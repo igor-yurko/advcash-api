@@ -1,0 +1,24 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.apache.axis:axis:1.4'
+    compile 'javax.xml:jaxrpc-api:1.1'
+    compile 'javax.xml.soap:javax.xml.soap-api:1.4.0'
+    compile 'wsdl4j:wsdl4j:1.6.3'
+
+
+    compile group: 'commons-logging', name: 'commons-logging', version: '1.2'
+    compile group: 'commons-discovery', name: 'commons-discovery', version: '0.5'
+
+
+
+
+
+}
