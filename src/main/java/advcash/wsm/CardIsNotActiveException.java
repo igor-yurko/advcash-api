@@ -8,38 +8,38 @@
 package advcash.wsm;
 
 public class CardIsNotActiveException  extends org.apache.axis.AxisFault  implements java.io.Serializable {
-    private advcash.wsm.ExceptionType type;
+    private ExceptionType type;
 
     public CardIsNotActiveException() {
     }
 
     public CardIsNotActiveException(
-           advcash.wsm.ExceptionType type) {
+           ExceptionType type) {
         this.type = type;
     }
 
 
     /**
      * Gets the type value for this CardIsNotActiveException.
-     * 
+     *
      * @return type
      */
-    public advcash.wsm.ExceptionType getType() {
+    public ExceptionType getType() {
         return type;
     }
 
 
     /**
      * Sets the type value for this CardIsNotActiveException.
-     * 
+     *
      * @param type
      */
-    public void setType(advcash.wsm.ExceptionType type) {
+    public void setType(ExceptionType type) {
         this.type = type;
     }
 
-    private java.lang.Object __equalsCalc = null;
-    public synchronized boolean equals(java.lang.Object obj) {
+    private Object __equalsCalc = null;
+    public synchronized boolean equals(Object obj) {
         if (!(obj instanceof CardIsNotActiveException)) return false;
         CardIsNotActiveException other = (CardIsNotActiveException) obj;
         if (obj == null) return false;
@@ -49,8 +49,8 @@ public class CardIsNotActiveException  extends org.apache.axis.AxisFault  implem
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true && 
-            ((this.type==null && other.getType()==null) || 
+        _equals = true &&
+            ((this.type==null && other.getType()==null) ||
              (this.type!=null &&
               this.type.equals(other.getType())));
         __equalsCalc = null;
@@ -96,10 +96,10 @@ public class CardIsNotActiveException  extends org.apache.axis.AxisFault  implem
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -108,10 +108,10 @@ public class CardIsNotActiveException  extends org.apache.axis.AxisFault  implem
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

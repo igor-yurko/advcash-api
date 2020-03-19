@@ -8,22 +8,22 @@
 package advcash.wsm;
 
 public class ValidateAccountRequestDTO  implements java.io.Serializable {
-    private java.lang.String email;
+    private String email;
 
-    private java.lang.String firstName;
+    private String firstName;
 
-    private java.lang.String lastName;
+    private String lastName;
 
-    private java.lang.String walletId;
+    private String walletId;
 
     public ValidateAccountRequestDTO() {
     }
 
     public ValidateAccountRequestDTO(
-           java.lang.String email,
-           java.lang.String firstName,
-           java.lang.String lastName,
-           java.lang.String walletId) {
+           String email,
+           String firstName,
+           String lastName,
+           String walletId) {
            this.email = email;
            this.firstName = firstName;
            this.lastName = lastName;
@@ -33,85 +33,85 @@ public class ValidateAccountRequestDTO  implements java.io.Serializable {
 
     /**
      * Gets the email value for this ValidateAccountRequestDTO.
-     * 
+     *
      * @return email
      */
-    public java.lang.String getEmail() {
+    public String getEmail() {
         return email;
     }
 
 
     /**
      * Sets the email value for this ValidateAccountRequestDTO.
-     * 
+     *
      * @param email
      */
-    public void setEmail(java.lang.String email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
 
     /**
      * Gets the firstName value for this ValidateAccountRequestDTO.
-     * 
+     *
      * @return firstName
      */
-    public java.lang.String getFirstName() {
+    public String getFirstName() {
         return firstName;
     }
 
 
     /**
      * Sets the firstName value for this ValidateAccountRequestDTO.
-     * 
+     *
      * @param firstName
      */
-    public void setFirstName(java.lang.String firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
 
     /**
      * Gets the lastName value for this ValidateAccountRequestDTO.
-     * 
+     *
      * @return lastName
      */
-    public java.lang.String getLastName() {
+    public String getLastName() {
         return lastName;
     }
 
 
     /**
      * Sets the lastName value for this ValidateAccountRequestDTO.
-     * 
+     *
      * @param lastName
      */
-    public void setLastName(java.lang.String lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
 
     /**
      * Gets the walletId value for this ValidateAccountRequestDTO.
-     * 
+     *
      * @return walletId
      */
-    public java.lang.String getWalletId() {
+    public String getWalletId() {
         return walletId;
     }
 
 
     /**
      * Sets the walletId value for this ValidateAccountRequestDTO.
-     * 
+     *
      * @param walletId
      */
-    public void setWalletId(java.lang.String walletId) {
+    public void setWalletId(String walletId) {
         this.walletId = walletId;
     }
 
-    private java.lang.Object __equalsCalc = null;
-    public synchronized boolean equals(java.lang.Object obj) {
+    private Object __equalsCalc = null;
+    public synchronized boolean equals(Object obj) {
         if (!(obj instanceof ValidateAccountRequestDTO)) return false;
         ValidateAccountRequestDTO other = (ValidateAccountRequestDTO) obj;
         if (obj == null) return false;
@@ -121,17 +121,17 @@ public class ValidateAccountRequestDTO  implements java.io.Serializable {
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true && 
-            ((this.email==null && other.getEmail()==null) || 
+        _equals = true &&
+            ((this.email==null && other.getEmail()==null) ||
              (this.email!=null &&
               this.email.equals(other.getEmail()))) &&
-            ((this.firstName==null && other.getFirstName()==null) || 
+            ((this.firstName==null && other.getFirstName()==null) ||
              (this.firstName!=null &&
               this.firstName.equals(other.getFirstName()))) &&
-            ((this.lastName==null && other.getLastName()==null) || 
+            ((this.lastName==null && other.getLastName()==null) ||
              (this.lastName!=null &&
               this.lastName.equals(other.getLastName()))) &&
-            ((this.walletId==null && other.getWalletId()==null) || 
+            ((this.walletId==null && other.getWalletId()==null) ||
              (this.walletId!=null &&
               this.walletId.equals(other.getWalletId())));
         __equalsCalc = null;
@@ -208,10 +208,10 @@ public class ValidateAccountRequestDTO  implements java.io.Serializable {
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -220,10 +220,10 @@ public class ValidateAccountRequestDTO  implements java.io.Serializable {
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

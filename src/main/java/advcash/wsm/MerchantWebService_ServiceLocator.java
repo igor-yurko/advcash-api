@@ -7,7 +7,7 @@
 
 package advcash.wsm;
 
-public class MerchantWebService_ServiceLocator extends org.apache.axis.client.Service implements advcash.wsm.MerchantWebService_Service {
+public class MerchantWebService_ServiceLocator extends org.apache.axis.client.Service implements MerchantWebService_Service {
 
     public MerchantWebService_ServiceLocator() {
     }
@@ -17,29 +17,29 @@ public class MerchantWebService_ServiceLocator extends org.apache.axis.client.Se
         super(config);
     }
 
-    public MerchantWebService_ServiceLocator(java.lang.String wsdlLoc, javax.xml.namespace.QName sName) throws javax.xml.rpc.ServiceException {
+    public MerchantWebService_ServiceLocator(String wsdlLoc, javax.xml.namespace.QName sName) throws javax.xml.rpc.ServiceException {
         super(wsdlLoc, sName);
     }
 
     // Use to get a proxy class for MerchantWebServicePort
-    private java.lang.String MerchantWebServicePort_address = "https://wallet.advcash.com/wsm/merchantWebService";
+    private String MerchantWebServicePort_address = "https://wallet.advcash.com/wsm/merchantWebService";
 
-    public java.lang.String getMerchantWebServicePortAddress() {
+    public String getMerchantWebServicePortAddress() {
         return MerchantWebServicePort_address;
     }
 
     // The WSDD service name defaults to the port name.
-    private java.lang.String MerchantWebServicePortWSDDServiceName = "MerchantWebServicePort";
+    private String MerchantWebServicePortWSDDServiceName = "MerchantWebServicePort";
 
-    public java.lang.String getMerchantWebServicePortWSDDServiceName() {
+    public String getMerchantWebServicePortWSDDServiceName() {
         return MerchantWebServicePortWSDDServiceName;
     }
 
-    public void setMerchantWebServicePortWSDDServiceName(java.lang.String name) {
+    public void setMerchantWebServicePortWSDDServiceName(String name) {
         MerchantWebServicePortWSDDServiceName = name;
     }
 
-    public advcash.wsm.MerchantWebService_PortType getMerchantWebServicePort() throws javax.xml.rpc.ServiceException {
+    public MerchantWebService_PortType getMerchantWebServicePort() throws javax.xml.rpc.ServiceException {
        java.net.URL endpoint;
         try {
             endpoint = new java.net.URL(MerchantWebServicePort_address);
@@ -50,9 +50,9 @@ public class MerchantWebService_ServiceLocator extends org.apache.axis.client.Se
         return getMerchantWebServicePort(endpoint);
     }
 
-    public advcash.wsm.MerchantWebService_PortType getMerchantWebServicePort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
+    public MerchantWebService_PortType getMerchantWebServicePort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
         try {
-            advcash.wsm.MerchantWebServiceSoapBindingStub _stub = new advcash.wsm.MerchantWebServiceSoapBindingStub(portAddress, this);
+            MerchantWebServiceSoapBindingStub _stub = new MerchantWebServiceSoapBindingStub(portAddress, this);
             _stub.setPortName(getMerchantWebServicePortWSDDServiceName());
             return _stub;
         }
@@ -61,7 +61,7 @@ public class MerchantWebService_ServiceLocator extends org.apache.axis.client.Se
         }
     }
 
-    public void setMerchantWebServicePortEndpointAddress(java.lang.String address) {
+    public void setMerchantWebServicePortEndpointAddress(String address) {
         MerchantWebServicePort_address = address;
     }
 
@@ -72,13 +72,13 @@ public class MerchantWebService_ServiceLocator extends org.apache.axis.client.Se
      */
     public java.rmi.Remote getPort(Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
         try {
-            if (advcash.wsm.MerchantWebService_PortType.class.isAssignableFrom(serviceEndpointInterface)) {
-                advcash.wsm.MerchantWebServiceSoapBindingStub _stub = new advcash.wsm.MerchantWebServiceSoapBindingStub(new java.net.URL(MerchantWebServicePort_address), this);
+            if (MerchantWebService_PortType.class.isAssignableFrom(serviceEndpointInterface)) {
+                MerchantWebServiceSoapBindingStub _stub = new MerchantWebServiceSoapBindingStub(new java.net.URL(MerchantWebServicePort_address), this);
                 _stub.setPortName(getMerchantWebServicePortWSDDServiceName());
                 return _stub;
             }
         }
-        catch (java.lang.Throwable t) {
+        catch (Throwable t) {
             throw new javax.xml.rpc.ServiceException(t);
         }
         throw new javax.xml.rpc.ServiceException("There is no stub implementation for the interface:  " + (serviceEndpointInterface == null ? "null" : serviceEndpointInterface.getName()));
@@ -93,7 +93,7 @@ public class MerchantWebService_ServiceLocator extends org.apache.axis.client.Se
         if (portName == null) {
             return getPort(serviceEndpointInterface);
         }
-        java.lang.String inputPortName = portName.getLocalPart();
+        String inputPortName = portName.getLocalPart();
         if ("MerchantWebServicePort".equals(inputPortName)) {
             return getMerchantWebServicePort();
         }
@@ -121,12 +121,12 @@ public class MerchantWebService_ServiceLocator extends org.apache.axis.client.Se
     /**
     * Set the endpoint address for the specified port name.
     */
-    public void setEndpointAddress(java.lang.String portName, java.lang.String address) throws javax.xml.rpc.ServiceException {
-        
+    public void setEndpointAddress(String portName, String address) throws javax.xml.rpc.ServiceException {
+    
 if ("MerchantWebServicePort".equals(portName)) {
             setMerchantWebServicePortEndpointAddress(address);
         }
-        else 
+        else
 { // Unknown Port Name
             throw new javax.xml.rpc.ServiceException(" Cannot set Endpoint Address for Unknown Port" + portName);
         }
@@ -135,7 +135,7 @@ if ("MerchantWebServicePort".equals(portName)) {
     /**
     * Set the endpoint address for the specified port name.
     */
-    public void setEndpointAddress(javax.xml.namespace.QName portName, java.lang.String address) throws javax.xml.rpc.ServiceException {
+    public void setEndpointAddress(javax.xml.namespace.QName portName, String address) throws javax.xml.rpc.ServiceException {
         setEndpointAddress(portName.getLocalPart(), address);
     }
 

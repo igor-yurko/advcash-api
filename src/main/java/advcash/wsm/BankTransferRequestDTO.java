@@ -8,79 +8,79 @@
 package advcash.wsm;
 
 public class BankTransferRequestDTO  implements java.io.Serializable {
-    private java.lang.String abaRoutingNumber;
+    private String abaRoutingNumber;
 
-    private java.lang.String accountName;
+    private String accountName;
 
-    private java.lang.String accountNumber;
+    private String accountNumber;
 
-    private java.lang.String accountNumberPrefix;
+    private String accountNumberPrefix;
 
-    private java.lang.String accountNumberSuffix;
+    private String accountNumberSuffix;
 
-    private java.lang.String accountType;
+    private String accountType;
 
     private java.math.BigDecimal amount;
 
-    private java.lang.String bankCode;
+    private String bankCode;
 
-    private java.lang.String bankName;
+    private String bankName;
 
-    private java.lang.String bic;
+    private String bic;
 
-    private java.lang.String branchCode;
+    private String branchCode;
 
-    private java.lang.String countryCode;
+    private String countryCode;
 
-    private java.lang.String currencyCode;
+    private String currencyCode;
 
-    private java.lang.String destCurrency;
+    private String destCurrency;
 
-    private java.lang.String iban;
+    private String iban;
 
-    private java.lang.String recipientAddress;
+    private String recipientAddress;
 
-    private java.lang.String recipientCity;
+    private String recipientCity;
 
-    private java.lang.String recipientCompanyName;
+    private String recipientCompanyName;
 
-    private java.lang.String recipientFirstName;
+    private String recipientFirstName;
 
-    private java.lang.String recipientSecondName;
+    private String recipientSecondName;
 
-    private java.lang.String sortCode;
+    private String sortCode;
 
-    private java.lang.String swiftBic;
+    private String swiftBic;
 
-    private java.lang.String walletId;
+    private String walletId;
 
     public BankTransferRequestDTO() {
     }
 
     public BankTransferRequestDTO(
-           java.lang.String abaRoutingNumber,
-           java.lang.String accountName,
-           java.lang.String accountNumber,
-           java.lang.String accountNumberPrefix,
-           java.lang.String accountNumberSuffix,
-           java.lang.String accountType,
+           String abaRoutingNumber,
+           String accountName,
+           String accountNumber,
+           String accountNumberPrefix,
+           String accountNumberSuffix,
+           String accountType,
            java.math.BigDecimal amount,
-           java.lang.String bankCode,
-           java.lang.String bankName,
-           java.lang.String bic,
-           java.lang.String branchCode,
-           java.lang.String countryCode,
-           java.lang.String currencyCode,
-           java.lang.String destCurrency,
-           java.lang.String iban,
-           java.lang.String recipientAddress,
-           java.lang.String recipientCity,
-           java.lang.String recipientCompanyName,
-           java.lang.String recipientFirstName,
-           java.lang.String recipientSecondName,
-           java.lang.String sortCode,
-           java.lang.String swiftBic,
-           java.lang.String walletId) {
+           String bankCode,
+           String bankName,
+           String bic,
+           String branchCode,
+           String countryCode,
+           String currencyCode,
+           String destCurrency,
+           String iban,
+           String recipientAddress,
+           String recipientCity,
+           String recipientCompanyName,
+           String recipientFirstName,
+           String recipientSecondName,
+           String sortCode,
+           String swiftBic,
+           String walletId) {
            this.abaRoutingNumber = abaRoutingNumber;
            this.accountName = accountName;
            this.accountNumber = accountNumber;
@@ -109,127 +109,127 @@ public class BankTransferRequestDTO  implements java.io.Serializable {
 
     /**
      * Gets the abaRoutingNumber value for this BankTransferRequestDTO.
-     * 
+     *
      * @return abaRoutingNumber
      */
-    public java.lang.String getAbaRoutingNumber() {
+    public String getAbaRoutingNumber() {
         return abaRoutingNumber;
     }
 
 
     /**
      * Sets the abaRoutingNumber value for this BankTransferRequestDTO.
-     * 
+     *
      * @param abaRoutingNumber
      */
-    public void setAbaRoutingNumber(java.lang.String abaRoutingNumber) {
+    public void setAbaRoutingNumber(String abaRoutingNumber) {
         this.abaRoutingNumber = abaRoutingNumber;
     }
 
 
     /**
      * Gets the accountName value for this BankTransferRequestDTO.
-     * 
+     *
      * @return accountName
      */
-    public java.lang.String getAccountName() {
+    public String getAccountName() {
         return accountName;
     }
 
 
     /**
      * Sets the accountName value for this BankTransferRequestDTO.
-     * 
+     *
      * @param accountName
      */
-    public void setAccountName(java.lang.String accountName) {
+    public void setAccountName(String accountName) {
         this.accountName = accountName;
     }
 
 
     /**
      * Gets the accountNumber value for this BankTransferRequestDTO.
-     * 
+     *
      * @return accountNumber
      */
-    public java.lang.String getAccountNumber() {
+    public String getAccountNumber() {
         return accountNumber;
     }
 
 
     /**
      * Sets the accountNumber value for this BankTransferRequestDTO.
-     * 
+     *
      * @param accountNumber
      */
-    public void setAccountNumber(java.lang.String accountNumber) {
+    public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
     }
 
 
     /**
      * Gets the accountNumberPrefix value for this BankTransferRequestDTO.
-     * 
+     *
      * @return accountNumberPrefix
      */
-    public java.lang.String getAccountNumberPrefix() {
+    public String getAccountNumberPrefix() {
         return accountNumberPrefix;
     }
 
 
     /**
      * Sets the accountNumberPrefix value for this BankTransferRequestDTO.
-     * 
+     *
      * @param accountNumberPrefix
      */
-    public void setAccountNumberPrefix(java.lang.String accountNumberPrefix) {
+    public void setAccountNumberPrefix(String accountNumberPrefix) {
         this.accountNumberPrefix = accountNumberPrefix;
     }
 
 
     /**
      * Gets the accountNumberSuffix value for this BankTransferRequestDTO.
-     * 
+     *
      * @return accountNumberSuffix
      */
-    public java.lang.String getAccountNumberSuffix() {
+    public String getAccountNumberSuffix() {
         return accountNumberSuffix;
     }
 
 
     /**
      * Sets the accountNumberSuffix value for this BankTransferRequestDTO.
-     * 
+     *
      * @param accountNumberSuffix
      */
-    public void setAccountNumberSuffix(java.lang.String accountNumberSuffix) {
+    public void setAccountNumberSuffix(String accountNumberSuffix) {
         this.accountNumberSuffix = accountNumberSuffix;
     }
 
 
     /**
      * Gets the accountType value for this BankTransferRequestDTO.
-     * 
+     *
      * @return accountType
      */
-    public java.lang.String getAccountType() {
+    public String getAccountType() {
         return accountType;
     }
 
 
     /**
      * Sets the accountType value for this BankTransferRequestDTO.
-     * 
+     *
      * @param accountType
      */
-    public void setAccountType(java.lang.String accountType) {
+    public void setAccountType(String accountType) {
         this.accountType = accountType;
     }
 
 
     /**
      * Gets the amount value for this BankTransferRequestDTO.
-     * 
+     *
      * @return amount
      */
     public java.math.BigDecimal getAmount() {
@@ -239,7 +239,7 @@ public class BankTransferRequestDTO  implements java.io.Serializable {
 
     /**
      * Sets the amount value for this BankTransferRequestDTO.
-     * 
+     *
      * @param amount
      */
     public void setAmount(java.math.BigDecimal amount) {
@@ -249,325 +249,325 @@ public class BankTransferRequestDTO  implements java.io.Serializable {
 
     /**
      * Gets the bankCode value for this BankTransferRequestDTO.
-     * 
+     *
      * @return bankCode
      */
-    public java.lang.String getBankCode() {
+    public String getBankCode() {
         return bankCode;
     }
 
 
     /**
      * Sets the bankCode value for this BankTransferRequestDTO.
-     * 
+     *
      * @param bankCode
      */
-    public void setBankCode(java.lang.String bankCode) {
+    public void setBankCode(String bankCode) {
         this.bankCode = bankCode;
     }
 
 
     /**
      * Gets the bankName value for this BankTransferRequestDTO.
-     * 
+     *
      * @return bankName
      */
-    public java.lang.String getBankName() {
+    public String getBankName() {
         return bankName;
     }
 
 
     /**
      * Sets the bankName value for this BankTransferRequestDTO.
-     * 
+     *
      * @param bankName
      */
-    public void setBankName(java.lang.String bankName) {
+    public void setBankName(String bankName) {
         this.bankName = bankName;
     }
 
 
     /**
      * Gets the bic value for this BankTransferRequestDTO.
-     * 
+     *
      * @return bic
      */
-    public java.lang.String getBic() {
+    public String getBic() {
         return bic;
     }
 
 
     /**
      * Sets the bic value for this BankTransferRequestDTO.
-     * 
+     *
      * @param bic
      */
-    public void setBic(java.lang.String bic) {
+    public void setBic(String bic) {
         this.bic = bic;
     }
 
 
     /**
      * Gets the branchCode value for this BankTransferRequestDTO.
-     * 
+     *
      * @return branchCode
      */
-    public java.lang.String getBranchCode() {
+    public String getBranchCode() {
         return branchCode;
     }
 
 
     /**
      * Sets the branchCode value for this BankTransferRequestDTO.
-     * 
+     *
      * @param branchCode
      */
-    public void setBranchCode(java.lang.String branchCode) {
+    public void setBranchCode(String branchCode) {
         this.branchCode = branchCode;
     }
 
 
     /**
      * Gets the countryCode value for this BankTransferRequestDTO.
-     * 
+     *
      * @return countryCode
      */
-    public java.lang.String getCountryCode() {
+    public String getCountryCode() {
         return countryCode;
     }
 
 
     /**
      * Sets the countryCode value for this BankTransferRequestDTO.
-     * 
+     *
      * @param countryCode
      */
-    public void setCountryCode(java.lang.String countryCode) {
+    public void setCountryCode(String countryCode) {
         this.countryCode = countryCode;
     }
 
 
     /**
      * Gets the currencyCode value for this BankTransferRequestDTO.
-     * 
+     *
      * @return currencyCode
      */
-    public java.lang.String getCurrencyCode() {
+    public String getCurrencyCode() {
         return currencyCode;
     }
 
 
     /**
      * Sets the currencyCode value for this BankTransferRequestDTO.
-     * 
+     *
      * @param currencyCode
      */
-    public void setCurrencyCode(java.lang.String currencyCode) {
+    public void setCurrencyCode(String currencyCode) {
         this.currencyCode = currencyCode;
     }
 
 
     /**
      * Gets the destCurrency value for this BankTransferRequestDTO.
-     * 
+     *
      * @return destCurrency
      */
-    public java.lang.String getDestCurrency() {
+    public String getDestCurrency() {
         return destCurrency;
     }
 
 
     /**
      * Sets the destCurrency value for this BankTransferRequestDTO.
-     * 
+     *
      * @param destCurrency
      */
-    public void setDestCurrency(java.lang.String destCurrency) {
+    public void setDestCurrency(String destCurrency) {
         this.destCurrency = destCurrency;
     }
 
 
     /**
      * Gets the iban value for this BankTransferRequestDTO.
-     * 
+     *
      * @return iban
      */
-    public java.lang.String getIban() {
+    public String getIban() {
         return iban;
     }
 
 
     /**
      * Sets the iban value for this BankTransferRequestDTO.
-     * 
+     *
      * @param iban
      */
-    public void setIban(java.lang.String iban) {
+    public void setIban(String iban) {
         this.iban = iban;
     }
 
 
     /**
      * Gets the recipientAddress value for this BankTransferRequestDTO.
-     * 
+     *
      * @return recipientAddress
      */
-    public java.lang.String getRecipientAddress() {
+    public String getRecipientAddress() {
         return recipientAddress;
     }
 
 
     /**
      * Sets the recipientAddress value for this BankTransferRequestDTO.
-     * 
+     *
      * @param recipientAddress
      */
-    public void setRecipientAddress(java.lang.String recipientAddress) {
+    public void setRecipientAddress(String recipientAddress) {
         this.recipientAddress = recipientAddress;
     }
 
 
     /**
      * Gets the recipientCity value for this BankTransferRequestDTO.
-     * 
+     *
      * @return recipientCity
      */
-    public java.lang.String getRecipientCity() {
+    public String getRecipientCity() {
         return recipientCity;
     }
 
 
     /**
      * Sets the recipientCity value for this BankTransferRequestDTO.
-     * 
+     *
      * @param recipientCity
      */
-    public void setRecipientCity(java.lang.String recipientCity) {
+    public void setRecipientCity(String recipientCity) {
         this.recipientCity = recipientCity;
     }
 
 
     /**
      * Gets the recipientCompanyName value for this BankTransferRequestDTO.
-     * 
+     *
      * @return recipientCompanyName
      */
-    public java.lang.String getRecipientCompanyName() {
+    public String getRecipientCompanyName() {
         return recipientCompanyName;
     }
 
 
     /**
      * Sets the recipientCompanyName value for this BankTransferRequestDTO.
-     * 
+     *
      * @param recipientCompanyName
      */
-    public void setRecipientCompanyName(java.lang.String recipientCompanyName) {
+    public void setRecipientCompanyName(String recipientCompanyName) {
         this.recipientCompanyName = recipientCompanyName;
     }
 
 
     /**
      * Gets the recipientFirstName value for this BankTransferRequestDTO.
-     * 
+     *
      * @return recipientFirstName
      */
-    public java.lang.String getRecipientFirstName() {
+    public String getRecipientFirstName() {
         return recipientFirstName;
     }
 
 
     /**
      * Sets the recipientFirstName value for this BankTransferRequestDTO.
-     * 
+     *
      * @param recipientFirstName
      */
-    public void setRecipientFirstName(java.lang.String recipientFirstName) {
+    public void setRecipientFirstName(String recipientFirstName) {
         this.recipientFirstName = recipientFirstName;
     }
 
 
     /**
      * Gets the recipientSecondName value for this BankTransferRequestDTO.
-     * 
+     *
      * @return recipientSecondName
      */
-    public java.lang.String getRecipientSecondName() {
+    public String getRecipientSecondName() {
         return recipientSecondName;
     }
 
 
     /**
      * Sets the recipientSecondName value for this BankTransferRequestDTO.
-     * 
+     *
      * @param recipientSecondName
      */
-    public void setRecipientSecondName(java.lang.String recipientSecondName) {
+    public void setRecipientSecondName(String recipientSecondName) {
         this.recipientSecondName = recipientSecondName;
     }
 
 
     /**
      * Gets the sortCode value for this BankTransferRequestDTO.
-     * 
+     *
      * @return sortCode
      */
-    public java.lang.String getSortCode() {
+    public String getSortCode() {
         return sortCode;
     }
 
 
     /**
      * Sets the sortCode value for this BankTransferRequestDTO.
-     * 
+     *
      * @param sortCode
      */
-    public void setSortCode(java.lang.String sortCode) {
+    public void setSortCode(String sortCode) {
         this.sortCode = sortCode;
     }
 
 
     /**
      * Gets the swiftBic value for this BankTransferRequestDTO.
-     * 
+     *
      * @return swiftBic
      */
-    public java.lang.String getSwiftBic() {
+    public String getSwiftBic() {
         return swiftBic;
     }
 
 
     /**
      * Sets the swiftBic value for this BankTransferRequestDTO.
-     * 
+     *
      * @param swiftBic
      */
-    public void setSwiftBic(java.lang.String swiftBic) {
+    public void setSwiftBic(String swiftBic) {
         this.swiftBic = swiftBic;
     }
 
 
     /**
      * Gets the walletId value for this BankTransferRequestDTO.
-     * 
+     *
      * @return walletId
      */
-    public java.lang.String getWalletId() {
+    public String getWalletId() {
         return walletId;
     }
 
 
     /**
      * Sets the walletId value for this BankTransferRequestDTO.
-     * 
+     *
      * @param walletId
      */
-    public void setWalletId(java.lang.String walletId) {
+    public void setWalletId(String walletId) {
         this.walletId = walletId;
     }
 
-    private java.lang.Object __equalsCalc = null;
-    public synchronized boolean equals(java.lang.Object obj) {
+    private Object __equalsCalc = null;
+    public synchronized boolean equals(Object obj) {
         if (!(obj instanceof BankTransferRequestDTO)) return false;
         BankTransferRequestDTO other = (BankTransferRequestDTO) obj;
         if (obj == null) return false;
@@ -577,74 +577,74 @@ public class BankTransferRequestDTO  implements java.io.Serializable {
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true && 
-            ((this.abaRoutingNumber==null && other.getAbaRoutingNumber()==null) || 
+        _equals = true &&
+            ((this.abaRoutingNumber==null && other.getAbaRoutingNumber()==null) ||
              (this.abaRoutingNumber!=null &&
               this.abaRoutingNumber.equals(other.getAbaRoutingNumber()))) &&
-            ((this.accountName==null && other.getAccountName()==null) || 
+            ((this.accountName==null && other.getAccountName()==null) ||
              (this.accountName!=null &&
               this.accountName.equals(other.getAccountName()))) &&
-            ((this.accountNumber==null && other.getAccountNumber()==null) || 
+            ((this.accountNumber==null && other.getAccountNumber()==null) ||
              (this.accountNumber!=null &&
               this.accountNumber.equals(other.getAccountNumber()))) &&
-            ((this.accountNumberPrefix==null && other.getAccountNumberPrefix()==null) || 
+            ((this.accountNumberPrefix==null && other.getAccountNumberPrefix()==null) ||
              (this.accountNumberPrefix!=null &&
               this.accountNumberPrefix.equals(other.getAccountNumberPrefix()))) &&
-            ((this.accountNumberSuffix==null && other.getAccountNumberSuffix()==null) || 
+            ((this.accountNumberSuffix==null && other.getAccountNumberSuffix()==null) ||
              (this.accountNumberSuffix!=null &&
               this.accountNumberSuffix.equals(other.getAccountNumberSuffix()))) &&
-            ((this.accountType==null && other.getAccountType()==null) || 
+            ((this.accountType==null && other.getAccountType()==null) ||
              (this.accountType!=null &&
               this.accountType.equals(other.getAccountType()))) &&
-            ((this.amount==null && other.getAmount()==null) || 
+            ((this.amount==null && other.getAmount()==null) ||
              (this.amount!=null &&
               this.amount.equals(other.getAmount()))) &&
-            ((this.bankCode==null && other.getBankCode()==null) || 
+            ((this.bankCode==null && other.getBankCode()==null) ||
              (this.bankCode!=null &&
               this.bankCode.equals(other.getBankCode()))) &&
-            ((this.bankName==null && other.getBankName()==null) || 
+            ((this.bankName==null && other.getBankName()==null) ||
              (this.bankName!=null &&
               this.bankName.equals(other.getBankName()))) &&
-            ((this.bic==null && other.getBic()==null) || 
+            ((this.bic==null && other.getBic()==null) ||
              (this.bic!=null &&
               this.bic.equals(other.getBic()))) &&
-            ((this.branchCode==null && other.getBranchCode()==null) || 
+            ((this.branchCode==null && other.getBranchCode()==null) ||
              (this.branchCode!=null &&
               this.branchCode.equals(other.getBranchCode()))) &&
-            ((this.countryCode==null && other.getCountryCode()==null) || 
+            ((this.countryCode==null && other.getCountryCode()==null) ||
              (this.countryCode!=null &&
               this.countryCode.equals(other.getCountryCode()))) &&
-            ((this.currencyCode==null && other.getCurrencyCode()==null) || 
+            ((this.currencyCode==null && other.getCurrencyCode()==null) ||
              (this.currencyCode!=null &&
               this.currencyCode.equals(other.getCurrencyCode()))) &&
-            ((this.destCurrency==null && other.getDestCurrency()==null) || 
+            ((this.destCurrency==null && other.getDestCurrency()==null) ||
              (this.destCurrency!=null &&
               this.destCurrency.equals(other.getDestCurrency()))) &&
-            ((this.iban==null && other.getIban()==null) || 
+            ((this.iban==null && other.getIban()==null) ||
              (this.iban!=null &&
               this.iban.equals(other.getIban()))) &&
-            ((this.recipientAddress==null && other.getRecipientAddress()==null) || 
+            ((this.recipientAddress==null && other.getRecipientAddress()==null) ||
              (this.recipientAddress!=null &&
               this.recipientAddress.equals(other.getRecipientAddress()))) &&
-            ((this.recipientCity==null && other.getRecipientCity()==null) || 
+            ((this.recipientCity==null && other.getRecipientCity()==null) ||
              (this.recipientCity!=null &&
               this.recipientCity.equals(other.getRecipientCity()))) &&
-            ((this.recipientCompanyName==null && other.getRecipientCompanyName()==null) || 
+            ((this.recipientCompanyName==null && other.getRecipientCompanyName()==null) ||
              (this.recipientCompanyName!=null &&
               this.recipientCompanyName.equals(other.getRecipientCompanyName()))) &&
-            ((this.recipientFirstName==null && other.getRecipientFirstName()==null) || 
+            ((this.recipientFirstName==null && other.getRecipientFirstName()==null) ||
              (this.recipientFirstName!=null &&
               this.recipientFirstName.equals(other.getRecipientFirstName()))) &&
-            ((this.recipientSecondName==null && other.getRecipientSecondName()==null) || 
+            ((this.recipientSecondName==null && other.getRecipientSecondName()==null) ||
              (this.recipientSecondName!=null &&
               this.recipientSecondName.equals(other.getRecipientSecondName()))) &&
-            ((this.sortCode==null && other.getSortCode()==null) || 
+            ((this.sortCode==null && other.getSortCode()==null) ||
              (this.sortCode!=null &&
               this.sortCode.equals(other.getSortCode()))) &&
-            ((this.swiftBic==null && other.getSwiftBic()==null) || 
+            ((this.swiftBic==null && other.getSwiftBic()==null) ||
              (this.swiftBic!=null &&
               this.swiftBic.equals(other.getSwiftBic()))) &&
-            ((this.walletId==null && other.getWalletId()==null) || 
+            ((this.walletId==null && other.getWalletId()==null) ||
              (this.walletId!=null &&
               this.walletId.equals(other.getWalletId())));
         __equalsCalc = null;
@@ -911,10 +911,10 @@ public class BankTransferRequestDTO  implements java.io.Serializable {
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -923,10 +923,10 @@ public class BankTransferRequestDTO  implements java.io.Serializable {
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

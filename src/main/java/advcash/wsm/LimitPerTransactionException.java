@@ -12,9 +12,13 @@ public class LimitPerTransactionException  extends org.apache.axis.AxisFault  im
 
     private java.math.BigDecimal maxAmount;
 
-    private advcash.wsm.Currency currency;
+    private DepositPaymentMethodType depositPaymentMethodType;
 
-    private advcash.wsm.ExceptionType type;
+    private CoinName coinName;
+
+    private Currency currency;
+
+    private ExceptionType type;
 
     public LimitPerTransactionException() {
     }
@@ -22,10 +26,14 @@ public class LimitPerTransactionException  extends org.apache.axis.AxisFault  im
     public LimitPerTransactionException(
            java.math.BigDecimal minAmount,
            java.math.BigDecimal maxAmount,
-           advcash.wsm.Currency currency,
-           advcash.wsm.ExceptionType type) {
+           DepositPaymentMethodType depositPaymentMethodType,
+           CoinName coinName,
+           Currency currency,
+           ExceptionType type) {
         this.minAmount = minAmount;
         this.maxAmount = maxAmount;
+        this.depositPaymentMethodType = depositPaymentMethodType;
+        this.coinName = coinName;
         this.currency = currency;
         this.type = type;
     }
@@ -33,7 +41,7 @@ public class LimitPerTransactionException  extends org.apache.axis.AxisFault  im
 
     /**
      * Gets the minAmount value for this LimitPerTransactionException.
-     * 
+     *
      * @return minAmount
      */
     public java.math.BigDecimal getMinAmount() {
@@ -43,7 +51,7 @@ public class LimitPerTransactionException  extends org.apache.axis.AxisFault  im
 
     /**
      * Sets the minAmount value for this LimitPerTransactionException.
-     * 
+     *
      * @param minAmount
      */
     public void setMinAmount(java.math.BigDecimal minAmount) {
@@ -53,7 +61,7 @@ public class LimitPerTransactionException  extends org.apache.axis.AxisFault  im
 
     /**
      * Gets the maxAmount value for this LimitPerTransactionException.
-     * 
+     *
      * @return maxAmount
      */
     public java.math.BigDecimal getMaxAmount() {
@@ -63,7 +71,7 @@ public class LimitPerTransactionException  extends org.apache.axis.AxisFault  im
 
     /**
      * Sets the maxAmount value for this LimitPerTransactionException.
-     * 
+     *
      * @param maxAmount
      */
     public void setMaxAmount(java.math.BigDecimal maxAmount) {
@@ -72,46 +80,86 @@ public class LimitPerTransactionException  extends org.apache.axis.AxisFault  im
 
 
     /**
+     * Gets the depositPaymentMethodType value for this LimitPerTransactionException.
+     *
+     * @return depositPaymentMethodType
+     */
+    public DepositPaymentMethodType getDepositPaymentMethodType() {
+        return depositPaymentMethodType;
+    }
+
+
+    /**
+     * Sets the depositPaymentMethodType value for this LimitPerTransactionException.
+     *
+     * @param depositPaymentMethodType
+     */
+    public void setDepositPaymentMethodType(DepositPaymentMethodType depositPaymentMethodType) {
+        this.depositPaymentMethodType = depositPaymentMethodType;
+    }
+
+
+    /**
+     * Gets the coinName value for this LimitPerTransactionException.
+     *
+     * @return coinName
+     */
+    public CoinName getCoinName() {
+        return coinName;
+    }
+
+
+    /**
+     * Sets the coinName value for this LimitPerTransactionException.
+     *
+     * @param coinName
+     */
+    public void setCoinName(CoinName coinName) {
+        this.coinName = coinName;
+    }
+
+
+    /**
      * Gets the currency value for this LimitPerTransactionException.
-     * 
+     *
      * @return currency
      */
-    public advcash.wsm.Currency getCurrency() {
+    public Currency getCurrency() {
         return currency;
     }
 
 
     /**
      * Sets the currency value for this LimitPerTransactionException.
-     * 
+     *
      * @param currency
      */
-    public void setCurrency(advcash.wsm.Currency currency) {
+    public void setCurrency(Currency currency) {
         this.currency = currency;
     }
 
 
     /**
      * Gets the type value for this LimitPerTransactionException.
-     * 
+     *
      * @return type
      */
-    public advcash.wsm.ExceptionType getType() {
+    public ExceptionType getType() {
         return type;
     }
 
 
     /**
      * Sets the type value for this LimitPerTransactionException.
-     * 
+     *
      * @param type
      */
-    public void setType(advcash.wsm.ExceptionType type) {
+    public void setType(ExceptionType type) {
         this.type = type;
     }
 
-    private java.lang.Object __equalsCalc = null;
-    public synchronized boolean equals(java.lang.Object obj) {
+    private Object __equalsCalc = null;
+    public synchronized boolean equals(Object obj) {
         if (!(obj instanceof LimitPerTransactionException)) return false;
         LimitPerTransactionException other = (LimitPerTransactionException) obj;
         if (obj == null) return false;
@@ -121,17 +169,23 @@ public class LimitPerTransactionException  extends org.apache.axis.AxisFault  im
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true && 
-            ((this.minAmount==null && other.getMinAmount()==null) || 
+        _equals = true &&
+            ((this.minAmount==null && other.getMinAmount()==null) ||
              (this.minAmount!=null &&
               this.minAmount.equals(other.getMinAmount()))) &&
-            ((this.maxAmount==null && other.getMaxAmount()==null) || 
+            ((this.maxAmount==null && other.getMaxAmount()==null) ||
              (this.maxAmount!=null &&
               this.maxAmount.equals(other.getMaxAmount()))) &&
-            ((this.currency==null && other.getCurrency()==null) || 
+            ((this.depositPaymentMethodType==null && other.getDepositPaymentMethodType()==null) ||
+             (this.depositPaymentMethodType!=null &&
+              this.depositPaymentMethodType.equals(other.getDepositPaymentMethodType()))) &&
+            ((this.coinName==null && other.getCoinName()==null) ||
+             (this.coinName!=null &&
+              this.coinName.equals(other.getCoinName()))) &&
+            ((this.currency==null && other.getCurrency()==null) ||
              (this.currency!=null &&
               this.currency.equals(other.getCurrency()))) &&
-            ((this.type==null && other.getType()==null) || 
+            ((this.type==null && other.getType()==null) ||
              (this.type!=null &&
               this.type.equals(other.getType())));
         __equalsCalc = null;
@@ -150,6 +204,12 @@ public class LimitPerTransactionException  extends org.apache.axis.AxisFault  im
         }
         if (getMaxAmount() != null) {
             _hashCode += getMaxAmount().hashCode();
+        }
+        if (getDepositPaymentMethodType() != null) {
+            _hashCode += getDepositPaymentMethodType().hashCode();
+        }
+        if (getCoinName() != null) {
+            _hashCode += getCoinName().hashCode();
         }
         if (getCurrency() != null) {
             _hashCode += getCurrency().hashCode();
@@ -180,6 +240,18 @@ public class LimitPerTransactionException  extends org.apache.axis.AxisFault  im
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("depositPaymentMethodType");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "depositPaymentMethodType"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://wsm.advcash/", "depositPaymentMethodType"));
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("coinName");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "coinName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://wsm.advcash/", "coinName"));
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("currency");
         elemField.setXmlName(new javax.xml.namespace.QName("", "currency"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://wsm.advcash/", "currency"));
@@ -204,10 +276,10 @@ public class LimitPerTransactionException  extends org.apache.axis.AxisFault  im
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -216,10 +288,10 @@ public class LimitPerTransactionException  extends org.apache.axis.AxisFault  im
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

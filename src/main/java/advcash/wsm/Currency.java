@@ -8,22 +8,24 @@
 package advcash.wsm;
 
 public class Currency implements java.io.Serializable {
-    private java.lang.String _value_;
+    private String _value_;
     private static java.util.HashMap _table_ = new java.util.HashMap();
 
     // Constructor
-    protected Currency(java.lang.String value) {
+    protected Currency(String value) {
         _value_ = value;
         _table_.put(_value_,this);
     }
 
-    public static final java.lang.String _USD = "USD";
-    public static final java.lang.String _EUR = "EUR";
-    public static final java.lang.String _RUR = "RUR";
-    public static final java.lang.String _GBP = "GBP";
-    public static final java.lang.String _UAH = "UAH";
-    public static final java.lang.String _KZT = "KZT";
-    public static final java.lang.String _BRL = "BRL";
+    public static final String _USD = "USD";
+    public static final String _EUR = "EUR";
+    public static final String _RUR = "RUR";
+    public static final String _GBP = "GBP";
+    public static final String _UAH = "UAH";
+    public static final String _KZT = "KZT";
+    public static final String _BRL = "BRL";
+    public static final String _TRY = "TRY";
+    public static final String _AZN = "AZN";
     public static final Currency USD = new Currency(_USD);
     public static final Currency EUR = new Currency(_EUR);
     public static final Currency RUR = new Currency(_RUR);
@@ -31,35 +33,37 @@ public class Currency implements java.io.Serializable {
     public static final Currency UAH = new Currency(_UAH);
     public static final Currency KZT = new Currency(_KZT);
     public static final Currency BRL = new Currency(_BRL);
-    public java.lang.String getValue() { return _value_;}
-    public static Currency fromValue(java.lang.String value)
-          throws java.lang.IllegalArgumentException {
+    public static final Currency TRY = new Currency(_TRY);
+    public static final Currency AZN = new Currency(_AZN);
+    public String getValue() { return _value_;}
+    public static Currency fromValue(String value)
+          throws IllegalArgumentException {
         Currency enumeration = (Currency)
             _table_.get(value);
-        if (enumeration==null) throw new java.lang.IllegalArgumentException();
+        if (enumeration==null) throw new IllegalArgumentException();
         return enumeration;
     }
-    public static Currency fromString(java.lang.String value)
-          throws java.lang.IllegalArgumentException {
+    public static Currency fromString(String value)
+          throws IllegalArgumentException {
         return fromValue(value);
     }
-    public boolean equals(java.lang.Object obj) {return (obj == this);}
+    public boolean equals(Object obj) {return (obj == this);}
     public int hashCode() { return toString().hashCode();}
-    public java.lang.String toString() { return _value_;}
-    public java.lang.Object readResolve() throws java.io.ObjectStreamException { return fromValue(_value_);}
+    public String toString() { return _value_;}
+    public Object readResolve() throws java.io.ObjectStreamException { return fromValue(_value_);}
     public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new org.apache.axis.encoding.ser.EnumSerializer(
             _javaType, _xmlType);
     }
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new org.apache.axis.encoding.ser.EnumDeserializer(
             _javaType, _xmlType);
     }

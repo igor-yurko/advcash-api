@@ -8,38 +8,38 @@
 package advcash.wsm;
 
 public abstract class BaseDTO  implements java.io.Serializable {
-    private java.lang.String id;
+    private String id;
 
     public BaseDTO() {
     }
 
     public BaseDTO(
-           java.lang.String id) {
+           String id) {
            this.id = id;
     }
 
 
     /**
      * Gets the id value for this BaseDTO.
-     * 
+     *
      * @return id
      */
-    public java.lang.String getId() {
+    public String getId() {
         return id;
     }
 
 
     /**
      * Sets the id value for this BaseDTO.
-     * 
+     *
      * @param id
      */
-    public void setId(java.lang.String id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    private java.lang.Object __equalsCalc = null;
-    public synchronized boolean equals(java.lang.Object obj) {
+    private Object __equalsCalc = null;
+    public synchronized boolean equals(Object obj) {
         if (!(obj instanceof BaseDTO)) return false;
         BaseDTO other = (BaseDTO) obj;
         if (obj == null) return false;
@@ -49,8 +49,8 @@ public abstract class BaseDTO  implements java.io.Serializable {
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true && 
-            ((this.id==null && other.getId()==null) || 
+        _equals = true &&
+            ((this.id==null && other.getId()==null) ||
              (this.id!=null &&
               this.id.equals(other.getId())));
         __equalsCalc = null;
@@ -97,10 +97,10 @@ public abstract class BaseDTO  implements java.io.Serializable {
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -109,10 +109,10 @@ public abstract class BaseDTO  implements java.io.Serializable {
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

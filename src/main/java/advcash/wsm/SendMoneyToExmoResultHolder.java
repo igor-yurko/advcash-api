@@ -7,20 +7,20 @@
 
 package advcash.wsm;
 
-public class SendMoneyToExmoResultHolder  extends advcash.wsm.SendMoneyToMarketResultHolder  implements java.io.Serializable {
+public class SendMoneyToExmoResultHolder  extends SendMoneyToMarketResultHolder  implements java.io.Serializable {
     public SendMoneyToExmoResultHolder() {
     }
 
     public SendMoneyToExmoResultHolder(
-           java.lang.String coupon,
-           java.lang.String id) {
+           String coupon,
+           String id) {
         super(
             coupon,
             id);
     }
 
-    private java.lang.Object __equalsCalc = null;
-    public synchronized boolean equals(java.lang.Object obj) {
+    private Object __equalsCalc = null;
+    public synchronized boolean equals(Object obj) {
         if (!(obj instanceof SendMoneyToExmoResultHolder)) return false;
         SendMoneyToExmoResultHolder other = (SendMoneyToExmoResultHolder) obj;
         if (obj == null) return false;
@@ -65,10 +65,10 @@ public class SendMoneyToExmoResultHolder  extends advcash.wsm.SendMoneyToMarketR
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -77,10 +77,10 @@ public class SendMoneyToExmoResultHolder  extends advcash.wsm.SendMoneyToMarketR
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

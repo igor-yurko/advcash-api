@@ -7,21 +7,21 @@
 
 package advcash.wsm;
 
-public class SendMoneyRequest  extends advcash.wsm.MoneyRequest  implements java.io.Serializable {
-    private java.lang.String email;
+public class SendMoneyRequest  extends MoneyRequest  implements java.io.Serializable {
+    private String email;
 
-    private java.lang.String walletId;
+    private String walletId;
 
     public SendMoneyRequest() {
     }
 
     public SendMoneyRequest(
            java.math.BigDecimal amount,
-           advcash.wsm.Currency currency,
-           java.lang.String note,
-           boolean savePaymentTemplate,
-           java.lang.String email,
-           java.lang.String walletId) {
+           Currency currency,
+           String note,
+           Boolean savePaymentTemplate,
+           String email,
+           String walletId) {
         super(
             amount,
             currency,
@@ -34,45 +34,45 @@ public class SendMoneyRequest  extends advcash.wsm.MoneyRequest  implements java
 
     /**
      * Gets the email value for this SendMoneyRequest.
-     * 
+     *
      * @return email
      */
-    public java.lang.String getEmail() {
+    public String getEmail() {
         return email;
     }
 
 
     /**
      * Sets the email value for this SendMoneyRequest.
-     * 
+     *
      * @param email
      */
-    public void setEmail(java.lang.String email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
 
     /**
      * Gets the walletId value for this SendMoneyRequest.
-     * 
+     *
      * @return walletId
      */
-    public java.lang.String getWalletId() {
+    public String getWalletId() {
         return walletId;
     }
 
 
     /**
      * Sets the walletId value for this SendMoneyRequest.
-     * 
+     *
      * @param walletId
      */
-    public void setWalletId(java.lang.String walletId) {
+    public void setWalletId(String walletId) {
         this.walletId = walletId;
     }
 
-    private java.lang.Object __equalsCalc = null;
-    public synchronized boolean equals(java.lang.Object obj) {
+    private Object __equalsCalc = null;
+    public synchronized boolean equals(Object obj) {
         if (!(obj instanceof SendMoneyRequest)) return false;
         SendMoneyRequest other = (SendMoneyRequest) obj;
         if (obj == null) return false;
@@ -82,11 +82,11 @@ public class SendMoneyRequest  extends advcash.wsm.MoneyRequest  implements java
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = super.equals(obj) && 
-            ((this.email==null && other.getEmail()==null) || 
+        _equals = super.equals(obj) &&
+            ((this.email==null && other.getEmail()==null) ||
              (this.email!=null &&
               this.email.equals(other.getEmail()))) &&
-            ((this.walletId==null && other.getWalletId()==null) || 
+            ((this.walletId==null && other.getWalletId()==null) ||
              (this.walletId!=null &&
               this.walletId.equals(other.getWalletId())));
         __equalsCalc = null;
@@ -143,10 +143,10 @@ public class SendMoneyRequest  extends advcash.wsm.MoneyRequest  implements java
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -155,10 +155,10 @@ public class SendMoneyRequest  extends advcash.wsm.MoneyRequest  implements java
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

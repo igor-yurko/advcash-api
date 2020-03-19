@@ -8,23 +8,23 @@
 package advcash.wsm;
 
 public class TransactionStatus implements java.io.Serializable {
-    private java.lang.String _value_;
+    private String _value_;
     private static java.util.HashMap _table_ = new java.util.HashMap();
 
     // Constructor
-    protected TransactionStatus(java.lang.String value) {
+    protected TransactionStatus(String value) {
         _value_ = value;
         _table_.put(_value_,this);
     }
 
-    public static final java.lang.String _PENDING = "PENDING";
-    public static final java.lang.String _PROCESS = "PROCESS";
-    public static final java.lang.String _COMPLETED = "COMPLETED";
-    public static final java.lang.String _CANCELED = "CANCELED";
-    public static final java.lang.String _NOT_IDENTIFIED = "NOT_IDENTIFIED";
-    public static final java.lang.String _ERROR = "ERROR";
-    public static final java.lang.String _NOT_CONFIRMED = "NOT_CONFIRMED";
-    public static final java.lang.String _CONFIRMED = "CONFIRMED";
+    public static final String _PENDING = "PENDING";
+    public static final String _PROCESS = "PROCESS";
+    public static final String _COMPLETED = "COMPLETED";
+    public static final String _CANCELED = "CANCELED";
+    public static final String _NOT_IDENTIFIED = "NOT_IDENTIFIED";
+    public static final String _ERROR = "ERROR";
+    public static final String _NOT_CONFIRMED = "NOT_CONFIRMED";
+    public static final String _CONFIRMED = "CONFIRMED";
     public static final TransactionStatus PENDING = new TransactionStatus(_PENDING);
     public static final TransactionStatus PROCESS = new TransactionStatus(_PROCESS);
     public static final TransactionStatus COMPLETED = new TransactionStatus(_COMPLETED);
@@ -33,35 +33,35 @@ public class TransactionStatus implements java.io.Serializable {
     public static final TransactionStatus ERROR = new TransactionStatus(_ERROR);
     public static final TransactionStatus NOT_CONFIRMED = new TransactionStatus(_NOT_CONFIRMED);
     public static final TransactionStatus CONFIRMED = new TransactionStatus(_CONFIRMED);
-    public java.lang.String getValue() { return _value_;}
-    public static TransactionStatus fromValue(java.lang.String value)
-          throws java.lang.IllegalArgumentException {
+    public String getValue() { return _value_;}
+    public static TransactionStatus fromValue(String value)
+          throws IllegalArgumentException {
         TransactionStatus enumeration = (TransactionStatus)
             _table_.get(value);
-        if (enumeration==null) throw new java.lang.IllegalArgumentException();
+        if (enumeration==null) throw new IllegalArgumentException();
         return enumeration;
     }
-    public static TransactionStatus fromString(java.lang.String value)
-          throws java.lang.IllegalArgumentException {
+    public static TransactionStatus fromString(String value)
+          throws IllegalArgumentException {
         return fromValue(value);
     }
-    public boolean equals(java.lang.Object obj) {return (obj == this);}
+    public boolean equals(Object obj) {return (obj == this);}
     public int hashCode() { return toString().hashCode();}
-    public java.lang.String toString() { return _value_;}
-    public java.lang.Object readResolve() throws java.io.ObjectStreamException { return fromValue(_value_);}
+    public String toString() { return _value_;}
+    public Object readResolve() throws java.io.ObjectStreamException { return fromValue(_value_);}
     public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new org.apache.axis.encoding.ser.EnumSerializer(
             _javaType, _xmlType);
     }
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new org.apache.axis.encoding.ser.EnumDeserializer(
             _javaType, _xmlType);
     }

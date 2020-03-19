@@ -10,20 +10,20 @@ package advcash.wsm;
 public abstract class MoneyRequest  implements java.io.Serializable {
     private java.math.BigDecimal amount;
 
-    private advcash.wsm.Currency currency;
+    private Currency currency;
 
-    private java.lang.String note;
+    private String note;
 
-    private boolean savePaymentTemplate;
+    private Boolean savePaymentTemplate;
 
     public MoneyRequest() {
     }
 
     public MoneyRequest(
            java.math.BigDecimal amount,
-           advcash.wsm.Currency currency,
-           java.lang.String note,
-           boolean savePaymentTemplate) {
+           Currency currency,
+           String note,
+           Boolean savePaymentTemplate) {
            this.amount = amount;
            this.currency = currency;
            this.note = note;
@@ -33,7 +33,7 @@ public abstract class MoneyRequest  implements java.io.Serializable {
 
     /**
      * Gets the amount value for this MoneyRequest.
-     * 
+     *
      * @return amount
      */
     public java.math.BigDecimal getAmount() {
@@ -43,7 +43,7 @@ public abstract class MoneyRequest  implements java.io.Serializable {
 
     /**
      * Sets the amount value for this MoneyRequest.
-     * 
+     *
      * @param amount
      */
     public void setAmount(java.math.BigDecimal amount) {
@@ -53,65 +53,65 @@ public abstract class MoneyRequest  implements java.io.Serializable {
 
     /**
      * Gets the currency value for this MoneyRequest.
-     * 
+     *
      * @return currency
      */
-    public advcash.wsm.Currency getCurrency() {
+    public Currency getCurrency() {
         return currency;
     }
 
 
     /**
      * Sets the currency value for this MoneyRequest.
-     * 
+     *
      * @param currency
      */
-    public void setCurrency(advcash.wsm.Currency currency) {
+    public void setCurrency(Currency currency) {
         this.currency = currency;
     }
 
 
     /**
      * Gets the note value for this MoneyRequest.
-     * 
+     *
      * @return note
      */
-    public java.lang.String getNote() {
+    public String getNote() {
         return note;
     }
 
 
     /**
      * Sets the note value for this MoneyRequest.
-     * 
+     *
      * @param note
      */
-    public void setNote(java.lang.String note) {
+    public void setNote(String note) {
         this.note = note;
     }
 
 
     /**
      * Gets the savePaymentTemplate value for this MoneyRequest.
-     * 
+     *
      * @return savePaymentTemplate
      */
-    public boolean isSavePaymentTemplate() {
+    public Boolean getSavePaymentTemplate() {
         return savePaymentTemplate;
     }
 
 
     /**
      * Sets the savePaymentTemplate value for this MoneyRequest.
-     * 
+     *
      * @param savePaymentTemplate
      */
-    public void setSavePaymentTemplate(boolean savePaymentTemplate) {
+    public void setSavePaymentTemplate(Boolean savePaymentTemplate) {
         this.savePaymentTemplate = savePaymentTemplate;
     }
 
-    private java.lang.Object __equalsCalc = null;
-    public synchronized boolean equals(java.lang.Object obj) {
+    private Object __equalsCalc = null;
+    public synchronized boolean equals(Object obj) {
         if (!(obj instanceof MoneyRequest)) return false;
         MoneyRequest other = (MoneyRequest) obj;
         if (obj == null) return false;
@@ -121,17 +121,19 @@ public abstract class MoneyRequest  implements java.io.Serializable {
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true && 
-            ((this.amount==null && other.getAmount()==null) || 
+        _equals = true &&
+            ((this.amount==null && other.getAmount()==null) ||
              (this.amount!=null &&
               this.amount.equals(other.getAmount()))) &&
-            ((this.currency==null && other.getCurrency()==null) || 
+            ((this.currency==null && other.getCurrency()==null) ||
              (this.currency!=null &&
               this.currency.equals(other.getCurrency()))) &&
-            ((this.note==null && other.getNote()==null) || 
+            ((this.note==null && other.getNote()==null) ||
              (this.note!=null &&
               this.note.equals(other.getNote()))) &&
-            this.savePaymentTemplate == other.isSavePaymentTemplate();
+            ((this.savePaymentTemplate==null && other.getSavePaymentTemplate()==null) ||
+             (this.savePaymentTemplate!=null &&
+              this.savePaymentTemplate.equals(other.getSavePaymentTemplate())));
         __equalsCalc = null;
         return _equals;
     }
@@ -152,7 +154,9 @@ public abstract class MoneyRequest  implements java.io.Serializable {
         if (getNote() != null) {
             _hashCode += getNote().hashCode();
         }
-        _hashCode += (isSavePaymentTemplate() ? Boolean.TRUE : Boolean.FALSE).hashCode();
+        if (getSavePaymentTemplate() != null) {
+            _hashCode += getSavePaymentTemplate().hashCode();
+        }
         __hashCodeCalc = false;
         return _hashCode;
     }
@@ -188,6 +192,7 @@ public abstract class MoneyRequest  implements java.io.Serializable {
         elemField.setFieldName("savePaymentTemplate");
         elemField.setXmlName(new javax.xml.namespace.QName("", "savePaymentTemplate"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "boolean"));
+        elemField.setMinOccurs(0);
         elemField.setNillable(false);
         typeDesc.addFieldDesc(elemField);
     }
@@ -203,10 +208,10 @@ public abstract class MoneyRequest  implements java.io.Serializable {
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -215,10 +220,10 @@ public abstract class MoneyRequest  implements java.io.Serializable {
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

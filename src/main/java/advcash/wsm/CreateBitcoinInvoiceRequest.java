@@ -7,21 +7,24 @@
 
 package advcash.wsm;
 
-public class CreateBitcoinInvoiceRequest  extends advcash.wsm.MoneyRequest  implements java.io.Serializable {
-    private java.lang.String orderId;
+public class CreateBitcoinInvoiceRequest  extends MoneyRequest  implements java.io.Serializable {
+    private String orderId;
 
-    private java.lang.String sciName;
+    private String sciName;
+
+    private String subMerchantURL;
 
     public CreateBitcoinInvoiceRequest() {
     }
 
     public CreateBitcoinInvoiceRequest(
            java.math.BigDecimal amount,
-           advcash.wsm.Currency currency,
-           java.lang.String note,
-           boolean savePaymentTemplate,
-           java.lang.String orderId,
-           java.lang.String sciName) {
+           Currency currency,
+           String note,
+           Boolean savePaymentTemplate,
+           String orderId,
+           String sciName,
+           String subMerchantURL) {
         super(
             amount,
             currency,
@@ -29,50 +32,71 @@ public class CreateBitcoinInvoiceRequest  extends advcash.wsm.MoneyRequest  impl
             savePaymentTemplate);
         this.orderId = orderId;
         this.sciName = sciName;
+        this.subMerchantURL = subMerchantURL;
     }
 
 
     /**
      * Gets the orderId value for this CreateBitcoinInvoiceRequest.
-     * 
+     *
      * @return orderId
      */
-    public java.lang.String getOrderId() {
+    public String getOrderId() {
         return orderId;
     }
 
 
     /**
      * Sets the orderId value for this CreateBitcoinInvoiceRequest.
-     * 
+     *
      * @param orderId
      */
-    public void setOrderId(java.lang.String orderId) {
+    public void setOrderId(String orderId) {
         this.orderId = orderId;
     }
 
 
     /**
      * Gets the sciName value for this CreateBitcoinInvoiceRequest.
-     * 
+     *
      * @return sciName
      */
-    public java.lang.String getSciName() {
+    public String getSciName() {
         return sciName;
     }
 
 
     /**
      * Sets the sciName value for this CreateBitcoinInvoiceRequest.
-     * 
+     *
      * @param sciName
      */
-    public void setSciName(java.lang.String sciName) {
+    public void setSciName(String sciName) {
         this.sciName = sciName;
     }
 
-    private java.lang.Object __equalsCalc = null;
-    public synchronized boolean equals(java.lang.Object obj) {
+
+    /**
+     * Gets the subMerchantURL value for this CreateBitcoinInvoiceRequest.
+     *
+     * @return subMerchantURL
+     */
+    public String getSubMerchantURL() {
+        return subMerchantURL;
+    }
+
+
+    /**
+     * Sets the subMerchantURL value for this CreateBitcoinInvoiceRequest.
+     *
+     * @param subMerchantURL
+     */
+    public void setSubMerchantURL(String subMerchantURL) {
+        this.subMerchantURL = subMerchantURL;
+    }
+
+    private Object __equalsCalc = null;
+    public synchronized boolean equals(Object obj) {
         if (!(obj instanceof CreateBitcoinInvoiceRequest)) return false;
         CreateBitcoinInvoiceRequest other = (CreateBitcoinInvoiceRequest) obj;
         if (obj == null) return false;
@@ -82,13 +106,16 @@ public class CreateBitcoinInvoiceRequest  extends advcash.wsm.MoneyRequest  impl
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = super.equals(obj) && 
-            ((this.orderId==null && other.getOrderId()==null) || 
+        _equals = super.equals(obj) &&
+            ((this.orderId==null && other.getOrderId()==null) ||
              (this.orderId!=null &&
               this.orderId.equals(other.getOrderId()))) &&
-            ((this.sciName==null && other.getSciName()==null) || 
+            ((this.sciName==null && other.getSciName()==null) ||
              (this.sciName!=null &&
-              this.sciName.equals(other.getSciName())));
+              this.sciName.equals(other.getSciName()))) &&
+            ((this.subMerchantURL==null && other.getSubMerchantURL()==null) ||
+             (this.subMerchantURL!=null &&
+              this.subMerchantURL.equals(other.getSubMerchantURL())));
         __equalsCalc = null;
         return _equals;
     }
@@ -105,6 +132,9 @@ public class CreateBitcoinInvoiceRequest  extends advcash.wsm.MoneyRequest  impl
         }
         if (getSciName() != null) {
             _hashCode += getSciName().hashCode();
+        }
+        if (getSubMerchantURL() != null) {
+            _hashCode += getSubMerchantURL().hashCode();
         }
         __hashCodeCalc = false;
         return _hashCode;
@@ -130,6 +160,13 @@ public class CreateBitcoinInvoiceRequest  extends advcash.wsm.MoneyRequest  impl
         elemField.setMinOccurs(0);
         elemField.setNillable(false);
         typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("subMerchantURL");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "subMerchantURL"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
     }
 
     /**
@@ -143,10 +180,10 @@ public class CreateBitcoinInvoiceRequest  extends advcash.wsm.MoneyRequest  impl
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -155,10 +192,10 @@ public class CreateBitcoinInvoiceRequest  extends advcash.wsm.MoneyRequest  impl
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

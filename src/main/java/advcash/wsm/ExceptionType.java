@@ -8,135 +8,169 @@
 package advcash.wsm;
 
 public class ExceptionType implements java.io.Serializable {
-    private java.lang.String _value_;
+    private String _value_;
     private static java.util.HashMap _table_ = new java.util.HashMap();
 
     // Constructor
-    protected ExceptionType(java.lang.String value) {
+    protected ExceptionType(String value) {
         _value_ = value;
         _table_.put(_value_,this);
     }
 
-    public static final java.lang.String _AlreadyExistException = "AlreadyExistException";
-    public static final java.lang.String _AttemptsHaveEndedException = "AttemptsHaveEndedException";
-    public static final java.lang.String _BadParametersException = "BadParametersException";
-    public static final java.lang.String _BadFormatAmountException = "BadFormatAmountException";
-    public static final java.lang.String _CodeHasExpired = "CodeHasExpired";
-    public static final java.lang.String _CodeIsNotValidException = "CodeIsNotValidException";
-    public static final java.lang.String _CryptoException = "CryptoException";
-    public static final java.lang.String _DatabaseException = "DatabaseException";
-    public static final java.lang.String _EmailAlreadyExistException = "EmailAlreadyExistException";
-    public static final java.lang.String _ExchangeCurrencyException = "ExchangeCurrencyException";
-    public static final java.lang.String _FileFormatException = "FileFormatException";
-    public static final java.lang.String _FileSystemException = "FileSystemException";
-    public static final java.lang.String _GroupDoesNotEmptyException = "GroupDoesNotEmptyException";
-    public static final java.lang.String _IpAddressIsWrongException = "IpAddressIsWrongException";
-    public static final java.lang.String _LimitPerMonthException = "LimitPerMonthException";
-    public static final java.lang.String _LimitPerDayException = "LimitPerDayException";
-    public static final java.lang.String _LimitPerTransactionException = "LimitPerTransactionException";
-    public static final java.lang.String _LoginAlreadyExistException = "LoginAlreadyExistException";
-    public static final java.lang.String _NotEnoughMoneyException = "NotEnoughMoneyException";
-    public static final java.lang.String _PasswordExpiredException = "PasswordExpiredException";
-    public static final java.lang.String _PasswordIncorrectException = "PasswordIncorrectException";
-    public static final java.lang.String _PasswordIsNotNewException = "PasswordIsNotNewException";
-    public static final java.lang.String _PINCodeIncorrectException = "PINCodeIncorrectException";
-    public static final java.lang.String _PasswordRecoveryException = "PasswordRecoveryException";
-    public static final java.lang.String _PhoneNumberAlreadyExistException = "PhoneNumberAlreadyExistException";
-    public static final java.lang.String _PhoneNumberNotValidException = "PhoneNumberNotValidException";
-    public static final java.lang.String _RecipientDoesNotExistException = "RecipientDoesNotExistException";
-    public static final java.lang.String _RegistrationException = "RegistrationException";
-    public static final java.lang.String _SecretAnswerIsNotValidException = "SecretAnswerIsNotValidException";
-    public static final java.lang.String _SenderDoesNotExistException = "SenderDoesNotExistException";
-    public static final java.lang.String _SignatureException = "SignatureException";
-    public static final java.lang.String _TooManyAttemptsException = "TooManyAttemptsException";
-    public static final java.lang.String _TooManyWalletsException = "TooManyWalletsException";
-    public static final java.lang.String _TransactionFailureException = "TransactionFailureException";
-    public static final java.lang.String _TransactionIsNotAvailableException = "TransactionIsNotAvailableException";
-    public static final java.lang.String _TypeWrongExceptionDB = "TypeWrongExceptionDB";
-    public static final java.lang.String _UnsupportedTransaction = "UnsupportedTransaction";
-    public static final java.lang.String _UserBlockedException = "UserBlockedException";
-    public static final java.lang.String _UserDoesNotExistException = "UserDoesNotExistException";
-    public static final java.lang.String _UserAlreadyExistException = "UserAlreadyExistException";
-    public static final java.lang.String _VeryBigAmountException = "VeryBigAmountException";
-    public static final java.lang.String _WalletCurrencyIncorrectException = "WalletCurrencyIncorrectException";
-    public static final java.lang.String _WalletDoesNotExist = "WalletDoesNotExist";
-    public static final java.lang.String _WrongParametersException = "WrongParametersException";
-    public static final java.lang.String _TooManyAttemptsPasswordRecoveryException = "TooManyAttemptsPasswordRecoveryException";
-    public static final java.lang.String _SAMException = "SAMException";
-    public static final java.lang.String _WrongEmailException = "WrongEmailException";
-    public static final java.lang.String _MultipleWalletsException = "MultipleWalletsException";
-    public static final java.lang.String _IpInBlackListException = "IpInBlackListException";
-    public static final java.lang.String _CardDoesNotExistException = "CardDoesNotExistException";
-    public static final java.lang.String _CardIsNotActiveException = "CardIsNotActiveException";
-    public static final java.lang.String _CardNumberIsNotValidException = "CardNumberIsNotValidException";
-    public static final java.lang.String _ProtectimusAuthenticationException = "ProtectimusAuthenticationException";
-    public static final java.lang.String _AccountIsNotVerifiedException = "AccountIsNotVerifiedException";
-    public static final java.lang.String _UserSuspiciousException = "UserSuspiciousException";
-    public static final java.lang.String _OkPayApiException = "OkPayApiException";
-    public static final java.lang.String _PerfectMoneyApiException = "PerfectMoneyApiException";
-    public static final java.lang.String _EgoPayApiException = "EgoPayApiException";
-    public static final java.lang.String _PaxumApiException = "PaxumApiException";
-    public static final java.lang.String _CoinbaseApiException = "CoinbaseApiException";
-    public static final java.lang.String _YandexMoneyApiException = "YandexMoneyApiException";
-    public static final java.lang.String _PayeerApiException = "PayeerApiException";
-    public static final java.lang.String _NotSupportedCountryException = "NotSupportedCountryException";
-    public static final java.lang.String _BitpayApiException = "BitpayApiException";
-    public static final java.lang.String _ExmoApiException = "ExmoApiException";
-    public static final java.lang.String _FetchDataException = "FetchDataException";
-    public static final java.lang.String _KitPSApiException = "KitPSApiException";
-    public static final java.lang.String _NotEnoughMoneyApiException = "NotEnoughMoneyApiException";
-    public static final java.lang.String _TestPaymentApiException = "TestPaymentApiException";
-    public static final java.lang.String _NotSupportedBankBinException = "NotSupportedBankBinException";
-    public static final java.lang.String _WebMoneyApiException = "WebMoneyApiException";
-    public static final java.lang.String _QiwiApiException = "QiwiApiException";
-    public static final java.lang.String _DuplicateOrderIdException = "DuplicateOrderIdException";
-    public static final java.lang.String _MixPlatApiException = "MixPlatApiException";
-    public static final java.lang.String _BtcEApiException = "BtcEApiException";
-    public static final java.lang.String _NetexApiException = "NetexApiException";
-    public static final java.lang.String _CardNotEnoughMoneyException = "CardNotEnoughMoneyException";
-    public static final java.lang.String _TransactionTemporaryNotAvailableException = "TransactionTemporaryNotAvailableException";
-    public static final java.lang.String _InterkassaApiException = "InterkassaApiException";
-    public static final java.lang.String _EcoinApiException = "EcoinApiException";
-    public static final java.lang.String _DuplicateTransactionException = "DuplicateTransactionException";
-    public static final java.lang.String _MonetaruApiException = "MonetaruApiException";
-    public static final java.lang.String _CardBlockException = "CardBlockException";
-    public static final java.lang.String _CapitalistApiException = "CapitalistApiException";
-    public static final java.lang.String _CardsApiDisabledException = "CardsApiDisabledException";
-    public static final java.lang.String _InternalException = "InternalException";
-    public static final java.lang.String _LimitsException = "LimitsException";
-    public static final java.lang.String _NotAuthException = "NotAuthException";
-    public static final java.lang.String _WrongParamsException = "WrongParamsException";
-    public static final java.lang.String _AccountIdDoesNotBelongToRequesterException = "AccountIdDoesNotBelongToRequesterException";
-    public static final java.lang.String _UserIsAlreadyVerifiedException = "UserIsAlreadyVerifiedException";
-    public static final java.lang.String _CardsAPISmsSendRestrictionException = "CardsAPISmsSendRestrictionException";
-    public static final java.lang.String _ChangeCardStatusException = "ChangeCardStatusException";
-    public static final java.lang.String _CardActivationException = "CardActivationException";
-    public static final java.lang.String _AdditionalDataRequiredException = "AdditionalDataRequiredException";
-    public static final java.lang.String _SystemAccountDeleteException = "SystemAccountDeleteException";
-    public static final java.lang.String _VerificationRequestIsAlreadySubmitted = "VerificationRequestIsAlreadySubmitted";
-    public static final java.lang.String _BitPayException = "BitPayException";
-    public static final java.lang.String _ChangeSystemAccountTypeRequestException = "ChangeSystemAccountTypeRequestException";
-    public static final java.lang.String _BitokApiException = "BitokApiException";
-    public static final java.lang.String _PayzaApiException = "PayzaApiException";
-    public static final java.lang.String _EpeseApiException = "EpeseApiException";
-    public static final java.lang.String _PayboxKzApiException = "PayboxKzApiException";
-    public static final java.lang.String _PayKeeperApiException = "PayKeeperApiException";
-    public static final java.lang.String _BitOneApiException = "BitOneApiException";
-    public static final java.lang.String _DuplicateDocumentNumberDigitsException = "DuplicateDocumentNumberDigitsException";
-    public static final java.lang.String _GpaysafeApiException = "GpaysafeApiException";
-    public static final java.lang.String _CreditPilotAPIException = "CreditPilotAPIException";
-    public static final java.lang.String _RsbApiException = "RsbApiException";
-    public static final java.lang.String _AlliedWalletApiException = "AlliedWalletApiException";
-    public static final java.lang.String _UnauthorizedIpAddressException = "UnauthorizedIpAddressException";
-    public static final java.lang.String _WinPayApiException = "WinPayApiException";
-    public static final java.lang.String _YandexCassaApiException = "YandexCassaApiException";
-    public static final java.lang.String _EpayApiException = "EpayApiException";
-    public static final java.lang.String _TicketSystemApiException = "TicketSystemApiException";
-    public static final java.lang.String _ParseErrorException = "ParseErrorException";
-    public static final java.lang.String _LimitPerCardPerDayException = "LimitPerCardPerDayException";
-    public static final java.lang.String _LifetimeLimitException = "LifetimeLimitException";
-    public static final java.lang.String _EcoinVoucherApiException = "EcoinVoucherApiException";
-    public static final java.lang.String _ClientProfileDoesNotMatchException = "ClientProfileDoesNotMatchException";
+    public static final String _AlreadyExistException = "AlreadyExistException";
+    public static final String _AttemptsHaveEndedException = "AttemptsHaveEndedException";
+    public static final String _BadParametersException = "BadParametersException";
+    public static final String _BadFormatAmountException = "BadFormatAmountException";
+    public static final String _CodeHasExpired = "CodeHasExpired";
+    public static final String _CodeIsNotValidException = "CodeIsNotValidException";
+    public static final String _CryptoException = "CryptoException";
+    public static final String _DatabaseException = "DatabaseException";
+    public static final String _EmailAlreadyExistException = "EmailAlreadyExistException";
+    public static final String _ExchangeCurrencyException = "ExchangeCurrencyException";
+    public static final String _FileFormatException = "FileFormatException";
+    public static final String _FileSystemException = "FileSystemException";
+    public static final String _GroupDoesNotEmptyException = "GroupDoesNotEmptyException";
+    public static final String _IpAddressIsWrongException = "IpAddressIsWrongException";
+    public static final String _LimitPerMonthException = "LimitPerMonthException";
+    public static final String _LimitPerDayException = "LimitPerDayException";
+    public static final String _LimitPerTransactionException = "LimitPerTransactionException";
+    public static final String _LoginAlreadyExistException = "LoginAlreadyExistException";
+    public static final String _NotEnoughMoneyException = "NotEnoughMoneyException";
+    public static final String _PasswordExpiredException = "PasswordExpiredException";
+    public static final String _PasswordIncorrectException = "PasswordIncorrectException";
+    public static final String _PasswordIsNotNewException = "PasswordIsNotNewException";
+    public static final String _PINCodeIncorrectException = "PINCodeIncorrectException";
+    public static final String _PasswordRecoveryException = "PasswordRecoveryException";
+    public static final String _PhoneNumberAlreadyExistException = "PhoneNumberAlreadyExistException";
+    public static final String _PhoneNumberNotValidException = "PhoneNumberNotValidException";
+    public static final String _RecipientDoesNotExistException = "RecipientDoesNotExistException";
+    public static final String _RegistrationException = "RegistrationException";
+    public static final String _SecretAnswerIsNotValidException = "SecretAnswerIsNotValidException";
+    public static final String _SenderDoesNotExistException = "SenderDoesNotExistException";
+    public static final String _SignatureException = "SignatureException";
+    public static final String _TooManyAttemptsException = "TooManyAttemptsException";
+    public static final String _TooManyWalletsException = "TooManyWalletsException";
+    public static final String _TransactionFailureException = "TransactionFailureException";
+    public static final String _TransactionIsNotAvailableException = "TransactionIsNotAvailableException";
+    public static final String _TypeWrongExceptionDB = "TypeWrongExceptionDB";
+    public static final String _UnsupportedTransaction = "UnsupportedTransaction";
+    public static final String _UserBlockedException = "UserBlockedException";
+    public static final String _UserDoesNotExistException = "UserDoesNotExistException";
+    public static final String _UserAlreadyExistException = "UserAlreadyExistException";
+    public static final String _VeryBigAmountException = "VeryBigAmountException";
+    public static final String _WalletCurrencyIncorrectException = "WalletCurrencyIncorrectException";
+    public static final String _WalletDoesNotExist = "WalletDoesNotExist";
+    public static final String _WrongParametersException = "WrongParametersException";
+    public static final String _TooManyAttemptsPasswordRecoveryException = "TooManyAttemptsPasswordRecoveryException";
+    public static final String _SAMException = "SAMException";
+    public static final String _WrongEmailException = "WrongEmailException";
+    public static final String _MultipleWalletsException = "MultipleWalletsException";
+    public static final String _IpInBlackListException = "IpInBlackListException";
+    public static final String _CardDoesNotExistException = "CardDoesNotExistException";
+    public static final String _CardIsNotActiveException = "CardIsNotActiveException";
+    public static final String _CardNumberIsNotValidException = "CardNumberIsNotValidException";
+    public static final String _ProtectimusAuthenticationException = "ProtectimusAuthenticationException";
+    public static final String _AccountIsNotVerifiedException = "AccountIsNotVerifiedException";
+    public static final String _UserSuspiciousException = "UserSuspiciousException";
+    public static final String _OkPayApiException = "OkPayApiException";
+    public static final String _PerfectMoneyApiException = "PerfectMoneyApiException";
+    public static final String _EgoPayApiException = "EgoPayApiException";
+    public static final String _PaxumApiException = "PaxumApiException";
+    public static final String _CoinbaseApiException = "CoinbaseApiException";
+    public static final String _YandexMoneyApiException = "YandexMoneyApiException";
+    public static final String _PayeerApiException = "PayeerApiException";
+    public static final String _NotSupportedCountryException = "NotSupportedCountryException";
+    public static final String _BitpayApiException = "BitpayApiException";
+    public static final String _ExmoApiException = "ExmoApiException";
+    public static final String _FetchDataException = "FetchDataException";
+    public static final String _KitPSApiException = "KitPSApiException";
+    public static final String _NotEnoughMoneyApiException = "NotEnoughMoneyApiException";
+    public static final String _TestPaymentApiException = "TestPaymentApiException";
+    public static final String _NotSupportedBankBinException = "NotSupportedBankBinException";
+    public static final String _WebMoneyApiException = "WebMoneyApiException";
+    public static final String _QiwiApiException = "QiwiApiException";
+    public static final String _DuplicateOrderIdException = "DuplicateOrderIdException";
+    public static final String _MixPlatApiException = "MixPlatApiException";
+    public static final String _BtcEApiException = "BtcEApiException";
+    public static final String _NetexApiException = "NetexApiException";
+    public static final String _CardNotEnoughMoneyException = "CardNotEnoughMoneyException";
+    public static final String _TransactionTemporaryNotAvailableException = "TransactionTemporaryNotAvailableException";
+    public static final String _InterkassaApiException = "InterkassaApiException";
+    public static final String _EcoinApiException = "EcoinApiException";
+    public static final String _DuplicateTransactionException = "DuplicateTransactionException";
+    public static final String _MonetaruApiException = "MonetaruApiException";
+    public static final String _CardBlockException = "CardBlockException";
+    public static final String _CapitalistApiException = "CapitalistApiException";
+    public static final String _CardsApiDisabledException = "CardsApiDisabledException";
+    public static final String _InternalException = "InternalException";
+    public static final String _LimitsException = "LimitsException";
+    public static final String _NotAuthException = "NotAuthException";
+    public static final String _WrongParamsException = "WrongParamsException";
+    public static final String _AccountIdDoesNotBelongToRequesterException = "AccountIdDoesNotBelongToRequesterException";
+    public static final String _UserIsAlreadyVerifiedException = "UserIsAlreadyVerifiedException";
+    public static final String _CardsAPISmsSendRestrictionException = "CardsAPISmsSendRestrictionException";
+    public static final String _ChangeCardStatusException = "ChangeCardStatusException";
+    public static final String _CardActivationException = "CardActivationException";
+    public static final String _AdditionalDataRequiredException = "AdditionalDataRequiredException";
+    public static final String _SystemAccountDeleteException = "SystemAccountDeleteException";
+    public static final String _VerificationRequestIsAlreadySubmitted = "VerificationRequestIsAlreadySubmitted";
+    public static final String _BitPayException = "BitPayException";
+    public static final String _ChangeSystemAccountTypeRequestException = "ChangeSystemAccountTypeRequestException";
+    public static final String _BitokApiException = "BitokApiException";
+    public static final String _PayzaApiException = "PayzaApiException";
+    public static final String _EpeseApiException = "EpeseApiException";
+    public static final String _PayboxKzApiException = "PayboxKzApiException";
+    public static final String _PayKeeperApiException = "PayKeeperApiException";
+    public static final String _BitOneApiException = "BitOneApiException";
+    public static final String _DuplicateDocumentNumberDigitsException = "DuplicateDocumentNumberDigitsException";
+    public static final String _GpaysafeApiException = "GpaysafeApiException";
+    public static final String _CreditPilotAPIException = "CreditPilotAPIException";
+    public static final String _RsbApiException = "RsbApiException";
+    public static final String _AlliedWalletApiException = "AlliedWalletApiException";
+    public static final String _UnauthorizedIpAddressException = "UnauthorizedIpAddressException";
+    public static final String _WinPayApiException = "WinPayApiException";
+    public static final String _YandexCassaApiException = "YandexCassaApiException";
+    public static final String _EpayApiException = "EpayApiException";
+    public static final String _TicketSystemApiException = "TicketSystemApiException";
+    public static final String _ParseErrorException = "ParseErrorException";
+    public static final String _LimitPerCardPerDayException = "LimitPerCardPerDayException";
+    public static final String _LifetimeLimitException = "LifetimeLimitException";
+    public static final String _EcoinVoucherApiException = "EcoinVoucherApiException";
+    public static final String _ClientProfileDoesNotMatchException = "ClientProfileDoesNotMatchException";
+    public static final String _WebsiteAlreadyExistException = "WebsiteAlreadyExistException";
+    public static final String _PhotoWithBankCardRequiredException = "PhotoWithBankCardRequiredException";
+    public static final String _BankCardDepositLimitPerAccountPerDayException = "BankCardDepositLimitPerAccountPerDayException";
+    public static final String _BitfinexApiException = "BitfinexApiException";
+    public static final String _BlockIoApiException = "BlockIoApiException";
+    public static final String _OklinkApiException = "OklinkApiException";
+    public static final String _MaximumAllowedCardsNumberExceededException = "MaximumAllowedCardsNumberExceededException";
+    public static final String _MailSendException = "MailSendException";
+    public static final String _CountLimitException = "CountLimitException";
+    public static final String _AstroPayApiException = "AstroPayApiException";
+    public static final String _BitGoApiException = "BitGoApiException";
+    public static final String _KrakenApiException = "KrakenApiException";
+    public static final String _BitstampApiException = "BitstampApiException";
+    public static final String _BittrexApiException = "BittrexApiException";
+    public static final String _BinanceApiException = "BinanceApiException";
+    public static final String _CryptoCurrencyMarketsUnavailable = "CryptoCurrencyMarketsUnavailable";
+    public static final String _AcquiroPayApiException = "AcquiroPayApiException";
+    public static final String _InterCashApiException = "InterCashApiException";
+    public static final String _EsSoloApiException = "EsSoloApiException";
+    public static final String _EsSoloResponseIntegrityCheckExeption = "EsSoloResponseIntegrityCheckExeption";
+    public static final String _EsSoloNestorIdentityApiException = "EsSoloNestorIdentityApiException";
+    public static final String _DocumentCreationException = "DocumentCreationException";
+    public static final String _TalkBankApiException = "TalkBankApiException";
+    public static final String _OkCoinApiException = "OkCoinApiException";
+    public static final String _MaxAdvcashCardAllowedBalanceExceededException = "MaxAdvcashCardAllowedBalanceExceededException";
+    public static final String _ForbiddenCryptoCurrencyAddressException = "ForbiddenCryptoCurrencyAddressException";
+    public static final String _CardNotAllowedForDepositException = "CardNotAllowedForDepositException";
+    public static final String _BusinessCardNotAllowedForDepositException = "BusinessCardNotAllowedForDepositException";
+    public static final String _UnsupportedThreeDSecureCheckException = "UnsupportedThreeDSecureCheckException";
+    public static final String _PaybypagoApiException = "PaybypagoApiException";
+    public static final String _EntityNotFoundException = "EntityNotFoundException";
+    public static final String _EmptyResultException = "EmptyResultException";
+    public static final String _CardCreationException = "CardCreationException";
+    public static final String _CardProgramKycCheckFailureException = "CardProgramKycCheckFailureException";
     public static final ExceptionType AlreadyExistException = new ExceptionType(_AlreadyExistException);
     public static final ExceptionType AttemptsHaveEndedException = new ExceptionType(_AttemptsHaveEndedException);
     public static final ExceptionType BadParametersException = new ExceptionType(_BadParametersException);
@@ -257,35 +291,69 @@ public class ExceptionType implements java.io.Serializable {
     public static final ExceptionType LifetimeLimitException = new ExceptionType(_LifetimeLimitException);
     public static final ExceptionType EcoinVoucherApiException = new ExceptionType(_EcoinVoucherApiException);
     public static final ExceptionType ClientProfileDoesNotMatchException = new ExceptionType(_ClientProfileDoesNotMatchException);
-    public java.lang.String getValue() { return _value_;}
-    public static ExceptionType fromValue(java.lang.String value)
-          throws java.lang.IllegalArgumentException {
+    public static final ExceptionType WebsiteAlreadyExistException = new ExceptionType(_WebsiteAlreadyExistException);
+    public static final ExceptionType PhotoWithBankCardRequiredException = new ExceptionType(_PhotoWithBankCardRequiredException);
+    public static final ExceptionType BankCardDepositLimitPerAccountPerDayException = new ExceptionType(_BankCardDepositLimitPerAccountPerDayException);
+    public static final ExceptionType BitfinexApiException = new ExceptionType(_BitfinexApiException);
+    public static final ExceptionType BlockIoApiException = new ExceptionType(_BlockIoApiException);
+    public static final ExceptionType OklinkApiException = new ExceptionType(_OklinkApiException);
+    public static final ExceptionType MaximumAllowedCardsNumberExceededException = new ExceptionType(_MaximumAllowedCardsNumberExceededException);
+    public static final ExceptionType MailSendException = new ExceptionType(_MailSendException);
+    public static final ExceptionType CountLimitException = new ExceptionType(_CountLimitException);
+    public static final ExceptionType AstroPayApiException = new ExceptionType(_AstroPayApiException);
+    public static final ExceptionType BitGoApiException = new ExceptionType(_BitGoApiException);
+    public static final ExceptionType KrakenApiException = new ExceptionType(_KrakenApiException);
+    public static final ExceptionType BitstampApiException = new ExceptionType(_BitstampApiException);
+    public static final ExceptionType BittrexApiException = new ExceptionType(_BittrexApiException);
+    public static final ExceptionType BinanceApiException = new ExceptionType(_BinanceApiException);
+    public static final ExceptionType CryptoCurrencyMarketsUnavailable = new ExceptionType(_CryptoCurrencyMarketsUnavailable);
+    public static final ExceptionType AcquiroPayApiException = new ExceptionType(_AcquiroPayApiException);
+    public static final ExceptionType InterCashApiException = new ExceptionType(_InterCashApiException);
+    public static final ExceptionType EsSoloApiException = new ExceptionType(_EsSoloApiException);
+    public static final ExceptionType EsSoloResponseIntegrityCheckExeption = new ExceptionType(_EsSoloResponseIntegrityCheckExeption);
+    public static final ExceptionType EsSoloNestorIdentityApiException = new ExceptionType(_EsSoloNestorIdentityApiException);
+    public static final ExceptionType DocumentCreationException = new ExceptionType(_DocumentCreationException);
+    public static final ExceptionType TalkBankApiException = new ExceptionType(_TalkBankApiException);
+    public static final ExceptionType OkCoinApiException = new ExceptionType(_OkCoinApiException);
+    public static final ExceptionType MaxAdvcashCardAllowedBalanceExceededException = new ExceptionType(_MaxAdvcashCardAllowedBalanceExceededException);
+    public static final ExceptionType ForbiddenCryptoCurrencyAddressException = new ExceptionType(_ForbiddenCryptoCurrencyAddressException);
+    public static final ExceptionType CardNotAllowedForDepositException = new ExceptionType(_CardNotAllowedForDepositException);
+    public static final ExceptionType BusinessCardNotAllowedForDepositException = new ExceptionType(_BusinessCardNotAllowedForDepositException);
+    public static final ExceptionType UnsupportedThreeDSecureCheckException = new ExceptionType(_UnsupportedThreeDSecureCheckException);
+    public static final ExceptionType PaybypagoApiException = new ExceptionType(_PaybypagoApiException);
+    public static final ExceptionType EntityNotFoundException = new ExceptionType(_EntityNotFoundException);
+    public static final ExceptionType EmptyResultException = new ExceptionType(_EmptyResultException);
+    public static final ExceptionType CardCreationException = new ExceptionType(_CardCreationException);
+    public static final ExceptionType CardProgramKycCheckFailureException = new ExceptionType(_CardProgramKycCheckFailureException);
+    public String getValue() { return _value_;}
+    public static ExceptionType fromValue(String value)
+          throws IllegalArgumentException {
         ExceptionType enumeration = (ExceptionType)
             _table_.get(value);
-        if (enumeration==null) throw new java.lang.IllegalArgumentException();
+        if (enumeration==null) throw new IllegalArgumentException();
         return enumeration;
     }
-    public static ExceptionType fromString(java.lang.String value)
-          throws java.lang.IllegalArgumentException {
+    public static ExceptionType fromString(String value)
+          throws IllegalArgumentException {
         return fromValue(value);
     }
-    public boolean equals(java.lang.Object obj) {return (obj == this);}
+    public boolean equals(Object obj) {return (obj == this);}
     public int hashCode() { return toString().hashCode();}
-    public java.lang.String toString() { return _value_;}
-    public java.lang.Object readResolve() throws java.io.ObjectStreamException { return fromValue(_value_);}
+    public String toString() { return _value_;}
+    public Object readResolve() throws java.io.ObjectStreamException { return fromValue(_value_);}
     public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new org.apache.axis.encoding.ser.EnumSerializer(
             _javaType, _xmlType);
     }
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new org.apache.axis.encoding.ser.EnumDeserializer(
             _javaType, _xmlType);
     }

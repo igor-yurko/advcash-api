@@ -10,23 +10,23 @@ package advcash.wsm;
 public class TransferRequestDTO  implements java.io.Serializable {
     private java.math.BigDecimal amount;
 
-    private java.lang.String comment;
+    private String comment;
 
-    private java.lang.String destWalletId;
+    private String destWalletId;
 
     private boolean savePaymentTemplate;
 
-    private java.lang.String srcWalletId;
+    private String srcWalletId;
 
     public TransferRequestDTO() {
     }
 
     public TransferRequestDTO(
            java.math.BigDecimal amount,
-           java.lang.String comment,
-           java.lang.String destWalletId,
+           String comment,
+           String destWalletId,
            boolean savePaymentTemplate,
-           java.lang.String srcWalletId) {
+           String srcWalletId) {
            this.amount = amount;
            this.comment = comment;
            this.destWalletId = destWalletId;
@@ -37,7 +37,7 @@ public class TransferRequestDTO  implements java.io.Serializable {
 
     /**
      * Gets the amount value for this TransferRequestDTO.
-     * 
+     *
      * @return amount
      */
     public java.math.BigDecimal getAmount() {
@@ -47,7 +47,7 @@ public class TransferRequestDTO  implements java.io.Serializable {
 
     /**
      * Sets the amount value for this TransferRequestDTO.
-     * 
+     *
      * @param amount
      */
     public void setAmount(java.math.BigDecimal amount) {
@@ -57,47 +57,47 @@ public class TransferRequestDTO  implements java.io.Serializable {
 
     /**
      * Gets the comment value for this TransferRequestDTO.
-     * 
+     *
      * @return comment
      */
-    public java.lang.String getComment() {
+    public String getComment() {
         return comment;
     }
 
 
     /**
      * Sets the comment value for this TransferRequestDTO.
-     * 
+     *
      * @param comment
      */
-    public void setComment(java.lang.String comment) {
+    public void setComment(String comment) {
         this.comment = comment;
     }
 
 
     /**
      * Gets the destWalletId value for this TransferRequestDTO.
-     * 
+     *
      * @return destWalletId
      */
-    public java.lang.String getDestWalletId() {
+    public String getDestWalletId() {
         return destWalletId;
     }
 
 
     /**
      * Sets the destWalletId value for this TransferRequestDTO.
-     * 
+     *
      * @param destWalletId
      */
-    public void setDestWalletId(java.lang.String destWalletId) {
+    public void setDestWalletId(String destWalletId) {
         this.destWalletId = destWalletId;
     }
 
 
     /**
      * Gets the savePaymentTemplate value for this TransferRequestDTO.
-     * 
+     *
      * @return savePaymentTemplate
      */
     public boolean isSavePaymentTemplate() {
@@ -107,7 +107,7 @@ public class TransferRequestDTO  implements java.io.Serializable {
 
     /**
      * Sets the savePaymentTemplate value for this TransferRequestDTO.
-     * 
+     *
      * @param savePaymentTemplate
      */
     public void setSavePaymentTemplate(boolean savePaymentTemplate) {
@@ -117,25 +117,25 @@ public class TransferRequestDTO  implements java.io.Serializable {
 
     /**
      * Gets the srcWalletId value for this TransferRequestDTO.
-     * 
+     *
      * @return srcWalletId
      */
-    public java.lang.String getSrcWalletId() {
+    public String getSrcWalletId() {
         return srcWalletId;
     }
 
 
     /**
      * Sets the srcWalletId value for this TransferRequestDTO.
-     * 
+     *
      * @param srcWalletId
      */
-    public void setSrcWalletId(java.lang.String srcWalletId) {
+    public void setSrcWalletId(String srcWalletId) {
         this.srcWalletId = srcWalletId;
     }
 
-    private java.lang.Object __equalsCalc = null;
-    public synchronized boolean equals(java.lang.Object obj) {
+    private Object __equalsCalc = null;
+    public synchronized boolean equals(Object obj) {
         if (!(obj instanceof TransferRequestDTO)) return false;
         TransferRequestDTO other = (TransferRequestDTO) obj;
         if (obj == null) return false;
@@ -145,18 +145,18 @@ public class TransferRequestDTO  implements java.io.Serializable {
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true && 
-            ((this.amount==null && other.getAmount()==null) || 
+        _equals = true &&
+            ((this.amount==null && other.getAmount()==null) ||
              (this.amount!=null &&
               this.amount.equals(other.getAmount()))) &&
-            ((this.comment==null && other.getComment()==null) || 
+            ((this.comment==null && other.getComment()==null) ||
              (this.comment!=null &&
               this.comment.equals(other.getComment()))) &&
-            ((this.destWalletId==null && other.getDestWalletId()==null) || 
+            ((this.destWalletId==null && other.getDestWalletId()==null) ||
              (this.destWalletId!=null &&
               this.destWalletId.equals(other.getDestWalletId()))) &&
             this.savePaymentTemplate == other.isSavePaymentTemplate() &&
-            ((this.srcWalletId==null && other.getSrcWalletId()==null) || 
+            ((this.srcWalletId==null && other.getSrcWalletId()==null) ||
              (this.srcWalletId!=null &&
               this.srcWalletId.equals(other.getSrcWalletId())));
         __equalsCalc = null;
@@ -240,10 +240,10 @@ public class TransferRequestDTO  implements java.io.Serializable {
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -252,10 +252,10 @@ public class TransferRequestDTO  implements java.io.Serializable {
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

@@ -8,25 +8,25 @@
 package advcash.wsm;
 
 public class RegistrationRequest  implements java.io.Serializable {
-    private java.lang.String email;
+    private String email;
 
-    private java.lang.String firstName;
+    private String firstName;
 
-    private java.lang.String ip;
+    private String ip;
 
-    private advcash.wsm.SupportedLanguage language;
+    private SupportedLanguage language;
 
-    private java.lang.String lastName;
+    private String lastName;
 
     public RegistrationRequest() {
     }
 
     public RegistrationRequest(
-           java.lang.String email,
-           java.lang.String firstName,
-           java.lang.String ip,
-           advcash.wsm.SupportedLanguage language,
-           java.lang.String lastName) {
+           String email,
+           String firstName,
+           String ip,
+           SupportedLanguage language,
+           String lastName) {
            this.email = email;
            this.firstName = firstName;
            this.ip = ip;
@@ -37,105 +37,105 @@ public class RegistrationRequest  implements java.io.Serializable {
 
     /**
      * Gets the email value for this RegistrationRequest.
-     * 
+     *
      * @return email
      */
-    public java.lang.String getEmail() {
+    public String getEmail() {
         return email;
     }
 
 
     /**
      * Sets the email value for this RegistrationRequest.
-     * 
+     *
      * @param email
      */
-    public void setEmail(java.lang.String email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
 
     /**
      * Gets the firstName value for this RegistrationRequest.
-     * 
+     *
      * @return firstName
      */
-    public java.lang.String getFirstName() {
+    public String getFirstName() {
         return firstName;
     }
 
 
     /**
      * Sets the firstName value for this RegistrationRequest.
-     * 
+     *
      * @param firstName
      */
-    public void setFirstName(java.lang.String firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
 
     /**
      * Gets the ip value for this RegistrationRequest.
-     * 
+     *
      * @return ip
      */
-    public java.lang.String getIp() {
+    public String getIp() {
         return ip;
     }
 
 
     /**
      * Sets the ip value for this RegistrationRequest.
-     * 
+     *
      * @param ip
      */
-    public void setIp(java.lang.String ip) {
+    public void setIp(String ip) {
         this.ip = ip;
     }
 
 
     /**
      * Gets the language value for this RegistrationRequest.
-     * 
+     *
      * @return language
      */
-    public advcash.wsm.SupportedLanguage getLanguage() {
+    public SupportedLanguage getLanguage() {
         return language;
     }
 
 
     /**
      * Sets the language value for this RegistrationRequest.
-     * 
+     *
      * @param language
      */
-    public void setLanguage(advcash.wsm.SupportedLanguage language) {
+    public void setLanguage(SupportedLanguage language) {
         this.language = language;
     }
 
 
     /**
      * Gets the lastName value for this RegistrationRequest.
-     * 
+     *
      * @return lastName
      */
-    public java.lang.String getLastName() {
+    public String getLastName() {
         return lastName;
     }
 
 
     /**
      * Sets the lastName value for this RegistrationRequest.
-     * 
+     *
      * @param lastName
      */
-    public void setLastName(java.lang.String lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
-    private java.lang.Object __equalsCalc = null;
-    public synchronized boolean equals(java.lang.Object obj) {
+    private Object __equalsCalc = null;
+    public synchronized boolean equals(Object obj) {
         if (!(obj instanceof RegistrationRequest)) return false;
         RegistrationRequest other = (RegistrationRequest) obj;
         if (obj == null) return false;
@@ -145,20 +145,20 @@ public class RegistrationRequest  implements java.io.Serializable {
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true && 
-            ((this.email==null && other.getEmail()==null) || 
+        _equals = true &&
+            ((this.email==null && other.getEmail()==null) ||
              (this.email!=null &&
               this.email.equals(other.getEmail()))) &&
-            ((this.firstName==null && other.getFirstName()==null) || 
+            ((this.firstName==null && other.getFirstName()==null) ||
              (this.firstName!=null &&
               this.firstName.equals(other.getFirstName()))) &&
-            ((this.ip==null && other.getIp()==null) || 
+            ((this.ip==null && other.getIp()==null) ||
              (this.ip!=null &&
               this.ip.equals(other.getIp()))) &&
-            ((this.language==null && other.getLanguage()==null) || 
+            ((this.language==null && other.getLanguage()==null) ||
              (this.language!=null &&
               this.language.equals(other.getLanguage()))) &&
-            ((this.lastName==null && other.getLastName()==null) || 
+            ((this.lastName==null && other.getLastName()==null) ||
              (this.lastName!=null &&
               this.lastName.equals(other.getLastName())));
         __equalsCalc = null;
@@ -245,10 +245,10 @@ public class RegistrationRequest  implements java.io.Serializable {
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -257,10 +257,10 @@ public class RegistrationRequest  implements java.io.Serializable {
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

@@ -7,120 +7,168 @@
 
 package advcash.wsm;
 
-public class WithdrawToEcurrencyRequest  extends advcash.wsm.MoneyRequest  implements java.io.Serializable {
-    private java.math.BigDecimal btcAmount;
+public class WithdrawToEcurrencyRequest  extends MoneyRequest  implements java.io.Serializable {
+    private Ecurrency ecurrency;
 
-    private advcash.wsm.Ecurrency ecurrency;
+    private String receiver;
 
-    private java.math.BigDecimal ethAmount;
+    private String destinationTag;
 
-    private java.lang.String receiver;
+    private java.math.BigDecimal cryptoCurrencyAmount;
+
+    private String orderId;
+
+    private String depositMethod;
 
     public WithdrawToEcurrencyRequest() {
     }
 
     public WithdrawToEcurrencyRequest(
            java.math.BigDecimal amount,
-           advcash.wsm.Currency currency,
-           java.lang.String note,
-           boolean savePaymentTemplate,
-           java.math.BigDecimal btcAmount,
-           advcash.wsm.Ecurrency ecurrency,
-           java.math.BigDecimal ethAmount,
-           java.lang.String receiver) {
+           Currency currency,
+           String note,
+           Boolean savePaymentTemplate,
+           Ecurrency ecurrency,
+           String receiver,
+           String destinationTag,
+           java.math.BigDecimal cryptoCurrencyAmount,
+           String orderId,
+           String depositMethod) {
         super(
             amount,
             currency,
             note,
             savePaymentTemplate);
-        this.btcAmount = btcAmount;
         this.ecurrency = ecurrency;
-        this.ethAmount = ethAmount;
         this.receiver = receiver;
-    }
-
-
-    /**
-     * Gets the btcAmount value for this WithdrawToEcurrencyRequest.
-     * 
-     * @return btcAmount
-     */
-    public java.math.BigDecimal getBtcAmount() {
-        return btcAmount;
-    }
-
-
-    /**
-     * Sets the btcAmount value for this WithdrawToEcurrencyRequest.
-     * 
-     * @param btcAmount
-     */
-    public void setBtcAmount(java.math.BigDecimal btcAmount) {
-        this.btcAmount = btcAmount;
+        this.destinationTag = destinationTag;
+        this.cryptoCurrencyAmount = cryptoCurrencyAmount;
+        this.orderId = orderId;
+        this.depositMethod = depositMethod;
     }
 
 
     /**
      * Gets the ecurrency value for this WithdrawToEcurrencyRequest.
-     * 
+     *
      * @return ecurrency
      */
-    public advcash.wsm.Ecurrency getEcurrency() {
+    public Ecurrency getEcurrency() {
         return ecurrency;
     }
 
 
     /**
      * Sets the ecurrency value for this WithdrawToEcurrencyRequest.
-     * 
+     *
      * @param ecurrency
      */
-    public void setEcurrency(advcash.wsm.Ecurrency ecurrency) {
+    public void setEcurrency(Ecurrency ecurrency) {
         this.ecurrency = ecurrency;
     }
 
 
     /**
-     * Gets the ethAmount value for this WithdrawToEcurrencyRequest.
-     * 
-     * @return ethAmount
-     */
-    public java.math.BigDecimal getEthAmount() {
-        return ethAmount;
-    }
-
-
-    /**
-     * Sets the ethAmount value for this WithdrawToEcurrencyRequest.
-     * 
-     * @param ethAmount
-     */
-    public void setEthAmount(java.math.BigDecimal ethAmount) {
-        this.ethAmount = ethAmount;
-    }
-
-
-    /**
      * Gets the receiver value for this WithdrawToEcurrencyRequest.
-     * 
+     *
      * @return receiver
      */
-    public java.lang.String getReceiver() {
+    public String getReceiver() {
         return receiver;
     }
 
 
     /**
      * Sets the receiver value for this WithdrawToEcurrencyRequest.
-     * 
+     *
      * @param receiver
      */
-    public void setReceiver(java.lang.String receiver) {
+    public void setReceiver(String receiver) {
         this.receiver = receiver;
     }
 
-    private java.lang.Object __equalsCalc = null;
-    public synchronized boolean equals(java.lang.Object obj) {
+
+    /**
+     * Gets the destinationTag value for this WithdrawToEcurrencyRequest.
+     *
+     * @return destinationTag
+     */
+    public String getDestinationTag() {
+        return destinationTag;
+    }
+
+
+    /**
+     * Sets the destinationTag value for this WithdrawToEcurrencyRequest.
+     *
+     * @param destinationTag
+     */
+    public void setDestinationTag(String destinationTag) {
+        this.destinationTag = destinationTag;
+    }
+
+
+    /**
+     * Gets the cryptoCurrencyAmount value for this WithdrawToEcurrencyRequest.
+     *
+     * @return cryptoCurrencyAmount
+     */
+    public java.math.BigDecimal getCryptoCurrencyAmount() {
+        return cryptoCurrencyAmount;
+    }
+
+
+    /**
+     * Sets the cryptoCurrencyAmount value for this WithdrawToEcurrencyRequest.
+     *
+     * @param cryptoCurrencyAmount
+     */
+    public void setCryptoCurrencyAmount(java.math.BigDecimal cryptoCurrencyAmount) {
+        this.cryptoCurrencyAmount = cryptoCurrencyAmount;
+    }
+
+
+    /**
+     * Gets the orderId value for this WithdrawToEcurrencyRequest.
+     *
+     * @return orderId
+     */
+    public String getOrderId() {
+        return orderId;
+    }
+
+
+    /**
+     * Sets the orderId value for this WithdrawToEcurrencyRequest.
+     *
+     * @param orderId
+     */
+    public void setOrderId(String orderId) {
+        this.orderId = orderId;
+    }
+
+
+    /**
+     * Gets the depositMethod value for this WithdrawToEcurrencyRequest.
+     *
+     * @return depositMethod
+     */
+    public String getDepositMethod() {
+        return depositMethod;
+    }
+
+
+    /**
+     * Sets the depositMethod value for this WithdrawToEcurrencyRequest.
+     *
+     * @param depositMethod
+     */
+    public void setDepositMethod(String depositMethod) {
+        this.depositMethod = depositMethod;
+    }
+
+    private Object __equalsCalc = null;
+    public synchronized boolean equals(Object obj) {
         if (!(obj instanceof WithdrawToEcurrencyRequest)) return false;
         WithdrawToEcurrencyRequest other = (WithdrawToEcurrencyRequest) obj;
         if (obj == null) return false;
@@ -130,19 +178,25 @@ public class WithdrawToEcurrencyRequest  extends advcash.wsm.MoneyRequest  imple
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = super.equals(obj) && 
-            ((this.btcAmount==null && other.getBtcAmount()==null) || 
-             (this.btcAmount!=null &&
-              this.btcAmount.equals(other.getBtcAmount()))) &&
-            ((this.ecurrency==null && other.getEcurrency()==null) || 
+        _equals = super.equals(obj) &&
+            ((this.ecurrency==null && other.getEcurrency()==null) ||
              (this.ecurrency!=null &&
               this.ecurrency.equals(other.getEcurrency()))) &&
-            ((this.ethAmount==null && other.getEthAmount()==null) || 
-             (this.ethAmount!=null &&
-              this.ethAmount.equals(other.getEthAmount()))) &&
-            ((this.receiver==null && other.getReceiver()==null) || 
+            ((this.receiver==null && other.getReceiver()==null) ||
              (this.receiver!=null &&
-              this.receiver.equals(other.getReceiver())));
+              this.receiver.equals(other.getReceiver()))) &&
+            ((this.destinationTag==null && other.getDestinationTag()==null) ||
+             (this.destinationTag!=null &&
+              this.destinationTag.equals(other.getDestinationTag()))) &&
+            ((this.cryptoCurrencyAmount==null && other.getCryptoCurrencyAmount()==null) ||
+             (this.cryptoCurrencyAmount!=null &&
+              this.cryptoCurrencyAmount.equals(other.getCryptoCurrencyAmount()))) &&
+            ((this.orderId==null && other.getOrderId()==null) ||
+             (this.orderId!=null &&
+              this.orderId.equals(other.getOrderId()))) &&
+            ((this.depositMethod==null && other.getDepositMethod()==null) ||
+             (this.depositMethod!=null &&
+              this.depositMethod.equals(other.getDepositMethod())));
         __equalsCalc = null;
         return _equals;
     }
@@ -154,17 +208,23 @@ public class WithdrawToEcurrencyRequest  extends advcash.wsm.MoneyRequest  imple
         }
         __hashCodeCalc = true;
         int _hashCode = super.hashCode();
-        if (getBtcAmount() != null) {
-            _hashCode += getBtcAmount().hashCode();
-        }
         if (getEcurrency() != null) {
             _hashCode += getEcurrency().hashCode();
         }
-        if (getEthAmount() != null) {
-            _hashCode += getEthAmount().hashCode();
-        }
         if (getReceiver() != null) {
             _hashCode += getReceiver().hashCode();
+        }
+        if (getDestinationTag() != null) {
+            _hashCode += getDestinationTag().hashCode();
+        }
+        if (getCryptoCurrencyAmount() != null) {
+            _hashCode += getCryptoCurrencyAmount().hashCode();
+        }
+        if (getOrderId() != null) {
+            _hashCode += getOrderId().hashCode();
+        }
+        if (getDepositMethod() != null) {
+            _hashCode += getDepositMethod().hashCode();
         }
         __hashCodeCalc = false;
         return _hashCode;
@@ -177,13 +237,6 @@ public class WithdrawToEcurrencyRequest  extends advcash.wsm.MoneyRequest  imple
     static {
         typeDesc.setXmlType(new javax.xml.namespace.QName("http://wsm.advcash/", "withdrawToEcurrencyRequest"));
         org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("btcAmount");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "btcAmount"));
-        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "decimal"));
-        elemField.setMinOccurs(0);
-        elemField.setNillable(false);
-        typeDesc.addFieldDesc(elemField);
-        elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("ecurrency");
         elemField.setXmlName(new javax.xml.namespace.QName("", "ecurrency"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://wsm.advcash/", "ecurrency"));
@@ -191,15 +244,36 @@ public class WithdrawToEcurrencyRequest  extends advcash.wsm.MoneyRequest  imple
         elemField.setNillable(false);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("ethAmount");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "ethAmount"));
+        elemField.setFieldName("receiver");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "receiver"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("destinationTag");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "destinationTag"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("cryptoCurrencyAmount");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "cryptoCurrencyAmount"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "decimal"));
         elemField.setMinOccurs(0);
         elemField.setNillable(false);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
-        elemField.setFieldName("receiver");
-        elemField.setXmlName(new javax.xml.namespace.QName("", "receiver"));
+        elemField.setFieldName("orderId");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "orderId"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("depositMethod");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "depositMethod"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
         elemField.setMinOccurs(0);
         elemField.setNillable(false);
@@ -217,10 +291,10 @@ public class WithdrawToEcurrencyRequest  extends advcash.wsm.MoneyRequest  imple
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -229,10 +303,10 @@ public class WithdrawToEcurrencyRequest  extends advcash.wsm.MoneyRequest  imple
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

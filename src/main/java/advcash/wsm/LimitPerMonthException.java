@@ -8,38 +8,86 @@
 package advcash.wsm;
 
 public class LimitPerMonthException  extends org.apache.axis.AxisFault  implements java.io.Serializable {
-    private advcash.wsm.ExceptionType type;
+    private java.math.BigDecimal limitAmount;
+
+    private Currency currency;
+
+    private ExceptionType type;
 
     public LimitPerMonthException() {
     }
 
     public LimitPerMonthException(
-           advcash.wsm.ExceptionType type) {
+           java.math.BigDecimal limitAmount,
+           Currency currency,
+           ExceptionType type) {
+        this.limitAmount = limitAmount;
+        this.currency = currency;
         this.type = type;
     }
 
 
     /**
+     * Gets the limitAmount value for this LimitPerMonthException.
+     *
+     * @return limitAmount
+     */
+    public java.math.BigDecimal getLimitAmount() {
+        return limitAmount;
+    }
+
+
+    /**
+     * Sets the limitAmount value for this LimitPerMonthException.
+     *
+     * @param limitAmount
+     */
+    public void setLimitAmount(java.math.BigDecimal limitAmount) {
+        this.limitAmount = limitAmount;
+    }
+
+
+    /**
+     * Gets the currency value for this LimitPerMonthException.
+     *
+     * @return currency
+     */
+    public Currency getCurrency() {
+        return currency;
+    }
+
+
+    /**
+     * Sets the currency value for this LimitPerMonthException.
+     *
+     * @param currency
+     */
+    public void setCurrency(Currency currency) {
+        this.currency = currency;
+    }
+
+
+    /**
      * Gets the type value for this LimitPerMonthException.
-     * 
+     *
      * @return type
      */
-    public advcash.wsm.ExceptionType getType() {
+    public ExceptionType getType() {
         return type;
     }
 
 
     /**
      * Sets the type value for this LimitPerMonthException.
-     * 
+     *
      * @param type
      */
-    public void setType(advcash.wsm.ExceptionType type) {
+    public void setType(ExceptionType type) {
         this.type = type;
     }
 
-    private java.lang.Object __equalsCalc = null;
-    public synchronized boolean equals(java.lang.Object obj) {
+    private Object __equalsCalc = null;
+    public synchronized boolean equals(Object obj) {
         if (!(obj instanceof LimitPerMonthException)) return false;
         LimitPerMonthException other = (LimitPerMonthException) obj;
         if (obj == null) return false;
@@ -49,8 +97,14 @@ public class LimitPerMonthException  extends org.apache.axis.AxisFault  implemen
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true && 
-            ((this.type==null && other.getType()==null) || 
+        _equals = true &&
+            ((this.limitAmount==null && other.getLimitAmount()==null) ||
+             (this.limitAmount!=null &&
+              this.limitAmount.equals(other.getLimitAmount()))) &&
+            ((this.currency==null && other.getCurrency()==null) ||
+             (this.currency!=null &&
+              this.currency.equals(other.getCurrency()))) &&
+            ((this.type==null && other.getType()==null) ||
              (this.type!=null &&
               this.type.equals(other.getType())));
         __equalsCalc = null;
@@ -64,6 +118,12 @@ public class LimitPerMonthException  extends org.apache.axis.AxisFault  implemen
         }
         __hashCodeCalc = true;
         int _hashCode = 1;
+        if (getLimitAmount() != null) {
+            _hashCode += getLimitAmount().hashCode();
+        }
+        if (getCurrency() != null) {
+            _hashCode += getCurrency().hashCode();
+        }
         if (getType() != null) {
             _hashCode += getType().hashCode();
         }
@@ -78,6 +138,18 @@ public class LimitPerMonthException  extends org.apache.axis.AxisFault  implemen
     static {
         typeDesc.setXmlType(new javax.xml.namespace.QName("http://wsm.advcash/", "LimitPerMonthException"));
         org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("limitAmount");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "limitAmount"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "decimal"));
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("currency");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "currency"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://wsm.advcash/", "currency"));
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("type");
         elemField.setXmlName(new javax.xml.namespace.QName("", "type"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://wsm.advcash/", "exceptionType"));
@@ -96,10 +168,10 @@ public class LimitPerMonthException  extends org.apache.axis.AxisFault  implemen
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -108,10 +180,10 @@ public class LimitPerMonthException  extends org.apache.axis.AxisFault  implemen
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           java.lang.String mechType, 
-           java.lang.Class _javaType,  
+           String mechType,
+           Class _javaType,
            javax.xml.namespace.QName _xmlType) {
-        return 
+        return
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }
