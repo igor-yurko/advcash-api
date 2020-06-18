@@ -8,28 +8,28 @@
 package advcash.wsm;
 
 public class AuthDTO  implements java.io.Serializable {
-    private String accountEmail;
+    private java.lang.String accountEmail;
 
-    private String accountId;
+    private java.lang.String accountId;
 
-    private String apiName;
+    private java.lang.String apiName;
 
-    private String authenticationToken;
+    private java.lang.String authenticationToken;
 
-    private String ipAddress;
+    private java.lang.String ipAddress;
 
-    private String systemAccountName;
+    private java.lang.String systemAccountName;
 
     public AuthDTO() {
     }
 
     public AuthDTO(
-           String accountEmail,
-           String accountId,
-           String apiName,
-           String authenticationToken,
-           String ipAddress,
-           String systemAccountName) {
+           java.lang.String accountEmail,
+           java.lang.String accountId,
+           java.lang.String apiName,
+           java.lang.String authenticationToken,
+           java.lang.String ipAddress,
+           java.lang.String systemAccountName) {
            this.accountEmail = accountEmail;
            this.accountId = accountId;
            this.apiName = apiName;
@@ -41,125 +41,125 @@ public class AuthDTO  implements java.io.Serializable {
 
     /**
      * Gets the accountEmail value for this AuthDTO.
-     *
+     * 
      * @return accountEmail
      */
-    public String getAccountEmail() {
+    public java.lang.String getAccountEmail() {
         return accountEmail;
     }
 
 
     /**
      * Sets the accountEmail value for this AuthDTO.
-     *
+     * 
      * @param accountEmail
      */
-    public void setAccountEmail(String accountEmail) {
+    public void setAccountEmail(java.lang.String accountEmail) {
         this.accountEmail = accountEmail;
     }
 
 
     /**
      * Gets the accountId value for this AuthDTO.
-     *
+     * 
      * @return accountId
      */
-    public String getAccountId() {
+    public java.lang.String getAccountId() {
         return accountId;
     }
 
 
     /**
      * Sets the accountId value for this AuthDTO.
-     *
+     * 
      * @param accountId
      */
-    public void setAccountId(String accountId) {
+    public void setAccountId(java.lang.String accountId) {
         this.accountId = accountId;
     }
 
 
     /**
      * Gets the apiName value for this AuthDTO.
-     *
+     * 
      * @return apiName
      */
-    public String getApiName() {
+    public java.lang.String getApiName() {
         return apiName;
     }
 
 
     /**
      * Sets the apiName value for this AuthDTO.
-     *
+     * 
      * @param apiName
      */
-    public void setApiName(String apiName) {
+    public void setApiName(java.lang.String apiName) {
         this.apiName = apiName;
     }
 
 
     /**
      * Gets the authenticationToken value for this AuthDTO.
-     *
+     * 
      * @return authenticationToken
      */
-    public String getAuthenticationToken() {
+    public java.lang.String getAuthenticationToken() {
         return authenticationToken;
     }
 
 
     /**
      * Sets the authenticationToken value for this AuthDTO.
-     *
+     * 
      * @param authenticationToken
      */
-    public void setAuthenticationToken(String authenticationToken) {
+    public void setAuthenticationToken(java.lang.String authenticationToken) {
         this.authenticationToken = authenticationToken;
     }
 
 
     /**
      * Gets the ipAddress value for this AuthDTO.
-     *
+     * 
      * @return ipAddress
      */
-    public String getIpAddress() {
+    public java.lang.String getIpAddress() {
         return ipAddress;
     }
 
 
     /**
      * Sets the ipAddress value for this AuthDTO.
-     *
+     * 
      * @param ipAddress
      */
-    public void setIpAddress(String ipAddress) {
+    public void setIpAddress(java.lang.String ipAddress) {
         this.ipAddress = ipAddress;
     }
 
 
     /**
      * Gets the systemAccountName value for this AuthDTO.
-     *
+     * 
      * @return systemAccountName
      */
-    public String getSystemAccountName() {
+    public java.lang.String getSystemAccountName() {
         return systemAccountName;
     }
 
 
     /**
      * Sets the systemAccountName value for this AuthDTO.
-     *
+     * 
      * @param systemAccountName
      */
-    public void setSystemAccountName(String systemAccountName) {
+    public void setSystemAccountName(java.lang.String systemAccountName) {
         this.systemAccountName = systemAccountName;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof AuthDTO)) return false;
         AuthDTO other = (AuthDTO) obj;
         if (obj == null) return false;
@@ -169,23 +169,23 @@ public class AuthDTO  implements java.io.Serializable {
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true &&
-            ((this.accountEmail==null && other.getAccountEmail()==null) ||
+        _equals = true && 
+            ((this.accountEmail==null && other.getAccountEmail()==null) || 
              (this.accountEmail!=null &&
               this.accountEmail.equals(other.getAccountEmail()))) &&
-            ((this.accountId==null && other.getAccountId()==null) ||
+            ((this.accountId==null && other.getAccountId()==null) || 
              (this.accountId!=null &&
               this.accountId.equals(other.getAccountId()))) &&
-            ((this.apiName==null && other.getApiName()==null) ||
+            ((this.apiName==null && other.getApiName()==null) || 
              (this.apiName!=null &&
               this.apiName.equals(other.getApiName()))) &&
-            ((this.authenticationToken==null && other.getAuthenticationToken()==null) ||
+            ((this.authenticationToken==null && other.getAuthenticationToken()==null) || 
              (this.authenticationToken!=null &&
               this.authenticationToken.equals(other.getAuthenticationToken()))) &&
-            ((this.ipAddress==null && other.getIpAddress()==null) ||
+            ((this.ipAddress==null && other.getIpAddress()==null) || 
              (this.ipAddress!=null &&
               this.ipAddress.equals(other.getIpAddress()))) &&
-            ((this.systemAccountName==null && other.getSystemAccountName()==null) ||
+            ((this.systemAccountName==null && other.getSystemAccountName()==null) || 
              (this.systemAccountName!=null &&
               this.systemAccountName.equals(other.getSystemAccountName())));
         __equalsCalc = null;
@@ -282,10 +282,10 @@ public class AuthDTO  implements java.io.Serializable {
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -294,10 +294,10 @@ public class AuthDTO  implements java.io.Serializable {
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

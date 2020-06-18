@@ -11,8 +11,8 @@ public class AccessDeniedException  extends org.apache.axis.AxisFault  implement
     public AccessDeniedException() {
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof AccessDeniedException)) return false;
         AccessDeniedException other = (AccessDeniedException) obj;
         if (obj == null) return false;
@@ -57,10 +57,10 @@ public class AccessDeniedException  extends org.apache.axis.AxisFault  implement
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -69,10 +69,10 @@ public class AccessDeniedException  extends org.apache.axis.AxisFault  implement
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

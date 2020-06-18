@@ -10,14 +10,14 @@ package advcash.wsm;
 public class CancelProtectedTransferResultHolder  implements java.io.Serializable {
     private advcash.wsm.OperationResult operationResult;
 
-    private TransactionStatus transactionStatus;
+    private advcash.wsm.TransactionStatus transactionStatus;
 
     public CancelProtectedTransferResultHolder() {
     }
 
     public CancelProtectedTransferResultHolder(
            advcash.wsm.OperationResult operationResult,
-           TransactionStatus transactionStatus) {
+           advcash.wsm.TransactionStatus transactionStatus) {
            this.operationResult = operationResult;
            this.transactionStatus = transactionStatus;
     }
@@ -25,7 +25,7 @@ public class CancelProtectedTransferResultHolder  implements java.io.Serializabl
 
     /**
      * Gets the operationResult value for this CancelProtectedTransferResultHolder.
-     *
+     * 
      * @return operationResult
      */
     public advcash.wsm.OperationResult getOperationResult() {
@@ -35,7 +35,7 @@ public class CancelProtectedTransferResultHolder  implements java.io.Serializabl
 
     /**
      * Sets the operationResult value for this CancelProtectedTransferResultHolder.
-     *
+     * 
      * @param operationResult
      */
     public void setOperationResult(advcash.wsm.OperationResult operationResult) {
@@ -45,25 +45,25 @@ public class CancelProtectedTransferResultHolder  implements java.io.Serializabl
 
     /**
      * Gets the transactionStatus value for this CancelProtectedTransferResultHolder.
-     *
+     * 
      * @return transactionStatus
      */
-    public TransactionStatus getTransactionStatus() {
+    public advcash.wsm.TransactionStatus getTransactionStatus() {
         return transactionStatus;
     }
 
 
     /**
      * Sets the transactionStatus value for this CancelProtectedTransferResultHolder.
-     *
+     * 
      * @param transactionStatus
      */
-    public void setTransactionStatus(TransactionStatus transactionStatus) {
+    public void setTransactionStatus(advcash.wsm.TransactionStatus transactionStatus) {
         this.transactionStatus = transactionStatus;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof CancelProtectedTransferResultHolder)) return false;
         CancelProtectedTransferResultHolder other = (CancelProtectedTransferResultHolder) obj;
         if (obj == null) return false;
@@ -73,11 +73,11 @@ public class CancelProtectedTransferResultHolder  implements java.io.Serializabl
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true &&
-            ((this.operationResult==null && other.getOperationResult()==null) ||
+        _equals = true && 
+            ((this.operationResult==null && other.getOperationResult()==null) || 
              (this.operationResult!=null &&
               this.operationResult.equals(other.getOperationResult()))) &&
-            ((this.transactionStatus==null && other.getTransactionStatus()==null) ||
+            ((this.transactionStatus==null && other.getTransactionStatus()==null) || 
              (this.transactionStatus!=null &&
               this.transactionStatus.equals(other.getTransactionStatus())));
         __equalsCalc = null;
@@ -134,10 +134,10 @@ public class CancelProtectedTransferResultHolder  implements java.io.Serializabl
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -146,10 +146,10 @@ public class CancelProtectedTransferResultHolder  implements java.io.Serializabl
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

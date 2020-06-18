@@ -8,46 +8,46 @@
 package advcash.wsm;
 
 public class CryptoCurrencyWithdrawalInvoiceDTO  implements java.io.Serializable {
-    private CoinName coinName;
+    private advcash.wsm.CoinName coinName;
 
-    private Long created;
+    private java.lang.Long created;
 
     private java.math.BigDecimal cryptoCurrencyAmount;
 
     private advcash.wsm.SciAllowedPaymentSystems depositMethod;
 
-    private Long expiresOn;
+    private java.lang.Long expiresOn;
 
     private java.math.BigDecimal fiatAmount;
 
-    private Currency fiatCurrency;
+    private advcash.wsm.Currency fiatCurrency;
 
-    private String id;
+    private java.lang.String id;
 
-    private String orderId;
+    private java.lang.String orderId;
 
-    private String receiver;
+    private java.lang.String receiver;
 
     private advcash.wsm.CryptoCurrencyWithdrawalInvoiceStatus status;
 
-    private String transactionId;
+    private java.lang.String transactionId;
 
     public CryptoCurrencyWithdrawalInvoiceDTO() {
     }
 
     public CryptoCurrencyWithdrawalInvoiceDTO(
-           CoinName coinName,
-           Long created,
+           advcash.wsm.CoinName coinName,
+           java.lang.Long created,
            java.math.BigDecimal cryptoCurrencyAmount,
            advcash.wsm.SciAllowedPaymentSystems depositMethod,
-           Long expiresOn,
+           java.lang.Long expiresOn,
            java.math.BigDecimal fiatAmount,
-           Currency fiatCurrency,
-           String id,
-           String orderId,
-           String receiver,
+           advcash.wsm.Currency fiatCurrency,
+           java.lang.String id,
+           java.lang.String orderId,
+           java.lang.String receiver,
            advcash.wsm.CryptoCurrencyWithdrawalInvoiceStatus status,
-           String transactionId) {
+           java.lang.String transactionId) {
            this.coinName = coinName;
            this.created = created;
            this.cryptoCurrencyAmount = cryptoCurrencyAmount;
@@ -65,47 +65,47 @@ public class CryptoCurrencyWithdrawalInvoiceDTO  implements java.io.Serializable
 
     /**
      * Gets the coinName value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @return coinName
      */
-    public CoinName getCoinName() {
+    public advcash.wsm.CoinName getCoinName() {
         return coinName;
     }
 
 
     /**
      * Sets the coinName value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @param coinName
      */
-    public void setCoinName(CoinName coinName) {
+    public void setCoinName(advcash.wsm.CoinName coinName) {
         this.coinName = coinName;
     }
 
 
     /**
      * Gets the created value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @return created
      */
-    public Long getCreated() {
+    public java.lang.Long getCreated() {
         return created;
     }
 
 
     /**
      * Sets the created value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @param created
      */
-    public void setCreated(Long created) {
+    public void setCreated(java.lang.Long created) {
         this.created = created;
     }
 
 
     /**
      * Gets the cryptoCurrencyAmount value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @return cryptoCurrencyAmount
      */
     public java.math.BigDecimal getCryptoCurrencyAmount() {
@@ -115,7 +115,7 @@ public class CryptoCurrencyWithdrawalInvoiceDTO  implements java.io.Serializable
 
     /**
      * Sets the cryptoCurrencyAmount value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @param cryptoCurrencyAmount
      */
     public void setCryptoCurrencyAmount(java.math.BigDecimal cryptoCurrencyAmount) {
@@ -125,7 +125,7 @@ public class CryptoCurrencyWithdrawalInvoiceDTO  implements java.io.Serializable
 
     /**
      * Gets the depositMethod value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @return depositMethod
      */
     public advcash.wsm.SciAllowedPaymentSystems getDepositMethod() {
@@ -135,7 +135,7 @@ public class CryptoCurrencyWithdrawalInvoiceDTO  implements java.io.Serializable
 
     /**
      * Sets the depositMethod value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @param depositMethod
      */
     public void setDepositMethod(advcash.wsm.SciAllowedPaymentSystems depositMethod) {
@@ -145,27 +145,27 @@ public class CryptoCurrencyWithdrawalInvoiceDTO  implements java.io.Serializable
 
     /**
      * Gets the expiresOn value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @return expiresOn
      */
-    public Long getExpiresOn() {
+    public java.lang.Long getExpiresOn() {
         return expiresOn;
     }
 
 
     /**
      * Sets the expiresOn value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @param expiresOn
      */
-    public void setExpiresOn(Long expiresOn) {
+    public void setExpiresOn(java.lang.Long expiresOn) {
         this.expiresOn = expiresOn;
     }
 
 
     /**
      * Gets the fiatAmount value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @return fiatAmount
      */
     public java.math.BigDecimal getFiatAmount() {
@@ -175,7 +175,7 @@ public class CryptoCurrencyWithdrawalInvoiceDTO  implements java.io.Serializable
 
     /**
      * Sets the fiatAmount value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @param fiatAmount
      */
     public void setFiatAmount(java.math.BigDecimal fiatAmount) {
@@ -185,87 +185,87 @@ public class CryptoCurrencyWithdrawalInvoiceDTO  implements java.io.Serializable
 
     /**
      * Gets the fiatCurrency value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @return fiatCurrency
      */
-    public Currency getFiatCurrency() {
+    public advcash.wsm.Currency getFiatCurrency() {
         return fiatCurrency;
     }
 
 
     /**
      * Sets the fiatCurrency value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @param fiatCurrency
      */
-    public void setFiatCurrency(Currency fiatCurrency) {
+    public void setFiatCurrency(advcash.wsm.Currency fiatCurrency) {
         this.fiatCurrency = fiatCurrency;
     }
 
 
     /**
      * Gets the id value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @return id
      */
-    public String getId() {
+    public java.lang.String getId() {
         return id;
     }
 
 
     /**
      * Sets the id value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @param id
      */
-    public void setId(String id) {
+    public void setId(java.lang.String id) {
         this.id = id;
     }
 
 
     /**
      * Gets the orderId value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @return orderId
      */
-    public String getOrderId() {
+    public java.lang.String getOrderId() {
         return orderId;
     }
 
 
     /**
      * Sets the orderId value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @param orderId
      */
-    public void setOrderId(String orderId) {
+    public void setOrderId(java.lang.String orderId) {
         this.orderId = orderId;
     }
 
 
     /**
      * Gets the receiver value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @return receiver
      */
-    public String getReceiver() {
+    public java.lang.String getReceiver() {
         return receiver;
     }
 
 
     /**
      * Sets the receiver value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @param receiver
      */
-    public void setReceiver(String receiver) {
+    public void setReceiver(java.lang.String receiver) {
         this.receiver = receiver;
     }
 
 
     /**
      * Gets the status value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @return status
      */
     public advcash.wsm.CryptoCurrencyWithdrawalInvoiceStatus getStatus() {
@@ -275,7 +275,7 @@ public class CryptoCurrencyWithdrawalInvoiceDTO  implements java.io.Serializable
 
     /**
      * Sets the status value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @param status
      */
     public void setStatus(advcash.wsm.CryptoCurrencyWithdrawalInvoiceStatus status) {
@@ -285,25 +285,25 @@ public class CryptoCurrencyWithdrawalInvoiceDTO  implements java.io.Serializable
 
     /**
      * Gets the transactionId value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @return transactionId
      */
-    public String getTransactionId() {
+    public java.lang.String getTransactionId() {
         return transactionId;
     }
 
 
     /**
      * Sets the transactionId value for this CryptoCurrencyWithdrawalInvoiceDTO.
-     *
+     * 
      * @param transactionId
      */
-    public void setTransactionId(String transactionId) {
+    public void setTransactionId(java.lang.String transactionId) {
         this.transactionId = transactionId;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof CryptoCurrencyWithdrawalInvoiceDTO)) return false;
         CryptoCurrencyWithdrawalInvoiceDTO other = (CryptoCurrencyWithdrawalInvoiceDTO) obj;
         if (obj == null) return false;
@@ -313,41 +313,41 @@ public class CryptoCurrencyWithdrawalInvoiceDTO  implements java.io.Serializable
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true &&
-            ((this.coinName==null && other.getCoinName()==null) ||
+        _equals = true && 
+            ((this.coinName==null && other.getCoinName()==null) || 
              (this.coinName!=null &&
               this.coinName.equals(other.getCoinName()))) &&
-            ((this.created==null && other.getCreated()==null) ||
+            ((this.created==null && other.getCreated()==null) || 
              (this.created!=null &&
               this.created.equals(other.getCreated()))) &&
-            ((this.cryptoCurrencyAmount==null && other.getCryptoCurrencyAmount()==null) ||
+            ((this.cryptoCurrencyAmount==null && other.getCryptoCurrencyAmount()==null) || 
              (this.cryptoCurrencyAmount!=null &&
               this.cryptoCurrencyAmount.equals(other.getCryptoCurrencyAmount()))) &&
-            ((this.depositMethod==null && other.getDepositMethod()==null) ||
+            ((this.depositMethod==null && other.getDepositMethod()==null) || 
              (this.depositMethod!=null &&
               this.depositMethod.equals(other.getDepositMethod()))) &&
-            ((this.expiresOn==null && other.getExpiresOn()==null) ||
+            ((this.expiresOn==null && other.getExpiresOn()==null) || 
              (this.expiresOn!=null &&
               this.expiresOn.equals(other.getExpiresOn()))) &&
-            ((this.fiatAmount==null && other.getFiatAmount()==null) ||
+            ((this.fiatAmount==null && other.getFiatAmount()==null) || 
              (this.fiatAmount!=null &&
               this.fiatAmount.equals(other.getFiatAmount()))) &&
-            ((this.fiatCurrency==null && other.getFiatCurrency()==null) ||
+            ((this.fiatCurrency==null && other.getFiatCurrency()==null) || 
              (this.fiatCurrency!=null &&
               this.fiatCurrency.equals(other.getFiatCurrency()))) &&
-            ((this.id==null && other.getId()==null) ||
+            ((this.id==null && other.getId()==null) || 
              (this.id!=null &&
               this.id.equals(other.getId()))) &&
-            ((this.orderId==null && other.getOrderId()==null) ||
+            ((this.orderId==null && other.getOrderId()==null) || 
              (this.orderId!=null &&
               this.orderId.equals(other.getOrderId()))) &&
-            ((this.receiver==null && other.getReceiver()==null) ||
+            ((this.receiver==null && other.getReceiver()==null) || 
              (this.receiver!=null &&
               this.receiver.equals(other.getReceiver()))) &&
-            ((this.status==null && other.getStatus()==null) ||
+            ((this.status==null && other.getStatus()==null) || 
              (this.status!=null &&
               this.status.equals(other.getStatus()))) &&
-            ((this.transactionId==null && other.getTransactionId()==null) ||
+            ((this.transactionId==null && other.getTransactionId()==null) || 
              (this.transactionId!=null &&
               this.transactionId.equals(other.getTransactionId())));
         __equalsCalc = null;
@@ -504,10 +504,10 @@ public class CryptoCurrencyWithdrawalInvoiceDTO  implements java.io.Serializable
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -516,10 +516,10 @@ public class CryptoCurrencyWithdrawalInvoiceDTO  implements java.io.Serializable
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

@@ -8,48 +8,48 @@
 package advcash.wsm;
 
 public class SciAllowedPaymentSystems implements java.io.Serializable {
-    private String _value_;
+    private java.lang.String _value_;
     private static java.util.HashMap _table_ = new java.util.HashMap();
 
     // Constructor
-    protected SciAllowedPaymentSystems(String value) {
+    protected SciAllowedPaymentSystems(java.lang.String value) {
         _value_ = value;
         _table_.put(_value_,this);
     }
 
-    public static final String _ADVANCED_CASH = "ADVANCED_CASH";
-    public static final String _BITCOIN = "BITCOIN";
-    public static final String _ECOIN = "ECOIN";
-    public static final String _EGO_PAY = "EGO_PAY";
-    public static final String _OKPAY = "OKPAY";
-    public static final String _PAXUM = "PAXUM";
-    public static final String _PAYEER = "PAYEER";
-    public static final String _PERFECT_MONEY = "PERFECT_MONEY";
-    public static final String _WALLET_ONE = "WALLET_ONE";
-    public static final String _WEB_MONEY = "WEB_MONEY";
-    public static final String _YANDEX_MONEY = "YANDEX_MONEY";
-    public static final String _PSB_RETAIL = "PSB_RETAIL";
-    public static final String _SVYAZNOY_BANK = "SVYAZNOY_BANK";
-    public static final String _SBER_ONLINE = "SBER_ONLINE";
-    public static final String _ALFACLICK = "ALFACLICK";
-    public static final String _PRIVAT24 = "PRIVAT24";
-    public static final String _QIWI = "QIWI";
-    public static final String _WEX = "WEX";
-    public static final String _RUSSIAN_STANDARD_BANK = "RUSSIAN_STANDARD_BANK";
-    public static final String _EXMO = "EXMO";
-    public static final String _PAYZA = "PAYZA";
-    public static final String _EPESE = "EPESE";
-    public static final String _ECOIN_VOUCHER = "ECOIN_VOUCHER";
-    public static final String _EPAY = "EPAY";
-    public static final String _LITECOIN = "LITECOIN";
-    public static final String _BITCOIN_CASH = "BITCOIN_CASH";
-    public static final String _RIPPLE = "RIPPLE";
-    public static final String _ETHEREUM = "ETHEREUM";
-    public static final String _ZCASH = "ZCASH";
-    public static final String _USDTETHER = "USDTETHER";
-    public static final String _VISA = "VISA";
-    public static final String _MASTERCARD = "MASTERCARD";
-    public static final String _MIR = "MIR";
+    public static final java.lang.String _ADVANCED_CASH = "ADVANCED_CASH";
+    public static final java.lang.String _BITCOIN = "BITCOIN";
+    public static final java.lang.String _ECOIN = "ECOIN";
+    public static final java.lang.String _EGO_PAY = "EGO_PAY";
+    public static final java.lang.String _OKPAY = "OKPAY";
+    public static final java.lang.String _PAXUM = "PAXUM";
+    public static final java.lang.String _PAYEER = "PAYEER";
+    public static final java.lang.String _PERFECT_MONEY = "PERFECT_MONEY";
+    public static final java.lang.String _WALLET_ONE = "WALLET_ONE";
+    public static final java.lang.String _WEB_MONEY = "WEB_MONEY";
+    public static final java.lang.String _YANDEX_MONEY = "YANDEX_MONEY";
+    public static final java.lang.String _PSB_RETAIL = "PSB_RETAIL";
+    public static final java.lang.String _SVYAZNOY_BANK = "SVYAZNOY_BANK";
+    public static final java.lang.String _SBER_ONLINE = "SBER_ONLINE";
+    public static final java.lang.String _ALFACLICK = "ALFACLICK";
+    public static final java.lang.String _PRIVAT24 = "PRIVAT24";
+    public static final java.lang.String _QIWI = "QIWI";
+    public static final java.lang.String _WEX = "WEX";
+    public static final java.lang.String _RUSSIAN_STANDARD_BANK = "RUSSIAN_STANDARD_BANK";
+    public static final java.lang.String _EXMO = "EXMO";
+    public static final java.lang.String _PAYZA = "PAYZA";
+    public static final java.lang.String _EPESE = "EPESE";
+    public static final java.lang.String _ECOIN_VOUCHER = "ECOIN_VOUCHER";
+    public static final java.lang.String _EPAY = "EPAY";
+    public static final java.lang.String _LITECOIN = "LITECOIN";
+    public static final java.lang.String _BITCOIN_CASH = "BITCOIN_CASH";
+    public static final java.lang.String _RIPPLE = "RIPPLE";
+    public static final java.lang.String _ETHEREUM = "ETHEREUM";
+    public static final java.lang.String _ZCASH = "ZCASH";
+    public static final java.lang.String _USDTETHER = "USDTETHER";
+    public static final java.lang.String _VISA = "VISA";
+    public static final java.lang.String _MASTERCARD = "MASTERCARD";
+    public static final java.lang.String _MIR = "MIR";
     public static final SciAllowedPaymentSystems ADVANCED_CASH = new SciAllowedPaymentSystems(_ADVANCED_CASH);
     public static final SciAllowedPaymentSystems BITCOIN = new SciAllowedPaymentSystems(_BITCOIN);
     public static final SciAllowedPaymentSystems ECOIN = new SciAllowedPaymentSystems(_ECOIN);
@@ -83,35 +83,35 @@ public class SciAllowedPaymentSystems implements java.io.Serializable {
     public static final SciAllowedPaymentSystems VISA = new SciAllowedPaymentSystems(_VISA);
     public static final SciAllowedPaymentSystems MASTERCARD = new SciAllowedPaymentSystems(_MASTERCARD);
     public static final SciAllowedPaymentSystems MIR = new SciAllowedPaymentSystems(_MIR);
-    public String getValue() { return _value_;}
-    public static SciAllowedPaymentSystems fromValue(String value)
-          throws IllegalArgumentException {
+    public java.lang.String getValue() { return _value_;}
+    public static SciAllowedPaymentSystems fromValue(java.lang.String value)
+          throws java.lang.IllegalArgumentException {
         SciAllowedPaymentSystems enumeration = (SciAllowedPaymentSystems)
             _table_.get(value);
-        if (enumeration==null) throw new IllegalArgumentException();
+        if (enumeration==null) throw new java.lang.IllegalArgumentException();
         return enumeration;
     }
-    public static SciAllowedPaymentSystems fromString(String value)
-          throws IllegalArgumentException {
+    public static SciAllowedPaymentSystems fromString(java.lang.String value)
+          throws java.lang.IllegalArgumentException {
         return fromValue(value);
     }
-    public boolean equals(Object obj) {return (obj == this);}
+    public boolean equals(java.lang.Object obj) {return (obj == this);}
     public int hashCode() { return toString().hashCode();}
-    public String toString() { return _value_;}
-    public Object readResolve() throws java.io.ObjectStreamException { return fromValue(_value_);}
+    public java.lang.String toString() { return _value_;}
+    public java.lang.Object readResolve() throws java.io.ObjectStreamException { return fromValue(_value_);}
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new org.apache.axis.encoding.ser.EnumSerializer(
             _javaType, _xmlType);
     }
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new org.apache.axis.encoding.ser.EnumDeserializer(
             _javaType, _xmlType);
     }

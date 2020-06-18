@@ -8,38 +8,38 @@
 package advcash.wsm;
 
 public class NotSupportedCountryException  extends org.apache.axis.AxisFault  implements java.io.Serializable {
-    private ExceptionType type;
+    private advcash.wsm.ExceptionType type;
 
     public NotSupportedCountryException() {
     }
 
     public NotSupportedCountryException(
-           ExceptionType type) {
+           advcash.wsm.ExceptionType type) {
         this.type = type;
     }
 
 
     /**
      * Gets the type value for this NotSupportedCountryException.
-     *
+     * 
      * @return type
      */
-    public ExceptionType getType() {
+    public advcash.wsm.ExceptionType getType() {
         return type;
     }
 
 
     /**
      * Sets the type value for this NotSupportedCountryException.
-     *
+     * 
      * @param type
      */
-    public void setType(ExceptionType type) {
+    public void setType(advcash.wsm.ExceptionType type) {
         this.type = type;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof NotSupportedCountryException)) return false;
         NotSupportedCountryException other = (NotSupportedCountryException) obj;
         if (obj == null) return false;
@@ -49,8 +49,8 @@ public class NotSupportedCountryException  extends org.apache.axis.AxisFault  im
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true &&
-            ((this.type==null && other.getType()==null) ||
+        _equals = true && 
+            ((this.type==null && other.getType()==null) || 
              (this.type!=null &&
               this.type.equals(other.getType())));
         __equalsCalc = null;
@@ -96,10 +96,10 @@ public class NotSupportedCountryException  extends org.apache.axis.AxisFault  im
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -108,10 +108,10 @@ public class NotSupportedCountryException  extends org.apache.axis.AxisFault  im
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

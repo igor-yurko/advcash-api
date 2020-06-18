@@ -8,16 +8,16 @@
 package advcash.wsm;
 
 public class PaymentOrderRequest  implements java.io.Serializable {
-    private String orderId;
+    private java.lang.String orderId;
 
-    private String sciName;
+    private java.lang.String sciName;
 
     public PaymentOrderRequest() {
     }
 
     public PaymentOrderRequest(
-           String orderId,
-           String sciName) {
+           java.lang.String orderId,
+           java.lang.String sciName) {
            this.orderId = orderId;
            this.sciName = sciName;
     }
@@ -25,45 +25,45 @@ public class PaymentOrderRequest  implements java.io.Serializable {
 
     /**
      * Gets the orderId value for this PaymentOrderRequest.
-     *
+     * 
      * @return orderId
      */
-    public String getOrderId() {
+    public java.lang.String getOrderId() {
         return orderId;
     }
 
 
     /**
      * Sets the orderId value for this PaymentOrderRequest.
-     *
+     * 
      * @param orderId
      */
-    public void setOrderId(String orderId) {
+    public void setOrderId(java.lang.String orderId) {
         this.orderId = orderId;
     }
 
 
     /**
      * Gets the sciName value for this PaymentOrderRequest.
-     *
+     * 
      * @return sciName
      */
-    public String getSciName() {
+    public java.lang.String getSciName() {
         return sciName;
     }
 
 
     /**
      * Sets the sciName value for this PaymentOrderRequest.
-     *
+     * 
      * @param sciName
      */
-    public void setSciName(String sciName) {
+    public void setSciName(java.lang.String sciName) {
         this.sciName = sciName;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof PaymentOrderRequest)) return false;
         PaymentOrderRequest other = (PaymentOrderRequest) obj;
         if (obj == null) return false;
@@ -73,11 +73,11 @@ public class PaymentOrderRequest  implements java.io.Serializable {
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true &&
-            ((this.orderId==null && other.getOrderId()==null) ||
+        _equals = true && 
+            ((this.orderId==null && other.getOrderId()==null) || 
              (this.orderId!=null &&
               this.orderId.equals(other.getOrderId()))) &&
-            ((this.sciName==null && other.getSciName()==null) ||
+            ((this.sciName==null && other.getSciName()==null) || 
              (this.sciName!=null &&
               this.sciName.equals(other.getSciName())));
         __equalsCalc = null;
@@ -134,10 +134,10 @@ public class PaymentOrderRequest  implements java.io.Serializable {
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -146,10 +146,10 @@ public class PaymentOrderRequest  implements java.io.Serializable {
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

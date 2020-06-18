@@ -8,19 +8,19 @@
 package advcash.wsm;
 
 public class CountLimitException  extends org.apache.axis.AxisFault  implements java.io.Serializable {
-    private Long limitCount;
+    private java.lang.Long limitCount;
 
     private advcash.wsm.DateIntervals dateInterval;
 
-    private ExceptionType type;
+    private advcash.wsm.ExceptionType type;
 
     public CountLimitException() {
     }
 
     public CountLimitException(
-           Long limitCount,
+           java.lang.Long limitCount,
            advcash.wsm.DateIntervals dateInterval,
-           ExceptionType type) {
+           advcash.wsm.ExceptionType type) {
         this.limitCount = limitCount;
         this.dateInterval = dateInterval;
         this.type = type;
@@ -29,27 +29,27 @@ public class CountLimitException  extends org.apache.axis.AxisFault  implements 
 
     /**
      * Gets the limitCount value for this CountLimitException.
-     *
+     * 
      * @return limitCount
      */
-    public Long getLimitCount() {
+    public java.lang.Long getLimitCount() {
         return limitCount;
     }
 
 
     /**
      * Sets the limitCount value for this CountLimitException.
-     *
+     * 
      * @param limitCount
      */
-    public void setLimitCount(Long limitCount) {
+    public void setLimitCount(java.lang.Long limitCount) {
         this.limitCount = limitCount;
     }
 
 
     /**
      * Gets the dateInterval value for this CountLimitException.
-     *
+     * 
      * @return dateInterval
      */
     public advcash.wsm.DateIntervals getDateInterval() {
@@ -59,7 +59,7 @@ public class CountLimitException  extends org.apache.axis.AxisFault  implements 
 
     /**
      * Sets the dateInterval value for this CountLimitException.
-     *
+     * 
      * @param dateInterval
      */
     public void setDateInterval(advcash.wsm.DateIntervals dateInterval) {
@@ -69,25 +69,25 @@ public class CountLimitException  extends org.apache.axis.AxisFault  implements 
 
     /**
      * Gets the type value for this CountLimitException.
-     *
+     * 
      * @return type
      */
-    public ExceptionType getType() {
+    public advcash.wsm.ExceptionType getType() {
         return type;
     }
 
 
     /**
      * Sets the type value for this CountLimitException.
-     *
+     * 
      * @param type
      */
-    public void setType(ExceptionType type) {
+    public void setType(advcash.wsm.ExceptionType type) {
         this.type = type;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof CountLimitException)) return false;
         CountLimitException other = (CountLimitException) obj;
         if (obj == null) return false;
@@ -97,14 +97,14 @@ public class CountLimitException  extends org.apache.axis.AxisFault  implements 
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true &&
-            ((this.limitCount==null && other.getLimitCount()==null) ||
+        _equals = true && 
+            ((this.limitCount==null && other.getLimitCount()==null) || 
              (this.limitCount!=null &&
               this.limitCount.equals(other.getLimitCount()))) &&
-            ((this.dateInterval==null && other.getDateInterval()==null) ||
+            ((this.dateInterval==null && other.getDateInterval()==null) || 
              (this.dateInterval!=null &&
               this.dateInterval.equals(other.getDateInterval()))) &&
-            ((this.type==null && other.getType()==null) ||
+            ((this.type==null && other.getType()==null) || 
              (this.type!=null &&
               this.type.equals(other.getType())));
         __equalsCalc = null;
@@ -168,10 +168,10 @@ public class CountLimitException  extends org.apache.axis.AxisFault  implements 
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -180,10 +180,10 @@ public class CountLimitException  extends org.apache.axis.AxisFault  implements 
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

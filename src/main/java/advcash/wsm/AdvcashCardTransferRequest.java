@@ -7,21 +7,21 @@
 
 package advcash.wsm;
 
-public class AdvcashCardTransferRequest  extends MoneyRequest  implements java.io.Serializable {
-    private CardType cardType;
+public class AdvcashCardTransferRequest  extends advcash.wsm.MoneyRequest  implements java.io.Serializable {
+    private advcash.wsm.CardType cardType;
 
-    private String email;
+    private java.lang.String email;
 
     public AdvcashCardTransferRequest() {
     }
 
     public AdvcashCardTransferRequest(
            java.math.BigDecimal amount,
-           Currency currency,
-           String note,
-           Boolean savePaymentTemplate,
-           CardType cardType,
-           String email) {
+           advcash.wsm.Currency currency,
+           java.lang.String note,
+           java.lang.Boolean savePaymentTemplate,
+           advcash.wsm.CardType cardType,
+           java.lang.String email) {
         super(
             amount,
             currency,
@@ -34,45 +34,45 @@ public class AdvcashCardTransferRequest  extends MoneyRequest  implements java.i
 
     /**
      * Gets the cardType value for this AdvcashCardTransferRequest.
-     *
+     * 
      * @return cardType
      */
-    public CardType getCardType() {
+    public advcash.wsm.CardType getCardType() {
         return cardType;
     }
 
 
     /**
      * Sets the cardType value for this AdvcashCardTransferRequest.
-     *
+     * 
      * @param cardType
      */
-    public void setCardType(CardType cardType) {
+    public void setCardType(advcash.wsm.CardType cardType) {
         this.cardType = cardType;
     }
 
 
     /**
      * Gets the email value for this AdvcashCardTransferRequest.
-     *
+     * 
      * @return email
      */
-    public String getEmail() {
+    public java.lang.String getEmail() {
         return email;
     }
 
 
     /**
      * Sets the email value for this AdvcashCardTransferRequest.
-     *
+     * 
      * @param email
      */
-    public void setEmail(String email) {
+    public void setEmail(java.lang.String email) {
         this.email = email;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof AdvcashCardTransferRequest)) return false;
         AdvcashCardTransferRequest other = (AdvcashCardTransferRequest) obj;
         if (obj == null) return false;
@@ -82,11 +82,11 @@ public class AdvcashCardTransferRequest  extends MoneyRequest  implements java.i
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = super.equals(obj) &&
-            ((this.cardType==null && other.getCardType()==null) ||
+        _equals = super.equals(obj) && 
+            ((this.cardType==null && other.getCardType()==null) || 
              (this.cardType!=null &&
               this.cardType.equals(other.getCardType()))) &&
-            ((this.email==null && other.getEmail()==null) ||
+            ((this.email==null && other.getEmail()==null) || 
              (this.email!=null &&
               this.email.equals(other.getEmail())));
         __equalsCalc = null;
@@ -143,10 +143,10 @@ public class AdvcashCardTransferRequest  extends MoneyRequest  implements java.i
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -155,10 +155,10 @@ public class AdvcashCardTransferRequest  extends MoneyRequest  implements java.i
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

@@ -7,8 +7,8 @@
 
 package advcash.wsm;
 
-public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.io.Serializable {
-    private String accountName;
+public class OutcomingTransactionDTO  extends advcash.wsm.AbstractBaseDTO  implements java.io.Serializable {
+    private java.lang.String accountName;
 
     private int activityLevel;
 
@@ -16,69 +16,69 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
 
     private java.math.BigDecimal amountInUSD;
 
-    private String comment;
+    private java.lang.String comment;
 
     private java.math.BigDecimal cryptoCurrencyAmount;
 
-    private CoinName cryptoCurrencyCoinName;
+    private advcash.wsm.CoinName cryptoCurrencyCoinName;
 
-    private Currency currency;
+    private advcash.wsm.Currency currency;
 
-    private TransactionDirection direction;
+    private advcash.wsm.TransactionDirection direction;
 
     private java.math.BigDecimal fullCommission;
 
-    private String orderId;
+    private java.lang.String orderId;
 
-    private String parentTransactionId;
+    private java.lang.String parentTransactionId;
 
-    private String receiverEmail;
+    private java.lang.String receiverEmail;
 
     private boolean sci;
 
-    private String senderEmail;
+    private java.lang.String senderEmail;
 
     private java.util.Calendar startTime;
 
-    private TransactionStatus status;
+    private advcash.wsm.TransactionStatus status;
 
-    private TransactionName transactionName;
+    private advcash.wsm.TransactionName transactionName;
 
     private java.util.Calendar updatedTime;
 
-    private VerificationStatus verificationStatus;
+    private advcash.wsm.VerificationStatus verificationStatus;
 
-    private String walletDestId;
+    private java.lang.String walletDestId;
 
-    private String walletSrcId;
+    private java.lang.String walletSrcId;
 
     public OutcomingTransactionDTO() {
     }
 
     public OutcomingTransactionDTO(
-           String id,
-           String accountName,
+           java.lang.String id,
+           java.lang.String accountName,
            int activityLevel,
            java.math.BigDecimal amount,
            java.math.BigDecimal amountInUSD,
-           String comment,
+           java.lang.String comment,
            java.math.BigDecimal cryptoCurrencyAmount,
-           CoinName cryptoCurrencyCoinName,
-           Currency currency,
-           TransactionDirection direction,
+           advcash.wsm.CoinName cryptoCurrencyCoinName,
+           advcash.wsm.Currency currency,
+           advcash.wsm.TransactionDirection direction,
            java.math.BigDecimal fullCommission,
-           String orderId,
-           String parentTransactionId,
-           String receiverEmail,
+           java.lang.String orderId,
+           java.lang.String parentTransactionId,
+           java.lang.String receiverEmail,
            boolean sci,
-           String senderEmail,
+           java.lang.String senderEmail,
            java.util.Calendar startTime,
-           TransactionStatus status,
-           TransactionName transactionName,
+           advcash.wsm.TransactionStatus status,
+           advcash.wsm.TransactionName transactionName,
            java.util.Calendar updatedTime,
-           VerificationStatus verificationStatus,
-           String walletDestId,
-           String walletSrcId) {
+           advcash.wsm.VerificationStatus verificationStatus,
+           java.lang.String walletDestId,
+           java.lang.String walletSrcId) {
         super(
             id);
         this.accountName = accountName;
@@ -108,27 +108,27 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
 
     /**
      * Gets the accountName value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return accountName
      */
-    public String getAccountName() {
+    public java.lang.String getAccountName() {
         return accountName;
     }
 
 
     /**
      * Sets the accountName value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param accountName
      */
-    public void setAccountName(String accountName) {
+    public void setAccountName(java.lang.String accountName) {
         this.accountName = accountName;
     }
 
 
     /**
      * Gets the activityLevel value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return activityLevel
      */
     public int getActivityLevel() {
@@ -138,7 +138,7 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
 
     /**
      * Sets the activityLevel value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param activityLevel
      */
     public void setActivityLevel(int activityLevel) {
@@ -148,7 +148,7 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
 
     /**
      * Gets the amount value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return amount
      */
     public java.math.BigDecimal getAmount() {
@@ -158,7 +158,7 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
 
     /**
      * Sets the amount value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param amount
      */
     public void setAmount(java.math.BigDecimal amount) {
@@ -168,7 +168,7 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
 
     /**
      * Gets the amountInUSD value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return amountInUSD
      */
     public java.math.BigDecimal getAmountInUSD() {
@@ -178,7 +178,7 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
 
     /**
      * Sets the amountInUSD value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param amountInUSD
      */
     public void setAmountInUSD(java.math.BigDecimal amountInUSD) {
@@ -188,27 +188,27 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
 
     /**
      * Gets the comment value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return comment
      */
-    public String getComment() {
+    public java.lang.String getComment() {
         return comment;
     }
 
 
     /**
      * Sets the comment value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param comment
      */
-    public void setComment(String comment) {
+    public void setComment(java.lang.String comment) {
         this.comment = comment;
     }
 
 
     /**
      * Gets the cryptoCurrencyAmount value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return cryptoCurrencyAmount
      */
     public java.math.BigDecimal getCryptoCurrencyAmount() {
@@ -218,7 +218,7 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
 
     /**
      * Sets the cryptoCurrencyAmount value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param cryptoCurrencyAmount
      */
     public void setCryptoCurrencyAmount(java.math.BigDecimal cryptoCurrencyAmount) {
@@ -228,67 +228,67 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
 
     /**
      * Gets the cryptoCurrencyCoinName value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return cryptoCurrencyCoinName
      */
-    public CoinName getCryptoCurrencyCoinName() {
+    public advcash.wsm.CoinName getCryptoCurrencyCoinName() {
         return cryptoCurrencyCoinName;
     }
 
 
     /**
      * Sets the cryptoCurrencyCoinName value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param cryptoCurrencyCoinName
      */
-    public void setCryptoCurrencyCoinName(CoinName cryptoCurrencyCoinName) {
+    public void setCryptoCurrencyCoinName(advcash.wsm.CoinName cryptoCurrencyCoinName) {
         this.cryptoCurrencyCoinName = cryptoCurrencyCoinName;
     }
 
 
     /**
      * Gets the currency value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return currency
      */
-    public Currency getCurrency() {
+    public advcash.wsm.Currency getCurrency() {
         return currency;
     }
 
 
     /**
      * Sets the currency value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param currency
      */
-    public void setCurrency(Currency currency) {
+    public void setCurrency(advcash.wsm.Currency currency) {
         this.currency = currency;
     }
 
 
     /**
      * Gets the direction value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return direction
      */
-    public TransactionDirection getDirection() {
+    public advcash.wsm.TransactionDirection getDirection() {
         return direction;
     }
 
 
     /**
      * Sets the direction value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param direction
      */
-    public void setDirection(TransactionDirection direction) {
+    public void setDirection(advcash.wsm.TransactionDirection direction) {
         this.direction = direction;
     }
 
 
     /**
      * Gets the fullCommission value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return fullCommission
      */
     public java.math.BigDecimal getFullCommission() {
@@ -298,7 +298,7 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
 
     /**
      * Sets the fullCommission value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param fullCommission
      */
     public void setFullCommission(java.math.BigDecimal fullCommission) {
@@ -308,67 +308,67 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
 
     /**
      * Gets the orderId value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return orderId
      */
-    public String getOrderId() {
+    public java.lang.String getOrderId() {
         return orderId;
     }
 
 
     /**
      * Sets the orderId value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param orderId
      */
-    public void setOrderId(String orderId) {
+    public void setOrderId(java.lang.String orderId) {
         this.orderId = orderId;
     }
 
 
     /**
      * Gets the parentTransactionId value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return parentTransactionId
      */
-    public String getParentTransactionId() {
+    public java.lang.String getParentTransactionId() {
         return parentTransactionId;
     }
 
 
     /**
      * Sets the parentTransactionId value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param parentTransactionId
      */
-    public void setParentTransactionId(String parentTransactionId) {
+    public void setParentTransactionId(java.lang.String parentTransactionId) {
         this.parentTransactionId = parentTransactionId;
     }
 
 
     /**
      * Gets the receiverEmail value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return receiverEmail
      */
-    public String getReceiverEmail() {
+    public java.lang.String getReceiverEmail() {
         return receiverEmail;
     }
 
 
     /**
      * Sets the receiverEmail value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param receiverEmail
      */
-    public void setReceiverEmail(String receiverEmail) {
+    public void setReceiverEmail(java.lang.String receiverEmail) {
         this.receiverEmail = receiverEmail;
     }
 
 
     /**
      * Gets the sci value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return sci
      */
     public boolean isSci() {
@@ -378,7 +378,7 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
 
     /**
      * Sets the sci value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param sci
      */
     public void setSci(boolean sci) {
@@ -388,27 +388,27 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
 
     /**
      * Gets the senderEmail value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return senderEmail
      */
-    public String getSenderEmail() {
+    public java.lang.String getSenderEmail() {
         return senderEmail;
     }
 
 
     /**
      * Sets the senderEmail value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param senderEmail
      */
-    public void setSenderEmail(String senderEmail) {
+    public void setSenderEmail(java.lang.String senderEmail) {
         this.senderEmail = senderEmail;
     }
 
 
     /**
      * Gets the startTime value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return startTime
      */
     public java.util.Calendar getStartTime() {
@@ -418,7 +418,7 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
 
     /**
      * Sets the startTime value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param startTime
      */
     public void setStartTime(java.util.Calendar startTime) {
@@ -428,47 +428,47 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
 
     /**
      * Gets the status value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return status
      */
-    public TransactionStatus getStatus() {
+    public advcash.wsm.TransactionStatus getStatus() {
         return status;
     }
 
 
     /**
      * Sets the status value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param status
      */
-    public void setStatus(TransactionStatus status) {
+    public void setStatus(advcash.wsm.TransactionStatus status) {
         this.status = status;
     }
 
 
     /**
      * Gets the transactionName value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return transactionName
      */
-    public TransactionName getTransactionName() {
+    public advcash.wsm.TransactionName getTransactionName() {
         return transactionName;
     }
 
 
     /**
      * Sets the transactionName value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param transactionName
      */
-    public void setTransactionName(TransactionName transactionName) {
+    public void setTransactionName(advcash.wsm.TransactionName transactionName) {
         this.transactionName = transactionName;
     }
 
 
     /**
      * Gets the updatedTime value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return updatedTime
      */
     public java.util.Calendar getUpdatedTime() {
@@ -478,7 +478,7 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
 
     /**
      * Sets the updatedTime value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param updatedTime
      */
     public void setUpdatedTime(java.util.Calendar updatedTime) {
@@ -488,65 +488,65 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
 
     /**
      * Gets the verificationStatus value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return verificationStatus
      */
-    public VerificationStatus getVerificationStatus() {
+    public advcash.wsm.VerificationStatus getVerificationStatus() {
         return verificationStatus;
     }
 
 
     /**
      * Sets the verificationStatus value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param verificationStatus
      */
-    public void setVerificationStatus(VerificationStatus verificationStatus) {
+    public void setVerificationStatus(advcash.wsm.VerificationStatus verificationStatus) {
         this.verificationStatus = verificationStatus;
     }
 
 
     /**
      * Gets the walletDestId value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return walletDestId
      */
-    public String getWalletDestId() {
+    public java.lang.String getWalletDestId() {
         return walletDestId;
     }
 
 
     /**
      * Sets the walletDestId value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param walletDestId
      */
-    public void setWalletDestId(String walletDestId) {
+    public void setWalletDestId(java.lang.String walletDestId) {
         this.walletDestId = walletDestId;
     }
 
 
     /**
      * Gets the walletSrcId value for this OutcomingTransactionDTO.
-     *
+     * 
      * @return walletSrcId
      */
-    public String getWalletSrcId() {
+    public java.lang.String getWalletSrcId() {
         return walletSrcId;
     }
 
 
     /**
      * Sets the walletSrcId value for this OutcomingTransactionDTO.
-     *
+     * 
      * @param walletSrcId
      */
-    public void setWalletSrcId(String walletSrcId) {
+    public void setWalletSrcId(java.lang.String walletSrcId) {
         this.walletSrcId = walletSrcId;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof OutcomingTransactionDTO)) return false;
         OutcomingTransactionDTO other = (OutcomingTransactionDTO) obj;
         if (obj == null) return false;
@@ -556,67 +556,67 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = super.equals(obj) &&
-            ((this.accountName==null && other.getAccountName()==null) ||
+        _equals = super.equals(obj) && 
+            ((this.accountName==null && other.getAccountName()==null) || 
              (this.accountName!=null &&
               this.accountName.equals(other.getAccountName()))) &&
             this.activityLevel == other.getActivityLevel() &&
-            ((this.amount==null && other.getAmount()==null) ||
+            ((this.amount==null && other.getAmount()==null) || 
              (this.amount!=null &&
               this.amount.equals(other.getAmount()))) &&
-            ((this.amountInUSD==null && other.getAmountInUSD()==null) ||
+            ((this.amountInUSD==null && other.getAmountInUSD()==null) || 
              (this.amountInUSD!=null &&
               this.amountInUSD.equals(other.getAmountInUSD()))) &&
-            ((this.comment==null && other.getComment()==null) ||
+            ((this.comment==null && other.getComment()==null) || 
              (this.comment!=null &&
               this.comment.equals(other.getComment()))) &&
-            ((this.cryptoCurrencyAmount==null && other.getCryptoCurrencyAmount()==null) ||
+            ((this.cryptoCurrencyAmount==null && other.getCryptoCurrencyAmount()==null) || 
              (this.cryptoCurrencyAmount!=null &&
               this.cryptoCurrencyAmount.equals(other.getCryptoCurrencyAmount()))) &&
-            ((this.cryptoCurrencyCoinName==null && other.getCryptoCurrencyCoinName()==null) ||
+            ((this.cryptoCurrencyCoinName==null && other.getCryptoCurrencyCoinName()==null) || 
              (this.cryptoCurrencyCoinName!=null &&
               this.cryptoCurrencyCoinName.equals(other.getCryptoCurrencyCoinName()))) &&
-            ((this.currency==null && other.getCurrency()==null) ||
+            ((this.currency==null && other.getCurrency()==null) || 
              (this.currency!=null &&
               this.currency.equals(other.getCurrency()))) &&
-            ((this.direction==null && other.getDirection()==null) ||
+            ((this.direction==null && other.getDirection()==null) || 
              (this.direction!=null &&
               this.direction.equals(other.getDirection()))) &&
-            ((this.fullCommission==null && other.getFullCommission()==null) ||
+            ((this.fullCommission==null && other.getFullCommission()==null) || 
              (this.fullCommission!=null &&
               this.fullCommission.equals(other.getFullCommission()))) &&
-            ((this.orderId==null && other.getOrderId()==null) ||
+            ((this.orderId==null && other.getOrderId()==null) || 
              (this.orderId!=null &&
               this.orderId.equals(other.getOrderId()))) &&
-            ((this.parentTransactionId==null && other.getParentTransactionId()==null) ||
+            ((this.parentTransactionId==null && other.getParentTransactionId()==null) || 
              (this.parentTransactionId!=null &&
               this.parentTransactionId.equals(other.getParentTransactionId()))) &&
-            ((this.receiverEmail==null && other.getReceiverEmail()==null) ||
+            ((this.receiverEmail==null && other.getReceiverEmail()==null) || 
              (this.receiverEmail!=null &&
               this.receiverEmail.equals(other.getReceiverEmail()))) &&
             this.sci == other.isSci() &&
-            ((this.senderEmail==null && other.getSenderEmail()==null) ||
+            ((this.senderEmail==null && other.getSenderEmail()==null) || 
              (this.senderEmail!=null &&
               this.senderEmail.equals(other.getSenderEmail()))) &&
-            ((this.startTime==null && other.getStartTime()==null) ||
+            ((this.startTime==null && other.getStartTime()==null) || 
              (this.startTime!=null &&
               this.startTime.equals(other.getStartTime()))) &&
-            ((this.status==null && other.getStatus()==null) ||
+            ((this.status==null && other.getStatus()==null) || 
              (this.status!=null &&
               this.status.equals(other.getStatus()))) &&
-            ((this.transactionName==null && other.getTransactionName()==null) ||
+            ((this.transactionName==null && other.getTransactionName()==null) || 
              (this.transactionName!=null &&
               this.transactionName.equals(other.getTransactionName()))) &&
-            ((this.updatedTime==null && other.getUpdatedTime()==null) ||
+            ((this.updatedTime==null && other.getUpdatedTime()==null) || 
              (this.updatedTime!=null &&
               this.updatedTime.equals(other.getUpdatedTime()))) &&
-            ((this.verificationStatus==null && other.getVerificationStatus()==null) ||
+            ((this.verificationStatus==null && other.getVerificationStatus()==null) || 
              (this.verificationStatus!=null &&
               this.verificationStatus.equals(other.getVerificationStatus()))) &&
-            ((this.walletDestId==null && other.getWalletDestId()==null) ||
+            ((this.walletDestId==null && other.getWalletDestId()==null) || 
              (this.walletDestId!=null &&
               this.walletDestId.equals(other.getWalletDestId()))) &&
-            ((this.walletSrcId==null && other.getWalletSrcId()==null) ||
+            ((this.walletSrcId==null && other.getWalletSrcId()==null) || 
              (this.walletSrcId!=null &&
               this.walletSrcId.equals(other.getWalletSrcId())));
         __equalsCalc = null;
@@ -867,10 +867,10 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -879,10 +879,10 @@ public class OutcomingTransactionDTO  extends AbstractBaseDTO  implements java.i
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

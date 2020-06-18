@@ -8,22 +8,22 @@
 package advcash.wsm;
 
 public class CreateApiRequest  implements java.io.Serializable {
-    private String apiIp;
+    private java.lang.String apiIp;
 
-    private String apiKey;
+    private java.lang.String apiKey;
 
-    private String apiName;
+    private java.lang.String apiName;
 
-    private String userEmail;
+    private java.lang.String userEmail;
 
     public CreateApiRequest() {
     }
 
     public CreateApiRequest(
-           String apiIp,
-           String apiKey,
-           String apiName,
-           String userEmail) {
+           java.lang.String apiIp,
+           java.lang.String apiKey,
+           java.lang.String apiName,
+           java.lang.String userEmail) {
            this.apiIp = apiIp;
            this.apiKey = apiKey;
            this.apiName = apiName;
@@ -33,85 +33,85 @@ public class CreateApiRequest  implements java.io.Serializable {
 
     /**
      * Gets the apiIp value for this CreateApiRequest.
-     *
+     * 
      * @return apiIp
      */
-    public String getApiIp() {
+    public java.lang.String getApiIp() {
         return apiIp;
     }
 
 
     /**
      * Sets the apiIp value for this CreateApiRequest.
-     *
+     * 
      * @param apiIp
      */
-    public void setApiIp(String apiIp) {
+    public void setApiIp(java.lang.String apiIp) {
         this.apiIp = apiIp;
     }
 
 
     /**
      * Gets the apiKey value for this CreateApiRequest.
-     *
+     * 
      * @return apiKey
      */
-    public String getApiKey() {
+    public java.lang.String getApiKey() {
         return apiKey;
     }
 
 
     /**
      * Sets the apiKey value for this CreateApiRequest.
-     *
+     * 
      * @param apiKey
      */
-    public void setApiKey(String apiKey) {
+    public void setApiKey(java.lang.String apiKey) {
         this.apiKey = apiKey;
     }
 
 
     /**
      * Gets the apiName value for this CreateApiRequest.
-     *
+     * 
      * @return apiName
      */
-    public String getApiName() {
+    public java.lang.String getApiName() {
         return apiName;
     }
 
 
     /**
      * Sets the apiName value for this CreateApiRequest.
-     *
+     * 
      * @param apiName
      */
-    public void setApiName(String apiName) {
+    public void setApiName(java.lang.String apiName) {
         this.apiName = apiName;
     }
 
 
     /**
      * Gets the userEmail value for this CreateApiRequest.
-     *
+     * 
      * @return userEmail
      */
-    public String getUserEmail() {
+    public java.lang.String getUserEmail() {
         return userEmail;
     }
 
 
     /**
      * Sets the userEmail value for this CreateApiRequest.
-     *
+     * 
      * @param userEmail
      */
-    public void setUserEmail(String userEmail) {
+    public void setUserEmail(java.lang.String userEmail) {
         this.userEmail = userEmail;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof CreateApiRequest)) return false;
         CreateApiRequest other = (CreateApiRequest) obj;
         if (obj == null) return false;
@@ -121,17 +121,17 @@ public class CreateApiRequest  implements java.io.Serializable {
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true &&
-            ((this.apiIp==null && other.getApiIp()==null) ||
+        _equals = true && 
+            ((this.apiIp==null && other.getApiIp()==null) || 
              (this.apiIp!=null &&
               this.apiIp.equals(other.getApiIp()))) &&
-            ((this.apiKey==null && other.getApiKey()==null) ||
+            ((this.apiKey==null && other.getApiKey()==null) || 
              (this.apiKey!=null &&
               this.apiKey.equals(other.getApiKey()))) &&
-            ((this.apiName==null && other.getApiName()==null) ||
+            ((this.apiName==null && other.getApiName()==null) || 
              (this.apiName!=null &&
               this.apiName.equals(other.getApiName()))) &&
-            ((this.userEmail==null && other.getUserEmail()==null) ||
+            ((this.userEmail==null && other.getUserEmail()==null) || 
              (this.userEmail!=null &&
               this.userEmail.equals(other.getUserEmail())));
         __equalsCalc = null;
@@ -208,10 +208,10 @@ public class CreateApiRequest  implements java.io.Serializable {
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -220,10 +220,10 @@ public class CreateApiRequest  implements java.io.Serializable {
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

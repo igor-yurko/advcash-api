@@ -7,7 +7,7 @@
 
 package advcash.wsm;
 
-public class CheckCurrencyExchangeResultHolder  extends CheckCurrencyExchangeRequest  implements java.io.Serializable {
+public class CheckCurrencyExchangeResultHolder  extends advcash.wsm.CheckCurrencyExchangeRequest  implements java.io.Serializable {
     private java.math.BigDecimal amountExchanged;
 
     private java.math.BigDecimal cryptoCurrencyAmountWithFee;
@@ -20,11 +20,11 @@ public class CheckCurrencyExchangeResultHolder  extends CheckCurrencyExchangeReq
     }
 
     public CheckCurrencyExchangeResultHolder(
-           CurrencyExchangeAction action,
+           advcash.wsm.CurrencyExchangeAction action,
            java.math.BigDecimal amount,
-           String depositMethod,
-           String from,
-           String to,
+           java.lang.String depositMethod,
+           java.lang.String from,
+           java.lang.String to,
            java.math.BigDecimal amountExchanged,
            java.math.BigDecimal cryptoCurrencyAmountWithFee,
            java.math.BigDecimal cryptoCurrencyWithdrawalFee,
@@ -44,7 +44,7 @@ public class CheckCurrencyExchangeResultHolder  extends CheckCurrencyExchangeReq
 
     /**
      * Gets the amountExchanged value for this CheckCurrencyExchangeResultHolder.
-     *
+     * 
      * @return amountExchanged
      */
     public java.math.BigDecimal getAmountExchanged() {
@@ -54,7 +54,7 @@ public class CheckCurrencyExchangeResultHolder  extends CheckCurrencyExchangeReq
 
     /**
      * Sets the amountExchanged value for this CheckCurrencyExchangeResultHolder.
-     *
+     * 
      * @param amountExchanged
      */
     public void setAmountExchanged(java.math.BigDecimal amountExchanged) {
@@ -64,7 +64,7 @@ public class CheckCurrencyExchangeResultHolder  extends CheckCurrencyExchangeReq
 
     /**
      * Gets the cryptoCurrencyAmountWithFee value for this CheckCurrencyExchangeResultHolder.
-     *
+     * 
      * @return cryptoCurrencyAmountWithFee
      */
     public java.math.BigDecimal getCryptoCurrencyAmountWithFee() {
@@ -74,7 +74,7 @@ public class CheckCurrencyExchangeResultHolder  extends CheckCurrencyExchangeReq
 
     /**
      * Sets the cryptoCurrencyAmountWithFee value for this CheckCurrencyExchangeResultHolder.
-     *
+     * 
      * @param cryptoCurrencyAmountWithFee
      */
     public void setCryptoCurrencyAmountWithFee(java.math.BigDecimal cryptoCurrencyAmountWithFee) {
@@ -84,7 +84,7 @@ public class CheckCurrencyExchangeResultHolder  extends CheckCurrencyExchangeReq
 
     /**
      * Gets the cryptoCurrencyWithdrawalFee value for this CheckCurrencyExchangeResultHolder.
-     *
+     * 
      * @return cryptoCurrencyWithdrawalFee
      */
     public java.math.BigDecimal getCryptoCurrencyWithdrawalFee() {
@@ -94,7 +94,7 @@ public class CheckCurrencyExchangeResultHolder  extends CheckCurrencyExchangeReq
 
     /**
      * Sets the cryptoCurrencyWithdrawalFee value for this CheckCurrencyExchangeResultHolder.
-     *
+     * 
      * @param cryptoCurrencyWithdrawalFee
      */
     public void setCryptoCurrencyWithdrawalFee(java.math.BigDecimal cryptoCurrencyWithdrawalFee) {
@@ -104,7 +104,7 @@ public class CheckCurrencyExchangeResultHolder  extends CheckCurrencyExchangeReq
 
     /**
      * Gets the rate value for this CheckCurrencyExchangeResultHolder.
-     *
+     * 
      * @return rate
      */
     public java.math.BigDecimal getRate() {
@@ -114,15 +114,15 @@ public class CheckCurrencyExchangeResultHolder  extends CheckCurrencyExchangeReq
 
     /**
      * Sets the rate value for this CheckCurrencyExchangeResultHolder.
-     *
+     * 
      * @param rate
      */
     public void setRate(java.math.BigDecimal rate) {
         this.rate = rate;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof CheckCurrencyExchangeResultHolder)) return false;
         CheckCurrencyExchangeResultHolder other = (CheckCurrencyExchangeResultHolder) obj;
         if (obj == null) return false;
@@ -132,17 +132,17 @@ public class CheckCurrencyExchangeResultHolder  extends CheckCurrencyExchangeReq
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = super.equals(obj) &&
-            ((this.amountExchanged==null && other.getAmountExchanged()==null) ||
+        _equals = super.equals(obj) && 
+            ((this.amountExchanged==null && other.getAmountExchanged()==null) || 
              (this.amountExchanged!=null &&
               this.amountExchanged.equals(other.getAmountExchanged()))) &&
-            ((this.cryptoCurrencyAmountWithFee==null && other.getCryptoCurrencyAmountWithFee()==null) ||
+            ((this.cryptoCurrencyAmountWithFee==null && other.getCryptoCurrencyAmountWithFee()==null) || 
              (this.cryptoCurrencyAmountWithFee!=null &&
               this.cryptoCurrencyAmountWithFee.equals(other.getCryptoCurrencyAmountWithFee()))) &&
-            ((this.cryptoCurrencyWithdrawalFee==null && other.getCryptoCurrencyWithdrawalFee()==null) ||
+            ((this.cryptoCurrencyWithdrawalFee==null && other.getCryptoCurrencyWithdrawalFee()==null) || 
              (this.cryptoCurrencyWithdrawalFee!=null &&
               this.cryptoCurrencyWithdrawalFee.equals(other.getCryptoCurrencyWithdrawalFee()))) &&
-            ((this.rate==null && other.getRate()==null) ||
+            ((this.rate==null && other.getRate()==null) || 
              (this.rate!=null &&
               this.rate.equals(other.getRate())));
         __equalsCalc = null;
@@ -219,10 +219,10 @@ public class CheckCurrencyExchangeResultHolder  extends CheckCurrencyExchangeReq
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -231,10 +231,10 @@ public class CheckCurrencyExchangeResultHolder  extends CheckCurrencyExchangeReq
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

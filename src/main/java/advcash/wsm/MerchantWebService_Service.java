@@ -8,9 +8,9 @@
 package advcash.wsm;
 
 public interface MerchantWebService_Service extends javax.xml.rpc.Service {
-    public String getMerchantWebServicePortAddress();
+    public java.lang.String getMerchantWebServicePortAddress();
 
-    public MerchantWebService_PortType getMerchantWebServicePort() throws javax.xml.rpc.ServiceException;
+    public advcash.wsm.MerchantWebService_PortType getMerchantWebServicePort() throws javax.xml.rpc.ServiceException;
 
-    public MerchantWebService_PortType getMerchantWebServicePort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException;
+    public advcash.wsm.MerchantWebService_PortType getMerchantWebServicePort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException;
 }

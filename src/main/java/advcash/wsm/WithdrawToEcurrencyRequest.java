@@ -7,33 +7,33 @@
 
 package advcash.wsm;
 
-public class WithdrawToEcurrencyRequest  extends MoneyRequest  implements java.io.Serializable {
-    private Ecurrency ecurrency;
+public class WithdrawToEcurrencyRequest  extends advcash.wsm.MoneyRequest  implements java.io.Serializable {
+    private advcash.wsm.Ecurrency ecurrency;
 
-    private String receiver;
+    private java.lang.String receiver;
 
-    private String destinationTag;
+    private java.lang.String destinationTag;
 
     private java.math.BigDecimal cryptoCurrencyAmount;
 
-    private String orderId;
+    private java.lang.String orderId;
 
-    private String depositMethod;
+    private java.lang.String depositMethod;
 
     public WithdrawToEcurrencyRequest() {
     }
 
     public WithdrawToEcurrencyRequest(
            java.math.BigDecimal amount,
-           Currency currency,
-           String note,
-           Boolean savePaymentTemplate,
-           Ecurrency ecurrency,
-           String receiver,
-           String destinationTag,
+           advcash.wsm.Currency currency,
+           java.lang.String note,
+           java.lang.Boolean savePaymentTemplate,
+           advcash.wsm.Ecurrency ecurrency,
+           java.lang.String receiver,
+           java.lang.String destinationTag,
            java.math.BigDecimal cryptoCurrencyAmount,
-           String orderId,
-           String depositMethod) {
+           java.lang.String orderId,
+           java.lang.String depositMethod) {
         super(
             amount,
             currency,
@@ -50,67 +50,67 @@ public class WithdrawToEcurrencyRequest  extends MoneyRequest  implements java.i
 
     /**
      * Gets the ecurrency value for this WithdrawToEcurrencyRequest.
-     *
+     * 
      * @return ecurrency
      */
-    public Ecurrency getEcurrency() {
+    public advcash.wsm.Ecurrency getEcurrency() {
         return ecurrency;
     }
 
 
     /**
      * Sets the ecurrency value for this WithdrawToEcurrencyRequest.
-     *
+     * 
      * @param ecurrency
      */
-    public void setEcurrency(Ecurrency ecurrency) {
+    public void setEcurrency(advcash.wsm.Ecurrency ecurrency) {
         this.ecurrency = ecurrency;
     }
 
 
     /**
      * Gets the receiver value for this WithdrawToEcurrencyRequest.
-     *
+     * 
      * @return receiver
      */
-    public String getReceiver() {
+    public java.lang.String getReceiver() {
         return receiver;
     }
 
 
     /**
      * Sets the receiver value for this WithdrawToEcurrencyRequest.
-     *
+     * 
      * @param receiver
      */
-    public void setReceiver(String receiver) {
+    public void setReceiver(java.lang.String receiver) {
         this.receiver = receiver;
     }
 
 
     /**
      * Gets the destinationTag value for this WithdrawToEcurrencyRequest.
-     *
+     * 
      * @return destinationTag
      */
-    public String getDestinationTag() {
+    public java.lang.String getDestinationTag() {
         return destinationTag;
     }
 
 
     /**
      * Sets the destinationTag value for this WithdrawToEcurrencyRequest.
-     *
+     * 
      * @param destinationTag
      */
-    public void setDestinationTag(String destinationTag) {
+    public void setDestinationTag(java.lang.String destinationTag) {
         this.destinationTag = destinationTag;
     }
 
 
     /**
      * Gets the cryptoCurrencyAmount value for this WithdrawToEcurrencyRequest.
-     *
+     * 
      * @return cryptoCurrencyAmount
      */
     public java.math.BigDecimal getCryptoCurrencyAmount() {
@@ -120,7 +120,7 @@ public class WithdrawToEcurrencyRequest  extends MoneyRequest  implements java.i
 
     /**
      * Sets the cryptoCurrencyAmount value for this WithdrawToEcurrencyRequest.
-     *
+     * 
      * @param cryptoCurrencyAmount
      */
     public void setCryptoCurrencyAmount(java.math.BigDecimal cryptoCurrencyAmount) {
@@ -130,45 +130,45 @@ public class WithdrawToEcurrencyRequest  extends MoneyRequest  implements java.i
 
     /**
      * Gets the orderId value for this WithdrawToEcurrencyRequest.
-     *
+     * 
      * @return orderId
      */
-    public String getOrderId() {
+    public java.lang.String getOrderId() {
         return orderId;
     }
 
 
     /**
      * Sets the orderId value for this WithdrawToEcurrencyRequest.
-     *
+     * 
      * @param orderId
      */
-    public void setOrderId(String orderId) {
+    public void setOrderId(java.lang.String orderId) {
         this.orderId = orderId;
     }
 
 
     /**
      * Gets the depositMethod value for this WithdrawToEcurrencyRequest.
-     *
+     * 
      * @return depositMethod
      */
-    public String getDepositMethod() {
+    public java.lang.String getDepositMethod() {
         return depositMethod;
     }
 
 
     /**
      * Sets the depositMethod value for this WithdrawToEcurrencyRequest.
-     *
+     * 
      * @param depositMethod
      */
-    public void setDepositMethod(String depositMethod) {
+    public void setDepositMethod(java.lang.String depositMethod) {
         this.depositMethod = depositMethod;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof WithdrawToEcurrencyRequest)) return false;
         WithdrawToEcurrencyRequest other = (WithdrawToEcurrencyRequest) obj;
         if (obj == null) return false;
@@ -178,23 +178,23 @@ public class WithdrawToEcurrencyRequest  extends MoneyRequest  implements java.i
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = super.equals(obj) &&
-            ((this.ecurrency==null && other.getEcurrency()==null) ||
+        _equals = super.equals(obj) && 
+            ((this.ecurrency==null && other.getEcurrency()==null) || 
              (this.ecurrency!=null &&
               this.ecurrency.equals(other.getEcurrency()))) &&
-            ((this.receiver==null && other.getReceiver()==null) ||
+            ((this.receiver==null && other.getReceiver()==null) || 
              (this.receiver!=null &&
               this.receiver.equals(other.getReceiver()))) &&
-            ((this.destinationTag==null && other.getDestinationTag()==null) ||
+            ((this.destinationTag==null && other.getDestinationTag()==null) || 
              (this.destinationTag!=null &&
               this.destinationTag.equals(other.getDestinationTag()))) &&
-            ((this.cryptoCurrencyAmount==null && other.getCryptoCurrencyAmount()==null) ||
+            ((this.cryptoCurrencyAmount==null && other.getCryptoCurrencyAmount()==null) || 
              (this.cryptoCurrencyAmount!=null &&
               this.cryptoCurrencyAmount.equals(other.getCryptoCurrencyAmount()))) &&
-            ((this.orderId==null && other.getOrderId()==null) ||
+            ((this.orderId==null && other.getOrderId()==null) || 
              (this.orderId!=null &&
               this.orderId.equals(other.getOrderId()))) &&
-            ((this.depositMethod==null && other.getDepositMethod()==null) ||
+            ((this.depositMethod==null && other.getDepositMethod()==null) || 
              (this.depositMethod!=null &&
               this.depositMethod.equals(other.getDepositMethod())));
         __equalsCalc = null;
@@ -291,10 +291,10 @@ public class WithdrawToEcurrencyRequest  extends MoneyRequest  implements java.i
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -303,10 +303,10 @@ public class WithdrawToEcurrencyRequest  extends MoneyRequest  implements java.i
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

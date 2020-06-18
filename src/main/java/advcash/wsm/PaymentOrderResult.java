@@ -7,18 +7,18 @@
 
 package advcash.wsm;
 
-public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io.Serializable {
-    private String buyerEmail;
+public class PaymentOrderResult  extends advcash.wsm.PaymentOrderRequest  implements java.io.Serializable {
+    private java.lang.String buyerEmail;
 
-    private CoinName coinName;
+    private advcash.wsm.CoinName coinName;
 
-    private String cryptoCurrencyAddress;
+    private java.lang.String cryptoCurrencyAddress;
 
     private java.math.BigDecimal cryptoCurrencyAmount;
 
     private java.util.Calendar cryptoCurrencyInvoiceCreated;
 
-    private CryptoCurrencyDepositPaymentStatus cryptoCurrencyInvoiceStatus;
+    private advcash.wsm.CryptoCurrencyDepositPaymentStatus cryptoCurrencyInvoiceStatus;
 
     private java.util.Calendar cryptoCurrencyPaymentCompleted;
 
@@ -28,7 +28,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     private java.util.Calendar cryptoCurrencyPaymentRefunded;
 
-    private String cryptoCurrencyTransactionId;
+    private java.lang.String cryptoCurrencyTransactionId;
 
     private java.util.Calendar paymentCreated;
 
@@ -38,9 +38,9 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     private java.math.BigDecimal receivedCryptoCurrencyAmount;
 
-    private String refundAddress;
+    private java.lang.String refundAddress;
 
-    private String srcWalletId;
+    private java.lang.String srcWalletId;
 
     private java.math.BigDecimal transactionAmount;
 
@@ -50,42 +50,45 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     private java.util.Calendar transactionCreated;
 
-    private Currency transactionCurrency;
+    private advcash.wsm.Currency transactionCurrency;
 
-    private String transactionId;
+    private java.lang.String transactionId;
 
-    private TransactionStatus transactionStatus;
+    private java.lang.String transactionNote;
+
+    private advcash.wsm.TransactionStatus transactionStatus;
 
     public PaymentOrderResult() {
     }
 
     public PaymentOrderResult(
-           String orderId,
-           String sciName,
-           String buyerEmail,
-           CoinName coinName,
-           String cryptoCurrencyAddress,
+           java.lang.String orderId,
+           java.lang.String sciName,
+           java.lang.String buyerEmail,
+           advcash.wsm.CoinName coinName,
+           java.lang.String cryptoCurrencyAddress,
            java.math.BigDecimal cryptoCurrencyAmount,
            java.util.Calendar cryptoCurrencyInvoiceCreated,
-           CryptoCurrencyDepositPaymentStatus cryptoCurrencyInvoiceStatus,
+           advcash.wsm.CryptoCurrencyDepositPaymentStatus cryptoCurrencyInvoiceStatus,
            java.util.Calendar cryptoCurrencyPaymentCompleted,
            java.util.Calendar cryptoCurrencyPaymentReceived,
            java.util.Calendar cryptoCurrencyPaymentRefundRequested,
            java.util.Calendar cryptoCurrencyPaymentRefunded,
-           String cryptoCurrencyTransactionId,
+           java.lang.String cryptoCurrencyTransactionId,
            java.util.Calendar paymentCreated,
            advcash.wsm.SciAllowedPaymentSystems paymentMethod,
            advcash.wsm.PaymentRequestStatus paymentStatus,
            java.math.BigDecimal receivedCryptoCurrencyAmount,
-           String refundAddress,
-           String srcWalletId,
+           java.lang.String refundAddress,
+           java.lang.String srcWalletId,
            java.math.BigDecimal transactionAmount,
            java.util.Calendar transactionCanceled,
            java.util.Calendar transactionCompleted,
            java.util.Calendar transactionCreated,
-           Currency transactionCurrency,
-           String transactionId,
-           TransactionStatus transactionStatus) {
+           advcash.wsm.Currency transactionCurrency,
+           java.lang.String transactionId,
+           java.lang.String transactionNote,
+           advcash.wsm.TransactionStatus transactionStatus) {
         super(
             orderId,
             sciName);
@@ -112,73 +115,74 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
         this.transactionCreated = transactionCreated;
         this.transactionCurrency = transactionCurrency;
         this.transactionId = transactionId;
+        this.transactionNote = transactionNote;
         this.transactionStatus = transactionStatus;
     }
 
 
     /**
      * Gets the buyerEmail value for this PaymentOrderResult.
-     *
+     * 
      * @return buyerEmail
      */
-    public String getBuyerEmail() {
+    public java.lang.String getBuyerEmail() {
         return buyerEmail;
     }
 
 
     /**
      * Sets the buyerEmail value for this PaymentOrderResult.
-     *
+     * 
      * @param buyerEmail
      */
-    public void setBuyerEmail(String buyerEmail) {
+    public void setBuyerEmail(java.lang.String buyerEmail) {
         this.buyerEmail = buyerEmail;
     }
 
 
     /**
      * Gets the coinName value for this PaymentOrderResult.
-     *
+     * 
      * @return coinName
      */
-    public CoinName getCoinName() {
+    public advcash.wsm.CoinName getCoinName() {
         return coinName;
     }
 
 
     /**
      * Sets the coinName value for this PaymentOrderResult.
-     *
+     * 
      * @param coinName
      */
-    public void setCoinName(CoinName coinName) {
+    public void setCoinName(advcash.wsm.CoinName coinName) {
         this.coinName = coinName;
     }
 
 
     /**
      * Gets the cryptoCurrencyAddress value for this PaymentOrderResult.
-     *
+     * 
      * @return cryptoCurrencyAddress
      */
-    public String getCryptoCurrencyAddress() {
+    public java.lang.String getCryptoCurrencyAddress() {
         return cryptoCurrencyAddress;
     }
 
 
     /**
      * Sets the cryptoCurrencyAddress value for this PaymentOrderResult.
-     *
+     * 
      * @param cryptoCurrencyAddress
      */
-    public void setCryptoCurrencyAddress(String cryptoCurrencyAddress) {
+    public void setCryptoCurrencyAddress(java.lang.String cryptoCurrencyAddress) {
         this.cryptoCurrencyAddress = cryptoCurrencyAddress;
     }
 
 
     /**
      * Gets the cryptoCurrencyAmount value for this PaymentOrderResult.
-     *
+     * 
      * @return cryptoCurrencyAmount
      */
     public java.math.BigDecimal getCryptoCurrencyAmount() {
@@ -188,7 +192,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Sets the cryptoCurrencyAmount value for this PaymentOrderResult.
-     *
+     * 
      * @param cryptoCurrencyAmount
      */
     public void setCryptoCurrencyAmount(java.math.BigDecimal cryptoCurrencyAmount) {
@@ -198,7 +202,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Gets the cryptoCurrencyInvoiceCreated value for this PaymentOrderResult.
-     *
+     * 
      * @return cryptoCurrencyInvoiceCreated
      */
     public java.util.Calendar getCryptoCurrencyInvoiceCreated() {
@@ -208,7 +212,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Sets the cryptoCurrencyInvoiceCreated value for this PaymentOrderResult.
-     *
+     * 
      * @param cryptoCurrencyInvoiceCreated
      */
     public void setCryptoCurrencyInvoiceCreated(java.util.Calendar cryptoCurrencyInvoiceCreated) {
@@ -218,27 +222,27 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Gets the cryptoCurrencyInvoiceStatus value for this PaymentOrderResult.
-     *
+     * 
      * @return cryptoCurrencyInvoiceStatus
      */
-    public CryptoCurrencyDepositPaymentStatus getCryptoCurrencyInvoiceStatus() {
+    public advcash.wsm.CryptoCurrencyDepositPaymentStatus getCryptoCurrencyInvoiceStatus() {
         return cryptoCurrencyInvoiceStatus;
     }
 
 
     /**
      * Sets the cryptoCurrencyInvoiceStatus value for this PaymentOrderResult.
-     *
+     * 
      * @param cryptoCurrencyInvoiceStatus
      */
-    public void setCryptoCurrencyInvoiceStatus(CryptoCurrencyDepositPaymentStatus cryptoCurrencyInvoiceStatus) {
+    public void setCryptoCurrencyInvoiceStatus(advcash.wsm.CryptoCurrencyDepositPaymentStatus cryptoCurrencyInvoiceStatus) {
         this.cryptoCurrencyInvoiceStatus = cryptoCurrencyInvoiceStatus;
     }
 
 
     /**
      * Gets the cryptoCurrencyPaymentCompleted value for this PaymentOrderResult.
-     *
+     * 
      * @return cryptoCurrencyPaymentCompleted
      */
     public java.util.Calendar getCryptoCurrencyPaymentCompleted() {
@@ -248,7 +252,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Sets the cryptoCurrencyPaymentCompleted value for this PaymentOrderResult.
-     *
+     * 
      * @param cryptoCurrencyPaymentCompleted
      */
     public void setCryptoCurrencyPaymentCompleted(java.util.Calendar cryptoCurrencyPaymentCompleted) {
@@ -258,7 +262,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Gets the cryptoCurrencyPaymentReceived value for this PaymentOrderResult.
-     *
+     * 
      * @return cryptoCurrencyPaymentReceived
      */
     public java.util.Calendar getCryptoCurrencyPaymentReceived() {
@@ -268,7 +272,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Sets the cryptoCurrencyPaymentReceived value for this PaymentOrderResult.
-     *
+     * 
      * @param cryptoCurrencyPaymentReceived
      */
     public void setCryptoCurrencyPaymentReceived(java.util.Calendar cryptoCurrencyPaymentReceived) {
@@ -278,7 +282,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Gets the cryptoCurrencyPaymentRefundRequested value for this PaymentOrderResult.
-     *
+     * 
      * @return cryptoCurrencyPaymentRefundRequested
      */
     public java.util.Calendar getCryptoCurrencyPaymentRefundRequested() {
@@ -288,7 +292,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Sets the cryptoCurrencyPaymentRefundRequested value for this PaymentOrderResult.
-     *
+     * 
      * @param cryptoCurrencyPaymentRefundRequested
      */
     public void setCryptoCurrencyPaymentRefundRequested(java.util.Calendar cryptoCurrencyPaymentRefundRequested) {
@@ -298,7 +302,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Gets the cryptoCurrencyPaymentRefunded value for this PaymentOrderResult.
-     *
+     * 
      * @return cryptoCurrencyPaymentRefunded
      */
     public java.util.Calendar getCryptoCurrencyPaymentRefunded() {
@@ -308,7 +312,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Sets the cryptoCurrencyPaymentRefunded value for this PaymentOrderResult.
-     *
+     * 
      * @param cryptoCurrencyPaymentRefunded
      */
     public void setCryptoCurrencyPaymentRefunded(java.util.Calendar cryptoCurrencyPaymentRefunded) {
@@ -318,27 +322,27 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Gets the cryptoCurrencyTransactionId value for this PaymentOrderResult.
-     *
+     * 
      * @return cryptoCurrencyTransactionId
      */
-    public String getCryptoCurrencyTransactionId() {
+    public java.lang.String getCryptoCurrencyTransactionId() {
         return cryptoCurrencyTransactionId;
     }
 
 
     /**
      * Sets the cryptoCurrencyTransactionId value for this PaymentOrderResult.
-     *
+     * 
      * @param cryptoCurrencyTransactionId
      */
-    public void setCryptoCurrencyTransactionId(String cryptoCurrencyTransactionId) {
+    public void setCryptoCurrencyTransactionId(java.lang.String cryptoCurrencyTransactionId) {
         this.cryptoCurrencyTransactionId = cryptoCurrencyTransactionId;
     }
 
 
     /**
      * Gets the paymentCreated value for this PaymentOrderResult.
-     *
+     * 
      * @return paymentCreated
      */
     public java.util.Calendar getPaymentCreated() {
@@ -348,7 +352,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Sets the paymentCreated value for this PaymentOrderResult.
-     *
+     * 
      * @param paymentCreated
      */
     public void setPaymentCreated(java.util.Calendar paymentCreated) {
@@ -358,7 +362,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Gets the paymentMethod value for this PaymentOrderResult.
-     *
+     * 
      * @return paymentMethod
      */
     public advcash.wsm.SciAllowedPaymentSystems getPaymentMethod() {
@@ -368,7 +372,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Sets the paymentMethod value for this PaymentOrderResult.
-     *
+     * 
      * @param paymentMethod
      */
     public void setPaymentMethod(advcash.wsm.SciAllowedPaymentSystems paymentMethod) {
@@ -378,7 +382,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Gets the paymentStatus value for this PaymentOrderResult.
-     *
+     * 
      * @return paymentStatus
      */
     public advcash.wsm.PaymentRequestStatus getPaymentStatus() {
@@ -388,7 +392,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Sets the paymentStatus value for this PaymentOrderResult.
-     *
+     * 
      * @param paymentStatus
      */
     public void setPaymentStatus(advcash.wsm.PaymentRequestStatus paymentStatus) {
@@ -398,7 +402,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Gets the receivedCryptoCurrencyAmount value for this PaymentOrderResult.
-     *
+     * 
      * @return receivedCryptoCurrencyAmount
      */
     public java.math.BigDecimal getReceivedCryptoCurrencyAmount() {
@@ -408,7 +412,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Sets the receivedCryptoCurrencyAmount value for this PaymentOrderResult.
-     *
+     * 
      * @param receivedCryptoCurrencyAmount
      */
     public void setReceivedCryptoCurrencyAmount(java.math.BigDecimal receivedCryptoCurrencyAmount) {
@@ -418,47 +422,47 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Gets the refundAddress value for this PaymentOrderResult.
-     *
+     * 
      * @return refundAddress
      */
-    public String getRefundAddress() {
+    public java.lang.String getRefundAddress() {
         return refundAddress;
     }
 
 
     /**
      * Sets the refundAddress value for this PaymentOrderResult.
-     *
+     * 
      * @param refundAddress
      */
-    public void setRefundAddress(String refundAddress) {
+    public void setRefundAddress(java.lang.String refundAddress) {
         this.refundAddress = refundAddress;
     }
 
 
     /**
      * Gets the srcWalletId value for this PaymentOrderResult.
-     *
+     * 
      * @return srcWalletId
      */
-    public String getSrcWalletId() {
+    public java.lang.String getSrcWalletId() {
         return srcWalletId;
     }
 
 
     /**
      * Sets the srcWalletId value for this PaymentOrderResult.
-     *
+     * 
      * @param srcWalletId
      */
-    public void setSrcWalletId(String srcWalletId) {
+    public void setSrcWalletId(java.lang.String srcWalletId) {
         this.srcWalletId = srcWalletId;
     }
 
 
     /**
      * Gets the transactionAmount value for this PaymentOrderResult.
-     *
+     * 
      * @return transactionAmount
      */
     public java.math.BigDecimal getTransactionAmount() {
@@ -468,7 +472,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Sets the transactionAmount value for this PaymentOrderResult.
-     *
+     * 
      * @param transactionAmount
      */
     public void setTransactionAmount(java.math.BigDecimal transactionAmount) {
@@ -478,7 +482,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Gets the transactionCanceled value for this PaymentOrderResult.
-     *
+     * 
      * @return transactionCanceled
      */
     public java.util.Calendar getTransactionCanceled() {
@@ -488,7 +492,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Sets the transactionCanceled value for this PaymentOrderResult.
-     *
+     * 
      * @param transactionCanceled
      */
     public void setTransactionCanceled(java.util.Calendar transactionCanceled) {
@@ -498,7 +502,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Gets the transactionCompleted value for this PaymentOrderResult.
-     *
+     * 
      * @return transactionCompleted
      */
     public java.util.Calendar getTransactionCompleted() {
@@ -508,7 +512,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Sets the transactionCompleted value for this PaymentOrderResult.
-     *
+     * 
      * @param transactionCompleted
      */
     public void setTransactionCompleted(java.util.Calendar transactionCompleted) {
@@ -518,7 +522,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Gets the transactionCreated value for this PaymentOrderResult.
-     *
+     * 
      * @return transactionCreated
      */
     public java.util.Calendar getTransactionCreated() {
@@ -528,7 +532,7 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Sets the transactionCreated value for this PaymentOrderResult.
-     *
+     * 
      * @param transactionCreated
      */
     public void setTransactionCreated(java.util.Calendar transactionCreated) {
@@ -538,65 +542,85 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
 
     /**
      * Gets the transactionCurrency value for this PaymentOrderResult.
-     *
+     * 
      * @return transactionCurrency
      */
-    public Currency getTransactionCurrency() {
+    public advcash.wsm.Currency getTransactionCurrency() {
         return transactionCurrency;
     }
 
 
     /**
      * Sets the transactionCurrency value for this PaymentOrderResult.
-     *
+     * 
      * @param transactionCurrency
      */
-    public void setTransactionCurrency(Currency transactionCurrency) {
+    public void setTransactionCurrency(advcash.wsm.Currency transactionCurrency) {
         this.transactionCurrency = transactionCurrency;
     }
 
 
     /**
      * Gets the transactionId value for this PaymentOrderResult.
-     *
+     * 
      * @return transactionId
      */
-    public String getTransactionId() {
+    public java.lang.String getTransactionId() {
         return transactionId;
     }
 
 
     /**
      * Sets the transactionId value for this PaymentOrderResult.
-     *
+     * 
      * @param transactionId
      */
-    public void setTransactionId(String transactionId) {
+    public void setTransactionId(java.lang.String transactionId) {
         this.transactionId = transactionId;
     }
 
 
     /**
+     * Gets the transactionNote value for this PaymentOrderResult.
+     * 
+     * @return transactionNote
+     */
+    public java.lang.String getTransactionNote() {
+        return transactionNote;
+    }
+
+
+    /**
+     * Sets the transactionNote value for this PaymentOrderResult.
+     * 
+     * @param transactionNote
+     */
+    public void setTransactionNote(java.lang.String transactionNote) {
+        this.transactionNote = transactionNote;
+    }
+
+
+    /**
      * Gets the transactionStatus value for this PaymentOrderResult.
-     *
+     * 
      * @return transactionStatus
      */
-    public TransactionStatus getTransactionStatus() {
+    public advcash.wsm.TransactionStatus getTransactionStatus() {
         return transactionStatus;
     }
 
 
     /**
      * Sets the transactionStatus value for this PaymentOrderResult.
-     *
+     * 
      * @param transactionStatus
      */
-    public void setTransactionStatus(TransactionStatus transactionStatus) {
+    public void setTransactionStatus(advcash.wsm.TransactionStatus transactionStatus) {
         this.transactionStatus = transactionStatus;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof PaymentOrderResult)) return false;
         PaymentOrderResult other = (PaymentOrderResult) obj;
         if (obj == null) return false;
@@ -606,77 +630,80 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = super.equals(obj) &&
-            ((this.buyerEmail==null && other.getBuyerEmail()==null) ||
+        _equals = super.equals(obj) && 
+            ((this.buyerEmail==null && other.getBuyerEmail()==null) || 
              (this.buyerEmail!=null &&
               this.buyerEmail.equals(other.getBuyerEmail()))) &&
-            ((this.coinName==null && other.getCoinName()==null) ||
+            ((this.coinName==null && other.getCoinName()==null) || 
              (this.coinName!=null &&
               this.coinName.equals(other.getCoinName()))) &&
-            ((this.cryptoCurrencyAddress==null && other.getCryptoCurrencyAddress()==null) ||
+            ((this.cryptoCurrencyAddress==null && other.getCryptoCurrencyAddress()==null) || 
              (this.cryptoCurrencyAddress!=null &&
               this.cryptoCurrencyAddress.equals(other.getCryptoCurrencyAddress()))) &&
-            ((this.cryptoCurrencyAmount==null && other.getCryptoCurrencyAmount()==null) ||
+            ((this.cryptoCurrencyAmount==null && other.getCryptoCurrencyAmount()==null) || 
              (this.cryptoCurrencyAmount!=null &&
               this.cryptoCurrencyAmount.equals(other.getCryptoCurrencyAmount()))) &&
-            ((this.cryptoCurrencyInvoiceCreated==null && other.getCryptoCurrencyInvoiceCreated()==null) ||
+            ((this.cryptoCurrencyInvoiceCreated==null && other.getCryptoCurrencyInvoiceCreated()==null) || 
              (this.cryptoCurrencyInvoiceCreated!=null &&
               this.cryptoCurrencyInvoiceCreated.equals(other.getCryptoCurrencyInvoiceCreated()))) &&
-            ((this.cryptoCurrencyInvoiceStatus==null && other.getCryptoCurrencyInvoiceStatus()==null) ||
+            ((this.cryptoCurrencyInvoiceStatus==null && other.getCryptoCurrencyInvoiceStatus()==null) || 
              (this.cryptoCurrencyInvoiceStatus!=null &&
               this.cryptoCurrencyInvoiceStatus.equals(other.getCryptoCurrencyInvoiceStatus()))) &&
-            ((this.cryptoCurrencyPaymentCompleted==null && other.getCryptoCurrencyPaymentCompleted()==null) ||
+            ((this.cryptoCurrencyPaymentCompleted==null && other.getCryptoCurrencyPaymentCompleted()==null) || 
              (this.cryptoCurrencyPaymentCompleted!=null &&
               this.cryptoCurrencyPaymentCompleted.equals(other.getCryptoCurrencyPaymentCompleted()))) &&
-            ((this.cryptoCurrencyPaymentReceived==null && other.getCryptoCurrencyPaymentReceived()==null) ||
+            ((this.cryptoCurrencyPaymentReceived==null && other.getCryptoCurrencyPaymentReceived()==null) || 
              (this.cryptoCurrencyPaymentReceived!=null &&
               this.cryptoCurrencyPaymentReceived.equals(other.getCryptoCurrencyPaymentReceived()))) &&
-            ((this.cryptoCurrencyPaymentRefundRequested==null && other.getCryptoCurrencyPaymentRefundRequested()==null) ||
+            ((this.cryptoCurrencyPaymentRefundRequested==null && other.getCryptoCurrencyPaymentRefundRequested()==null) || 
              (this.cryptoCurrencyPaymentRefundRequested!=null &&
               this.cryptoCurrencyPaymentRefundRequested.equals(other.getCryptoCurrencyPaymentRefundRequested()))) &&
-            ((this.cryptoCurrencyPaymentRefunded==null && other.getCryptoCurrencyPaymentRefunded()==null) ||
+            ((this.cryptoCurrencyPaymentRefunded==null && other.getCryptoCurrencyPaymentRefunded()==null) || 
              (this.cryptoCurrencyPaymentRefunded!=null &&
               this.cryptoCurrencyPaymentRefunded.equals(other.getCryptoCurrencyPaymentRefunded()))) &&
-            ((this.cryptoCurrencyTransactionId==null && other.getCryptoCurrencyTransactionId()==null) ||
+            ((this.cryptoCurrencyTransactionId==null && other.getCryptoCurrencyTransactionId()==null) || 
              (this.cryptoCurrencyTransactionId!=null &&
               this.cryptoCurrencyTransactionId.equals(other.getCryptoCurrencyTransactionId()))) &&
-            ((this.paymentCreated==null && other.getPaymentCreated()==null) ||
+            ((this.paymentCreated==null && other.getPaymentCreated()==null) || 
              (this.paymentCreated!=null &&
               this.paymentCreated.equals(other.getPaymentCreated()))) &&
-            ((this.paymentMethod==null && other.getPaymentMethod()==null) ||
+            ((this.paymentMethod==null && other.getPaymentMethod()==null) || 
              (this.paymentMethod!=null &&
               this.paymentMethod.equals(other.getPaymentMethod()))) &&
-            ((this.paymentStatus==null && other.getPaymentStatus()==null) ||
+            ((this.paymentStatus==null && other.getPaymentStatus()==null) || 
              (this.paymentStatus!=null &&
               this.paymentStatus.equals(other.getPaymentStatus()))) &&
-            ((this.receivedCryptoCurrencyAmount==null && other.getReceivedCryptoCurrencyAmount()==null) ||
+            ((this.receivedCryptoCurrencyAmount==null && other.getReceivedCryptoCurrencyAmount()==null) || 
              (this.receivedCryptoCurrencyAmount!=null &&
               this.receivedCryptoCurrencyAmount.equals(other.getReceivedCryptoCurrencyAmount()))) &&
-            ((this.refundAddress==null && other.getRefundAddress()==null) ||
+            ((this.refundAddress==null && other.getRefundAddress()==null) || 
              (this.refundAddress!=null &&
               this.refundAddress.equals(other.getRefundAddress()))) &&
-            ((this.srcWalletId==null && other.getSrcWalletId()==null) ||
+            ((this.srcWalletId==null && other.getSrcWalletId()==null) || 
              (this.srcWalletId!=null &&
               this.srcWalletId.equals(other.getSrcWalletId()))) &&
-            ((this.transactionAmount==null && other.getTransactionAmount()==null) ||
+            ((this.transactionAmount==null && other.getTransactionAmount()==null) || 
              (this.transactionAmount!=null &&
               this.transactionAmount.equals(other.getTransactionAmount()))) &&
-            ((this.transactionCanceled==null && other.getTransactionCanceled()==null) ||
+            ((this.transactionCanceled==null && other.getTransactionCanceled()==null) || 
              (this.transactionCanceled!=null &&
               this.transactionCanceled.equals(other.getTransactionCanceled()))) &&
-            ((this.transactionCompleted==null && other.getTransactionCompleted()==null) ||
+            ((this.transactionCompleted==null && other.getTransactionCompleted()==null) || 
              (this.transactionCompleted!=null &&
               this.transactionCompleted.equals(other.getTransactionCompleted()))) &&
-            ((this.transactionCreated==null && other.getTransactionCreated()==null) ||
+            ((this.transactionCreated==null && other.getTransactionCreated()==null) || 
              (this.transactionCreated!=null &&
               this.transactionCreated.equals(other.getTransactionCreated()))) &&
-            ((this.transactionCurrency==null && other.getTransactionCurrency()==null) ||
+            ((this.transactionCurrency==null && other.getTransactionCurrency()==null) || 
              (this.transactionCurrency!=null &&
               this.transactionCurrency.equals(other.getTransactionCurrency()))) &&
-            ((this.transactionId==null && other.getTransactionId()==null) ||
+            ((this.transactionId==null && other.getTransactionId()==null) || 
              (this.transactionId!=null &&
               this.transactionId.equals(other.getTransactionId()))) &&
-            ((this.transactionStatus==null && other.getTransactionStatus()==null) ||
+            ((this.transactionNote==null && other.getTransactionNote()==null) || 
+             (this.transactionNote!=null &&
+              this.transactionNote.equals(other.getTransactionNote()))) &&
+            ((this.transactionStatus==null && other.getTransactionStatus()==null) || 
              (this.transactionStatus!=null &&
               this.transactionStatus.equals(other.getTransactionStatus())));
         __equalsCalc = null;
@@ -758,6 +785,9 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
         }
         if (getTransactionId() != null) {
             _hashCode += getTransactionId().hashCode();
+        }
+        if (getTransactionNote() != null) {
+            _hashCode += getTransactionNote().hashCode();
         }
         if (getTransactionStatus() != null) {
             _hashCode += getTransactionStatus().hashCode();
@@ -934,6 +964,13 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
         elemField.setNillable(false);
         typeDesc.addFieldDesc(elemField);
         elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("transactionNote");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "transactionNote"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setMinOccurs(0);
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("transactionStatus");
         elemField.setXmlName(new javax.xml.namespace.QName("", "transactionStatus"));
         elemField.setXmlType(new javax.xml.namespace.QName("http://wsm.advcash/", "transactionStatus"));
@@ -953,10 +990,10 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -965,10 +1002,10 @@ public class PaymentOrderResult  extends PaymentOrderRequest  implements java.io
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

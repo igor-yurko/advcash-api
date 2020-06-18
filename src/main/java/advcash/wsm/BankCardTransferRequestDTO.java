@@ -10,41 +10,41 @@ package advcash.wsm;
 public class BankCardTransferRequestDTO  implements java.io.Serializable {
     private java.math.BigDecimal amount;
 
-    private String cardHolder;
+    private java.lang.String cardHolder;
 
-    private String cardHolderAddress;
+    private java.lang.String cardHolderAddress;
 
-    private String cardHolderCountryCode;
+    private java.lang.String cardHolderCountryCode;
 
-    private String cardHolderIp;
+    private java.lang.String cardHolderIp;
 
-    private String cardNumber;
+    private java.lang.String cardNumber;
 
-    private String destCurrency;
+    private java.lang.String destCurrency;
 
-    private String expiryMonth;
+    private java.lang.String expiryMonth;
 
-    private String expiryYear;
+    private java.lang.String expiryYear;
 
     private boolean savePaymentTemplate;
 
-    private String srcWalletId;
+    private java.lang.String srcWalletId;
 
     public BankCardTransferRequestDTO() {
     }
 
     public BankCardTransferRequestDTO(
            java.math.BigDecimal amount,
-           String cardHolder,
-           String cardHolderAddress,
-           String cardHolderCountryCode,
-           String cardHolderIp,
-           String cardNumber,
-           String destCurrency,
-           String expiryMonth,
-           String expiryYear,
+           java.lang.String cardHolder,
+           java.lang.String cardHolderAddress,
+           java.lang.String cardHolderCountryCode,
+           java.lang.String cardHolderIp,
+           java.lang.String cardNumber,
+           java.lang.String destCurrency,
+           java.lang.String expiryMonth,
+           java.lang.String expiryYear,
            boolean savePaymentTemplate,
-           String srcWalletId) {
+           java.lang.String srcWalletId) {
            this.amount = amount;
            this.cardHolder = cardHolder;
            this.cardHolderAddress = cardHolderAddress;
@@ -61,7 +61,7 @@ public class BankCardTransferRequestDTO  implements java.io.Serializable {
 
     /**
      * Gets the amount value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @return amount
      */
     public java.math.BigDecimal getAmount() {
@@ -71,7 +71,7 @@ public class BankCardTransferRequestDTO  implements java.io.Serializable {
 
     /**
      * Sets the amount value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @param amount
      */
     public void setAmount(java.math.BigDecimal amount) {
@@ -81,167 +81,167 @@ public class BankCardTransferRequestDTO  implements java.io.Serializable {
 
     /**
      * Gets the cardHolder value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @return cardHolder
      */
-    public String getCardHolder() {
+    public java.lang.String getCardHolder() {
         return cardHolder;
     }
 
 
     /**
      * Sets the cardHolder value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @param cardHolder
      */
-    public void setCardHolder(String cardHolder) {
+    public void setCardHolder(java.lang.String cardHolder) {
         this.cardHolder = cardHolder;
     }
 
 
     /**
      * Gets the cardHolderAddress value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @return cardHolderAddress
      */
-    public String getCardHolderAddress() {
+    public java.lang.String getCardHolderAddress() {
         return cardHolderAddress;
     }
 
 
     /**
      * Sets the cardHolderAddress value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @param cardHolderAddress
      */
-    public void setCardHolderAddress(String cardHolderAddress) {
+    public void setCardHolderAddress(java.lang.String cardHolderAddress) {
         this.cardHolderAddress = cardHolderAddress;
     }
 
 
     /**
      * Gets the cardHolderCountryCode value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @return cardHolderCountryCode
      */
-    public String getCardHolderCountryCode() {
+    public java.lang.String getCardHolderCountryCode() {
         return cardHolderCountryCode;
     }
 
 
     /**
      * Sets the cardHolderCountryCode value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @param cardHolderCountryCode
      */
-    public void setCardHolderCountryCode(String cardHolderCountryCode) {
+    public void setCardHolderCountryCode(java.lang.String cardHolderCountryCode) {
         this.cardHolderCountryCode = cardHolderCountryCode;
     }
 
 
     /**
      * Gets the cardHolderIp value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @return cardHolderIp
      */
-    public String getCardHolderIp() {
+    public java.lang.String getCardHolderIp() {
         return cardHolderIp;
     }
 
 
     /**
      * Sets the cardHolderIp value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @param cardHolderIp
      */
-    public void setCardHolderIp(String cardHolderIp) {
+    public void setCardHolderIp(java.lang.String cardHolderIp) {
         this.cardHolderIp = cardHolderIp;
     }
 
 
     /**
      * Gets the cardNumber value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @return cardNumber
      */
-    public String getCardNumber() {
+    public java.lang.String getCardNumber() {
         return cardNumber;
     }
 
 
     /**
      * Sets the cardNumber value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @param cardNumber
      */
-    public void setCardNumber(String cardNumber) {
+    public void setCardNumber(java.lang.String cardNumber) {
         this.cardNumber = cardNumber;
     }
 
 
     /**
      * Gets the destCurrency value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @return destCurrency
      */
-    public String getDestCurrency() {
+    public java.lang.String getDestCurrency() {
         return destCurrency;
     }
 
 
     /**
      * Sets the destCurrency value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @param destCurrency
      */
-    public void setDestCurrency(String destCurrency) {
+    public void setDestCurrency(java.lang.String destCurrency) {
         this.destCurrency = destCurrency;
     }
 
 
     /**
      * Gets the expiryMonth value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @return expiryMonth
      */
-    public String getExpiryMonth() {
+    public java.lang.String getExpiryMonth() {
         return expiryMonth;
     }
 
 
     /**
      * Sets the expiryMonth value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @param expiryMonth
      */
-    public void setExpiryMonth(String expiryMonth) {
+    public void setExpiryMonth(java.lang.String expiryMonth) {
         this.expiryMonth = expiryMonth;
     }
 
 
     /**
      * Gets the expiryYear value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @return expiryYear
      */
-    public String getExpiryYear() {
+    public java.lang.String getExpiryYear() {
         return expiryYear;
     }
 
 
     /**
      * Sets the expiryYear value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @param expiryYear
      */
-    public void setExpiryYear(String expiryYear) {
+    public void setExpiryYear(java.lang.String expiryYear) {
         this.expiryYear = expiryYear;
     }
 
 
     /**
      * Gets the savePaymentTemplate value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @return savePaymentTemplate
      */
     public boolean isSavePaymentTemplate() {
@@ -251,7 +251,7 @@ public class BankCardTransferRequestDTO  implements java.io.Serializable {
 
     /**
      * Sets the savePaymentTemplate value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @param savePaymentTemplate
      */
     public void setSavePaymentTemplate(boolean savePaymentTemplate) {
@@ -261,25 +261,25 @@ public class BankCardTransferRequestDTO  implements java.io.Serializable {
 
     /**
      * Gets the srcWalletId value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @return srcWalletId
      */
-    public String getSrcWalletId() {
+    public java.lang.String getSrcWalletId() {
         return srcWalletId;
     }
 
 
     /**
      * Sets the srcWalletId value for this BankCardTransferRequestDTO.
-     *
+     * 
      * @param srcWalletId
      */
-    public void setSrcWalletId(String srcWalletId) {
+    public void setSrcWalletId(java.lang.String srcWalletId) {
         this.srcWalletId = srcWalletId;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof BankCardTransferRequestDTO)) return false;
         BankCardTransferRequestDTO other = (BankCardTransferRequestDTO) obj;
         if (obj == null) return false;
@@ -289,36 +289,36 @@ public class BankCardTransferRequestDTO  implements java.io.Serializable {
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true &&
-            ((this.amount==null && other.getAmount()==null) ||
+        _equals = true && 
+            ((this.amount==null && other.getAmount()==null) || 
              (this.amount!=null &&
               this.amount.equals(other.getAmount()))) &&
-            ((this.cardHolder==null && other.getCardHolder()==null) ||
+            ((this.cardHolder==null && other.getCardHolder()==null) || 
              (this.cardHolder!=null &&
               this.cardHolder.equals(other.getCardHolder()))) &&
-            ((this.cardHolderAddress==null && other.getCardHolderAddress()==null) ||
+            ((this.cardHolderAddress==null && other.getCardHolderAddress()==null) || 
              (this.cardHolderAddress!=null &&
               this.cardHolderAddress.equals(other.getCardHolderAddress()))) &&
-            ((this.cardHolderCountryCode==null && other.getCardHolderCountryCode()==null) ||
+            ((this.cardHolderCountryCode==null && other.getCardHolderCountryCode()==null) || 
              (this.cardHolderCountryCode!=null &&
               this.cardHolderCountryCode.equals(other.getCardHolderCountryCode()))) &&
-            ((this.cardHolderIp==null && other.getCardHolderIp()==null) ||
+            ((this.cardHolderIp==null && other.getCardHolderIp()==null) || 
              (this.cardHolderIp!=null &&
               this.cardHolderIp.equals(other.getCardHolderIp()))) &&
-            ((this.cardNumber==null && other.getCardNumber()==null) ||
+            ((this.cardNumber==null && other.getCardNumber()==null) || 
              (this.cardNumber!=null &&
               this.cardNumber.equals(other.getCardNumber()))) &&
-            ((this.destCurrency==null && other.getDestCurrency()==null) ||
+            ((this.destCurrency==null && other.getDestCurrency()==null) || 
              (this.destCurrency!=null &&
               this.destCurrency.equals(other.getDestCurrency()))) &&
-            ((this.expiryMonth==null && other.getExpiryMonth()==null) ||
+            ((this.expiryMonth==null && other.getExpiryMonth()==null) || 
              (this.expiryMonth!=null &&
               this.expiryMonth.equals(other.getExpiryMonth()))) &&
-            ((this.expiryYear==null && other.getExpiryYear()==null) ||
+            ((this.expiryYear==null && other.getExpiryYear()==null) || 
              (this.expiryYear!=null &&
               this.expiryYear.equals(other.getExpiryYear()))) &&
             this.savePaymentTemplate == other.isSavePaymentTemplate() &&
-            ((this.srcWalletId==null && other.getSrcWalletId()==null) ||
+            ((this.srcWalletId==null && other.getSrcWalletId()==null) || 
              (this.srcWalletId!=null &&
               this.srcWalletId.equals(other.getSrcWalletId())));
         __equalsCalc = null;
@@ -462,10 +462,10 @@ public class BankCardTransferRequestDTO  implements java.io.Serializable {
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -474,10 +474,10 @@ public class BankCardTransferRequestDTO  implements java.io.Serializable {
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

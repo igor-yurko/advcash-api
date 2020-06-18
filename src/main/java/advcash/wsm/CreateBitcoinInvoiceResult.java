@@ -7,8 +7,8 @@
 
 package advcash.wsm;
 
-public class CreateBitcoinInvoiceResult  extends CreateBitcoinInvoiceRequest  implements java.io.Serializable {
-    private String bitcoinAddress;
+public class CreateBitcoinInvoiceResult  extends advcash.wsm.CreateBitcoinInvoiceRequest  implements java.io.Serializable {
+    private java.lang.String bitcoinAddress;
 
     private java.math.BigDecimal bitcoinAmount;
 
@@ -17,13 +17,13 @@ public class CreateBitcoinInvoiceResult  extends CreateBitcoinInvoiceRequest  im
 
     public CreateBitcoinInvoiceResult(
            java.math.BigDecimal amount,
-           Currency currency,
-           String note,
-           Boolean savePaymentTemplate,
-           String orderId,
-           String sciName,
-           String subMerchantURL,
-           String bitcoinAddress,
+           advcash.wsm.Currency currency,
+           java.lang.String note,
+           java.lang.Boolean savePaymentTemplate,
+           java.lang.String orderId,
+           java.lang.String sciName,
+           java.lang.String subMerchantURL,
+           java.lang.String bitcoinAddress,
            java.math.BigDecimal bitcoinAmount) {
         super(
             amount,
@@ -40,27 +40,27 @@ public class CreateBitcoinInvoiceResult  extends CreateBitcoinInvoiceRequest  im
 
     /**
      * Gets the bitcoinAddress value for this CreateBitcoinInvoiceResult.
-     *
+     * 
      * @return bitcoinAddress
      */
-    public String getBitcoinAddress() {
+    public java.lang.String getBitcoinAddress() {
         return bitcoinAddress;
     }
 
 
     /**
      * Sets the bitcoinAddress value for this CreateBitcoinInvoiceResult.
-     *
+     * 
      * @param bitcoinAddress
      */
-    public void setBitcoinAddress(String bitcoinAddress) {
+    public void setBitcoinAddress(java.lang.String bitcoinAddress) {
         this.bitcoinAddress = bitcoinAddress;
     }
 
 
     /**
      * Gets the bitcoinAmount value for this CreateBitcoinInvoiceResult.
-     *
+     * 
      * @return bitcoinAmount
      */
     public java.math.BigDecimal getBitcoinAmount() {
@@ -70,15 +70,15 @@ public class CreateBitcoinInvoiceResult  extends CreateBitcoinInvoiceRequest  im
 
     /**
      * Sets the bitcoinAmount value for this CreateBitcoinInvoiceResult.
-     *
+     * 
      * @param bitcoinAmount
      */
     public void setBitcoinAmount(java.math.BigDecimal bitcoinAmount) {
         this.bitcoinAmount = bitcoinAmount;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof CreateBitcoinInvoiceResult)) return false;
         CreateBitcoinInvoiceResult other = (CreateBitcoinInvoiceResult) obj;
         if (obj == null) return false;
@@ -88,11 +88,11 @@ public class CreateBitcoinInvoiceResult  extends CreateBitcoinInvoiceRequest  im
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = super.equals(obj) &&
-            ((this.bitcoinAddress==null && other.getBitcoinAddress()==null) ||
+        _equals = super.equals(obj) && 
+            ((this.bitcoinAddress==null && other.getBitcoinAddress()==null) || 
              (this.bitcoinAddress!=null &&
               this.bitcoinAddress.equals(other.getBitcoinAddress()))) &&
-            ((this.bitcoinAmount==null && other.getBitcoinAmount()==null) ||
+            ((this.bitcoinAmount==null && other.getBitcoinAmount()==null) || 
              (this.bitcoinAmount!=null &&
               this.bitcoinAmount.equals(other.getBitcoinAmount())));
         __equalsCalc = null;
@@ -149,10 +149,10 @@ public class CreateBitcoinInvoiceResult  extends CreateBitcoinInvoiceRequest  im
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -161,10 +161,10 @@ public class CreateBitcoinInvoiceResult  extends CreateBitcoinInvoiceRequest  im
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

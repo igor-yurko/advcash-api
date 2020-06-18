@@ -10,26 +10,26 @@ package advcash.wsm;
 public class AdvcashCardTransferRequestDTO  implements java.io.Serializable {
     private java.math.BigDecimal amount;
 
-    private CardType cardType;
+    private advcash.wsm.CardType cardType;
 
-    private Currency currency;
+    private advcash.wsm.Currency currency;
 
-    private String email;
+    private java.lang.String email;
 
     private boolean savePaymentTemplate;
 
-    private String srcWalletId;
+    private java.lang.String srcWalletId;
 
     public AdvcashCardTransferRequestDTO() {
     }
 
     public AdvcashCardTransferRequestDTO(
            java.math.BigDecimal amount,
-           CardType cardType,
-           Currency currency,
-           String email,
+           advcash.wsm.CardType cardType,
+           advcash.wsm.Currency currency,
+           java.lang.String email,
            boolean savePaymentTemplate,
-           String srcWalletId) {
+           java.lang.String srcWalletId) {
            this.amount = amount;
            this.cardType = cardType;
            this.currency = currency;
@@ -41,7 +41,7 @@ public class AdvcashCardTransferRequestDTO  implements java.io.Serializable {
 
     /**
      * Gets the amount value for this AdvcashCardTransferRequestDTO.
-     *
+     * 
      * @return amount
      */
     public java.math.BigDecimal getAmount() {
@@ -51,7 +51,7 @@ public class AdvcashCardTransferRequestDTO  implements java.io.Serializable {
 
     /**
      * Sets the amount value for this AdvcashCardTransferRequestDTO.
-     *
+     * 
      * @param amount
      */
     public void setAmount(java.math.BigDecimal amount) {
@@ -61,67 +61,67 @@ public class AdvcashCardTransferRequestDTO  implements java.io.Serializable {
 
     /**
      * Gets the cardType value for this AdvcashCardTransferRequestDTO.
-     *
+     * 
      * @return cardType
      */
-    public CardType getCardType() {
+    public advcash.wsm.CardType getCardType() {
         return cardType;
     }
 
 
     /**
      * Sets the cardType value for this AdvcashCardTransferRequestDTO.
-     *
+     * 
      * @param cardType
      */
-    public void setCardType(CardType cardType) {
+    public void setCardType(advcash.wsm.CardType cardType) {
         this.cardType = cardType;
     }
 
 
     /**
      * Gets the currency value for this AdvcashCardTransferRequestDTO.
-     *
+     * 
      * @return currency
      */
-    public Currency getCurrency() {
+    public advcash.wsm.Currency getCurrency() {
         return currency;
     }
 
 
     /**
      * Sets the currency value for this AdvcashCardTransferRequestDTO.
-     *
+     * 
      * @param currency
      */
-    public void setCurrency(Currency currency) {
+    public void setCurrency(advcash.wsm.Currency currency) {
         this.currency = currency;
     }
 
 
     /**
      * Gets the email value for this AdvcashCardTransferRequestDTO.
-     *
+     * 
      * @return email
      */
-    public String getEmail() {
+    public java.lang.String getEmail() {
         return email;
     }
 
 
     /**
      * Sets the email value for this AdvcashCardTransferRequestDTO.
-     *
+     * 
      * @param email
      */
-    public void setEmail(String email) {
+    public void setEmail(java.lang.String email) {
         this.email = email;
     }
 
 
     /**
      * Gets the savePaymentTemplate value for this AdvcashCardTransferRequestDTO.
-     *
+     * 
      * @return savePaymentTemplate
      */
     public boolean isSavePaymentTemplate() {
@@ -131,7 +131,7 @@ public class AdvcashCardTransferRequestDTO  implements java.io.Serializable {
 
     /**
      * Sets the savePaymentTemplate value for this AdvcashCardTransferRequestDTO.
-     *
+     * 
      * @param savePaymentTemplate
      */
     public void setSavePaymentTemplate(boolean savePaymentTemplate) {
@@ -141,25 +141,25 @@ public class AdvcashCardTransferRequestDTO  implements java.io.Serializable {
 
     /**
      * Gets the srcWalletId value for this AdvcashCardTransferRequestDTO.
-     *
+     * 
      * @return srcWalletId
      */
-    public String getSrcWalletId() {
+    public java.lang.String getSrcWalletId() {
         return srcWalletId;
     }
 
 
     /**
      * Sets the srcWalletId value for this AdvcashCardTransferRequestDTO.
-     *
+     * 
      * @param srcWalletId
      */
-    public void setSrcWalletId(String srcWalletId) {
+    public void setSrcWalletId(java.lang.String srcWalletId) {
         this.srcWalletId = srcWalletId;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof AdvcashCardTransferRequestDTO)) return false;
         AdvcashCardTransferRequestDTO other = (AdvcashCardTransferRequestDTO) obj;
         if (obj == null) return false;
@@ -169,21 +169,21 @@ public class AdvcashCardTransferRequestDTO  implements java.io.Serializable {
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true &&
-            ((this.amount==null && other.getAmount()==null) ||
+        _equals = true && 
+            ((this.amount==null && other.getAmount()==null) || 
              (this.amount!=null &&
               this.amount.equals(other.getAmount()))) &&
-            ((this.cardType==null && other.getCardType()==null) ||
+            ((this.cardType==null && other.getCardType()==null) || 
              (this.cardType!=null &&
               this.cardType.equals(other.getCardType()))) &&
-            ((this.currency==null && other.getCurrency()==null) ||
+            ((this.currency==null && other.getCurrency()==null) || 
              (this.currency!=null &&
               this.currency.equals(other.getCurrency()))) &&
-            ((this.email==null && other.getEmail()==null) ||
+            ((this.email==null && other.getEmail()==null) || 
              (this.email!=null &&
               this.email.equals(other.getEmail()))) &&
             this.savePaymentTemplate == other.isSavePaymentTemplate() &&
-            ((this.srcWalletId==null && other.getSrcWalletId()==null) ||
+            ((this.srcWalletId==null && other.getSrcWalletId()==null) || 
              (this.srcWalletId!=null &&
               this.srcWalletId.equals(other.getSrcWalletId())));
         __equalsCalc = null;
@@ -277,10 +277,10 @@ public class AdvcashCardTransferRequestDTO  implements java.io.Serializable {
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -289,10 +289,10 @@ public class AdvcashCardTransferRequestDTO  implements java.io.Serializable {
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

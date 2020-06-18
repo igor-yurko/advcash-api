@@ -10,17 +10,17 @@ package advcash.wsm;
 public class LimitPerDayException  extends org.apache.axis.AxisFault  implements java.io.Serializable {
     private java.math.BigDecimal limitAmount;
 
-    private Currency currency;
+    private advcash.wsm.Currency currency;
 
-    private ExceptionType type;
+    private advcash.wsm.ExceptionType type;
 
     public LimitPerDayException() {
     }
 
     public LimitPerDayException(
            java.math.BigDecimal limitAmount,
-           Currency currency,
-           ExceptionType type) {
+           advcash.wsm.Currency currency,
+           advcash.wsm.ExceptionType type) {
         this.limitAmount = limitAmount;
         this.currency = currency;
         this.type = type;
@@ -29,7 +29,7 @@ public class LimitPerDayException  extends org.apache.axis.AxisFault  implements
 
     /**
      * Gets the limitAmount value for this LimitPerDayException.
-     *
+     * 
      * @return limitAmount
      */
     public java.math.BigDecimal getLimitAmount() {
@@ -39,7 +39,7 @@ public class LimitPerDayException  extends org.apache.axis.AxisFault  implements
 
     /**
      * Sets the limitAmount value for this LimitPerDayException.
-     *
+     * 
      * @param limitAmount
      */
     public void setLimitAmount(java.math.BigDecimal limitAmount) {
@@ -49,45 +49,45 @@ public class LimitPerDayException  extends org.apache.axis.AxisFault  implements
 
     /**
      * Gets the currency value for this LimitPerDayException.
-     *
+     * 
      * @return currency
      */
-    public Currency getCurrency() {
+    public advcash.wsm.Currency getCurrency() {
         return currency;
     }
 
 
     /**
      * Sets the currency value for this LimitPerDayException.
-     *
+     * 
      * @param currency
      */
-    public void setCurrency(Currency currency) {
+    public void setCurrency(advcash.wsm.Currency currency) {
         this.currency = currency;
     }
 
 
     /**
      * Gets the type value for this LimitPerDayException.
-     *
+     * 
      * @return type
      */
-    public ExceptionType getType() {
+    public advcash.wsm.ExceptionType getType() {
         return type;
     }
 
 
     /**
      * Sets the type value for this LimitPerDayException.
-     *
+     * 
      * @param type
      */
-    public void setType(ExceptionType type) {
+    public void setType(advcash.wsm.ExceptionType type) {
         this.type = type;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof LimitPerDayException)) return false;
         LimitPerDayException other = (LimitPerDayException) obj;
         if (obj == null) return false;
@@ -97,14 +97,14 @@ public class LimitPerDayException  extends org.apache.axis.AxisFault  implements
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true &&
-            ((this.limitAmount==null && other.getLimitAmount()==null) ||
+        _equals = true && 
+            ((this.limitAmount==null && other.getLimitAmount()==null) || 
              (this.limitAmount!=null &&
               this.limitAmount.equals(other.getLimitAmount()))) &&
-            ((this.currency==null && other.getCurrency()==null) ||
+            ((this.currency==null && other.getCurrency()==null) || 
              (this.currency!=null &&
               this.currency.equals(other.getCurrency()))) &&
-            ((this.type==null && other.getType()==null) ||
+            ((this.type==null && other.getType()==null) || 
              (this.type!=null &&
               this.type.equals(other.getType())));
         __equalsCalc = null;
@@ -168,10 +168,10 @@ public class LimitPerDayException  extends org.apache.axis.AxisFault  implements
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -180,10 +180,10 @@ public class LimitPerDayException  extends org.apache.axis.AxisFault  implements
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

@@ -10,13 +10,13 @@ package advcash.wsm;
 public class WithdrawalThroughExternalPaymentSystemRequestDTO  implements java.io.Serializable {
     private java.math.BigDecimal amount;
 
-    private String comment;
+    private java.lang.String comment;
 
-    private Currency currency;
+    private advcash.wsm.Currency currency;
 
-    private ExternalSystemWithdrawalType externalPaymentSystem;
+    private advcash.wsm.ExternalSystemWithdrawalType externalPaymentSystem;
 
-    private String receiver;
+    private java.lang.String receiver;
 
     private boolean savePaymentTemplate;
 
@@ -25,10 +25,10 @@ public class WithdrawalThroughExternalPaymentSystemRequestDTO  implements java.i
 
     public WithdrawalThroughExternalPaymentSystemRequestDTO(
            java.math.BigDecimal amount,
-           String comment,
-           Currency currency,
-           ExternalSystemWithdrawalType externalPaymentSystem,
-           String receiver,
+           java.lang.String comment,
+           advcash.wsm.Currency currency,
+           advcash.wsm.ExternalSystemWithdrawalType externalPaymentSystem,
+           java.lang.String receiver,
            boolean savePaymentTemplate) {
            this.amount = amount;
            this.comment = comment;
@@ -41,7 +41,7 @@ public class WithdrawalThroughExternalPaymentSystemRequestDTO  implements java.i
 
     /**
      * Gets the amount value for this WithdrawalThroughExternalPaymentSystemRequestDTO.
-     *
+     * 
      * @return amount
      */
     public java.math.BigDecimal getAmount() {
@@ -51,7 +51,7 @@ public class WithdrawalThroughExternalPaymentSystemRequestDTO  implements java.i
 
     /**
      * Sets the amount value for this WithdrawalThroughExternalPaymentSystemRequestDTO.
-     *
+     * 
      * @param amount
      */
     public void setAmount(java.math.BigDecimal amount) {
@@ -61,87 +61,87 @@ public class WithdrawalThroughExternalPaymentSystemRequestDTO  implements java.i
 
     /**
      * Gets the comment value for this WithdrawalThroughExternalPaymentSystemRequestDTO.
-     *
+     * 
      * @return comment
      */
-    public String getComment() {
+    public java.lang.String getComment() {
         return comment;
     }
 
 
     /**
      * Sets the comment value for this WithdrawalThroughExternalPaymentSystemRequestDTO.
-     *
+     * 
      * @param comment
      */
-    public void setComment(String comment) {
+    public void setComment(java.lang.String comment) {
         this.comment = comment;
     }
 
 
     /**
      * Gets the currency value for this WithdrawalThroughExternalPaymentSystemRequestDTO.
-     *
+     * 
      * @return currency
      */
-    public Currency getCurrency() {
+    public advcash.wsm.Currency getCurrency() {
         return currency;
     }
 
 
     /**
      * Sets the currency value for this WithdrawalThroughExternalPaymentSystemRequestDTO.
-     *
+     * 
      * @param currency
      */
-    public void setCurrency(Currency currency) {
+    public void setCurrency(advcash.wsm.Currency currency) {
         this.currency = currency;
     }
 
 
     /**
      * Gets the externalPaymentSystem value for this WithdrawalThroughExternalPaymentSystemRequestDTO.
-     *
+     * 
      * @return externalPaymentSystem
      */
-    public ExternalSystemWithdrawalType getExternalPaymentSystem() {
+    public advcash.wsm.ExternalSystemWithdrawalType getExternalPaymentSystem() {
         return externalPaymentSystem;
     }
 
 
     /**
      * Sets the externalPaymentSystem value for this WithdrawalThroughExternalPaymentSystemRequestDTO.
-     *
+     * 
      * @param externalPaymentSystem
      */
-    public void setExternalPaymentSystem(ExternalSystemWithdrawalType externalPaymentSystem) {
+    public void setExternalPaymentSystem(advcash.wsm.ExternalSystemWithdrawalType externalPaymentSystem) {
         this.externalPaymentSystem = externalPaymentSystem;
     }
 
 
     /**
      * Gets the receiver value for this WithdrawalThroughExternalPaymentSystemRequestDTO.
-     *
+     * 
      * @return receiver
      */
-    public String getReceiver() {
+    public java.lang.String getReceiver() {
         return receiver;
     }
 
 
     /**
      * Sets the receiver value for this WithdrawalThroughExternalPaymentSystemRequestDTO.
-     *
+     * 
      * @param receiver
      */
-    public void setReceiver(String receiver) {
+    public void setReceiver(java.lang.String receiver) {
         this.receiver = receiver;
     }
 
 
     /**
      * Gets the savePaymentTemplate value for this WithdrawalThroughExternalPaymentSystemRequestDTO.
-     *
+     * 
      * @return savePaymentTemplate
      */
     public boolean isSavePaymentTemplate() {
@@ -151,15 +151,15 @@ public class WithdrawalThroughExternalPaymentSystemRequestDTO  implements java.i
 
     /**
      * Sets the savePaymentTemplate value for this WithdrawalThroughExternalPaymentSystemRequestDTO.
-     *
+     * 
      * @param savePaymentTemplate
      */
     public void setSavePaymentTemplate(boolean savePaymentTemplate) {
         this.savePaymentTemplate = savePaymentTemplate;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof WithdrawalThroughExternalPaymentSystemRequestDTO)) return false;
         WithdrawalThroughExternalPaymentSystemRequestDTO other = (WithdrawalThroughExternalPaymentSystemRequestDTO) obj;
         if (obj == null) return false;
@@ -169,20 +169,20 @@ public class WithdrawalThroughExternalPaymentSystemRequestDTO  implements java.i
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true &&
-            ((this.amount==null && other.getAmount()==null) ||
+        _equals = true && 
+            ((this.amount==null && other.getAmount()==null) || 
              (this.amount!=null &&
               this.amount.equals(other.getAmount()))) &&
-            ((this.comment==null && other.getComment()==null) ||
+            ((this.comment==null && other.getComment()==null) || 
              (this.comment!=null &&
               this.comment.equals(other.getComment()))) &&
-            ((this.currency==null && other.getCurrency()==null) ||
+            ((this.currency==null && other.getCurrency()==null) || 
              (this.currency!=null &&
               this.currency.equals(other.getCurrency()))) &&
-            ((this.externalPaymentSystem==null && other.getExternalPaymentSystem()==null) ||
+            ((this.externalPaymentSystem==null && other.getExternalPaymentSystem()==null) || 
              (this.externalPaymentSystem!=null &&
               this.externalPaymentSystem.equals(other.getExternalPaymentSystem()))) &&
-            ((this.receiver==null && other.getReceiver()==null) ||
+            ((this.receiver==null && other.getReceiver()==null) || 
              (this.receiver!=null &&
               this.receiver.equals(other.getReceiver()))) &&
             this.savePaymentTemplate == other.isSavePaymentTemplate();
@@ -277,10 +277,10 @@ public class WithdrawalThroughExternalPaymentSystemRequestDTO  implements java.i
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -289,10 +289,10 @@ public class WithdrawalThroughExternalPaymentSystemRequestDTO  implements java.i
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

@@ -8,48 +8,48 @@
 package advcash.wsm;
 
 public class TypeOfTransaction implements java.io.Serializable {
-    private String _value_;
+    private java.lang.String _value_;
     private static java.util.HashMap _table_ = new java.util.HashMap();
 
     // Constructor
-    protected TypeOfTransaction(String value) {
+    protected TypeOfTransaction(java.lang.String value) {
         _value_ = value;
         _table_.put(_value_,this);
     }
 
-    public static final String _TRANSFER_INNER_SYSTEM = "TRANSFER_INNER_SYSTEM";
-    public static final String _TRANSFER_INNER_ACCOUNT = "TRANSFER_INNER_ACCOUNT";
+    public static final java.lang.String _TRANSFER_INNER_SYSTEM = "TRANSFER_INNER_SYSTEM";
+    public static final java.lang.String _TRANSFER_INNER_ACCOUNT = "TRANSFER_INNER_ACCOUNT";
     public static final TypeOfTransaction TRANSFER_INNER_SYSTEM = new TypeOfTransaction(_TRANSFER_INNER_SYSTEM);
     public static final TypeOfTransaction TRANSFER_INNER_ACCOUNT = new TypeOfTransaction(_TRANSFER_INNER_ACCOUNT);
-    public String getValue() { return _value_;}
-    public static TypeOfTransaction fromValue(String value)
-          throws IllegalArgumentException {
+    public java.lang.String getValue() { return _value_;}
+    public static TypeOfTransaction fromValue(java.lang.String value)
+          throws java.lang.IllegalArgumentException {
         TypeOfTransaction enumeration = (TypeOfTransaction)
             _table_.get(value);
-        if (enumeration==null) throw new IllegalArgumentException();
+        if (enumeration==null) throw new java.lang.IllegalArgumentException();
         return enumeration;
     }
-    public static TypeOfTransaction fromString(String value)
-          throws IllegalArgumentException {
+    public static TypeOfTransaction fromString(java.lang.String value)
+          throws java.lang.IllegalArgumentException {
         return fromValue(value);
     }
-    public boolean equals(Object obj) {return (obj == this);}
+    public boolean equals(java.lang.Object obj) {return (obj == this);}
     public int hashCode() { return toString().hashCode();}
-    public String toString() { return _value_;}
-    public Object readResolve() throws java.io.ObjectStreamException { return fromValue(_value_);}
+    public java.lang.String toString() { return _value_;}
+    public java.lang.Object readResolve() throws java.io.ObjectStreamException { return fromValue(_value_);}
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new org.apache.axis.encoding.ser.EnumSerializer(
             _javaType, _xmlType);
     }
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new org.apache.axis.encoding.ser.EnumDeserializer(
             _javaType, _xmlType);
     }

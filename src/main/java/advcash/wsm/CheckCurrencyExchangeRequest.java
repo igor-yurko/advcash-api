@@ -8,25 +8,25 @@
 package advcash.wsm;
 
 public class CheckCurrencyExchangeRequest  implements java.io.Serializable {
-    private CurrencyExchangeAction action;
+    private advcash.wsm.CurrencyExchangeAction action;
 
     private java.math.BigDecimal amount;
 
-    private String depositMethod;
+    private java.lang.String depositMethod;
 
-    private String from;
+    private java.lang.String from;
 
-    private String to;
+    private java.lang.String to;
 
     public CheckCurrencyExchangeRequest() {
     }
 
     public CheckCurrencyExchangeRequest(
-           CurrencyExchangeAction action,
+           advcash.wsm.CurrencyExchangeAction action,
            java.math.BigDecimal amount,
-           String depositMethod,
-           String from,
-           String to) {
+           java.lang.String depositMethod,
+           java.lang.String from,
+           java.lang.String to) {
            this.action = action;
            this.amount = amount;
            this.depositMethod = depositMethod;
@@ -37,27 +37,27 @@ public class CheckCurrencyExchangeRequest  implements java.io.Serializable {
 
     /**
      * Gets the action value for this CheckCurrencyExchangeRequest.
-     *
+     * 
      * @return action
      */
-    public CurrencyExchangeAction getAction() {
+    public advcash.wsm.CurrencyExchangeAction getAction() {
         return action;
     }
 
 
     /**
      * Sets the action value for this CheckCurrencyExchangeRequest.
-     *
+     * 
      * @param action
      */
-    public void setAction(CurrencyExchangeAction action) {
+    public void setAction(advcash.wsm.CurrencyExchangeAction action) {
         this.action = action;
     }
 
 
     /**
      * Gets the amount value for this CheckCurrencyExchangeRequest.
-     *
+     * 
      * @return amount
      */
     public java.math.BigDecimal getAmount() {
@@ -67,7 +67,7 @@ public class CheckCurrencyExchangeRequest  implements java.io.Serializable {
 
     /**
      * Sets the amount value for this CheckCurrencyExchangeRequest.
-     *
+     * 
      * @param amount
      */
     public void setAmount(java.math.BigDecimal amount) {
@@ -77,65 +77,65 @@ public class CheckCurrencyExchangeRequest  implements java.io.Serializable {
 
     /**
      * Gets the depositMethod value for this CheckCurrencyExchangeRequest.
-     *
+     * 
      * @return depositMethod
      */
-    public String getDepositMethod() {
+    public java.lang.String getDepositMethod() {
         return depositMethod;
     }
 
 
     /**
      * Sets the depositMethod value for this CheckCurrencyExchangeRequest.
-     *
+     * 
      * @param depositMethod
      */
-    public void setDepositMethod(String depositMethod) {
+    public void setDepositMethod(java.lang.String depositMethod) {
         this.depositMethod = depositMethod;
     }
 
 
     /**
      * Gets the from value for this CheckCurrencyExchangeRequest.
-     *
+     * 
      * @return from
      */
-    public String getFrom() {
+    public java.lang.String getFrom() {
         return from;
     }
 
 
     /**
      * Sets the from value for this CheckCurrencyExchangeRequest.
-     *
+     * 
      * @param from
      */
-    public void setFrom(String from) {
+    public void setFrom(java.lang.String from) {
         this.from = from;
     }
 
 
     /**
      * Gets the to value for this CheckCurrencyExchangeRequest.
-     *
+     * 
      * @return to
      */
-    public String getTo() {
+    public java.lang.String getTo() {
         return to;
     }
 
 
     /**
      * Sets the to value for this CheckCurrencyExchangeRequest.
-     *
+     * 
      * @param to
      */
-    public void setTo(String to) {
+    public void setTo(java.lang.String to) {
         this.to = to;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof CheckCurrencyExchangeRequest)) return false;
         CheckCurrencyExchangeRequest other = (CheckCurrencyExchangeRequest) obj;
         if (obj == null) return false;
@@ -145,20 +145,20 @@ public class CheckCurrencyExchangeRequest  implements java.io.Serializable {
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true &&
-            ((this.action==null && other.getAction()==null) ||
+        _equals = true && 
+            ((this.action==null && other.getAction()==null) || 
              (this.action!=null &&
               this.action.equals(other.getAction()))) &&
-            ((this.amount==null && other.getAmount()==null) ||
+            ((this.amount==null && other.getAmount()==null) || 
              (this.amount!=null &&
               this.amount.equals(other.getAmount()))) &&
-            ((this.depositMethod==null && other.getDepositMethod()==null) ||
+            ((this.depositMethod==null && other.getDepositMethod()==null) || 
              (this.depositMethod!=null &&
               this.depositMethod.equals(other.getDepositMethod()))) &&
-            ((this.from==null && other.getFrom()==null) ||
+            ((this.from==null && other.getFrom()==null) || 
              (this.from!=null &&
               this.from.equals(other.getFrom()))) &&
-            ((this.to==null && other.getTo()==null) ||
+            ((this.to==null && other.getTo()==null) || 
              (this.to!=null &&
               this.to.equals(other.getTo())));
         __equalsCalc = null;
@@ -245,10 +245,10 @@ public class CheckCurrencyExchangeRequest  implements java.io.Serializable {
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -257,10 +257,10 @@ public class CheckCurrencyExchangeRequest  implements java.io.Serializable {
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

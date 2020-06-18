@@ -8,16 +8,16 @@
 package advcash.wsm;
 
 public abstract class SendMoneyToMarketResultHolder  implements java.io.Serializable {
-    private String coupon;
+    private java.lang.String coupon;
 
-    private String id;
+    private java.lang.String id;
 
     public SendMoneyToMarketResultHolder() {
     }
 
     public SendMoneyToMarketResultHolder(
-           String coupon,
-           String id) {
+           java.lang.String coupon,
+           java.lang.String id) {
            this.coupon = coupon;
            this.id = id;
     }
@@ -25,45 +25,45 @@ public abstract class SendMoneyToMarketResultHolder  implements java.io.Serializ
 
     /**
      * Gets the coupon value for this SendMoneyToMarketResultHolder.
-     *
+     * 
      * @return coupon
      */
-    public String getCoupon() {
+    public java.lang.String getCoupon() {
         return coupon;
     }
 
 
     /**
      * Sets the coupon value for this SendMoneyToMarketResultHolder.
-     *
+     * 
      * @param coupon
      */
-    public void setCoupon(String coupon) {
+    public void setCoupon(java.lang.String coupon) {
         this.coupon = coupon;
     }
 
 
     /**
      * Gets the id value for this SendMoneyToMarketResultHolder.
-     *
+     * 
      * @return id
      */
-    public String getId() {
+    public java.lang.String getId() {
         return id;
     }
 
 
     /**
      * Sets the id value for this SendMoneyToMarketResultHolder.
-     *
+     * 
      * @param id
      */
-    public void setId(String id) {
+    public void setId(java.lang.String id) {
         this.id = id;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof SendMoneyToMarketResultHolder)) return false;
         SendMoneyToMarketResultHolder other = (SendMoneyToMarketResultHolder) obj;
         if (obj == null) return false;
@@ -73,11 +73,11 @@ public abstract class SendMoneyToMarketResultHolder  implements java.io.Serializ
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true &&
-            ((this.coupon==null && other.getCoupon()==null) ||
+        _equals = true && 
+            ((this.coupon==null && other.getCoupon()==null) || 
              (this.coupon!=null &&
               this.coupon.equals(other.getCoupon()))) &&
-            ((this.id==null && other.getId()==null) ||
+            ((this.id==null && other.getId()==null) || 
              (this.id!=null &&
               this.id.equals(other.getId())));
         __equalsCalc = null;
@@ -134,10 +134,10 @@ public abstract class SendMoneyToMarketResultHolder  implements java.io.Serializ
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -146,10 +146,10 @@ public abstract class SendMoneyToMarketResultHolder  implements java.io.Serializ
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

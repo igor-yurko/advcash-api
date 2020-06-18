@@ -7,31 +7,31 @@
 
 package advcash.wsm;
 
-public class CreateCryptoCurrencyInvoiceResult  extends CreateCryptoCurrencyInvoiceRequest  implements java.io.Serializable {
-    private String address;
+public class CreateCryptoCurrencyInvoiceResult  extends advcash.wsm.CreateCryptoCurrencyInvoiceRequest  implements java.io.Serializable {
+    private java.lang.String address;
 
-    private String addressOldFormat;
+    private java.lang.String addressOldFormat;
 
     private java.math.BigDecimal cryptoCurrencyAmount;
 
-    private String destinationTag;
+    private java.lang.String destinationTag;
 
     public CreateCryptoCurrencyInvoiceResult() {
     }
 
     public CreateCryptoCurrencyInvoiceResult(
            java.math.BigDecimal amount,
-           Currency currency,
-           String note,
-           Boolean savePaymentTemplate,
-           CoinName coinName,
-           String orderId,
-           String sciName,
-           String subMerchantURL,
-           String address,
-           String addressOldFormat,
+           advcash.wsm.Currency currency,
+           java.lang.String note,
+           java.lang.Boolean savePaymentTemplate,
+           advcash.wsm.CoinName coinName,
+           java.lang.String orderId,
+           java.lang.String sciName,
+           java.lang.String subMerchantURL,
+           java.lang.String address,
+           java.lang.String addressOldFormat,
            java.math.BigDecimal cryptoCurrencyAmount,
-           String destinationTag) {
+           java.lang.String destinationTag) {
         super(
             amount,
             currency,
@@ -50,47 +50,47 @@ public class CreateCryptoCurrencyInvoiceResult  extends CreateCryptoCurrencyInvo
 
     /**
      * Gets the address value for this CreateCryptoCurrencyInvoiceResult.
-     *
+     * 
      * @return address
      */
-    public String getAddress() {
+    public java.lang.String getAddress() {
         return address;
     }
 
 
     /**
      * Sets the address value for this CreateCryptoCurrencyInvoiceResult.
-     *
+     * 
      * @param address
      */
-    public void setAddress(String address) {
+    public void setAddress(java.lang.String address) {
         this.address = address;
     }
 
 
     /**
      * Gets the addressOldFormat value for this CreateCryptoCurrencyInvoiceResult.
-     *
+     * 
      * @return addressOldFormat
      */
-    public String getAddressOldFormat() {
+    public java.lang.String getAddressOldFormat() {
         return addressOldFormat;
     }
 
 
     /**
      * Sets the addressOldFormat value for this CreateCryptoCurrencyInvoiceResult.
-     *
+     * 
      * @param addressOldFormat
      */
-    public void setAddressOldFormat(String addressOldFormat) {
+    public void setAddressOldFormat(java.lang.String addressOldFormat) {
         this.addressOldFormat = addressOldFormat;
     }
 
 
     /**
      * Gets the cryptoCurrencyAmount value for this CreateCryptoCurrencyInvoiceResult.
-     *
+     * 
      * @return cryptoCurrencyAmount
      */
     public java.math.BigDecimal getCryptoCurrencyAmount() {
@@ -100,7 +100,7 @@ public class CreateCryptoCurrencyInvoiceResult  extends CreateCryptoCurrencyInvo
 
     /**
      * Sets the cryptoCurrencyAmount value for this CreateCryptoCurrencyInvoiceResult.
-     *
+     * 
      * @param cryptoCurrencyAmount
      */
     public void setCryptoCurrencyAmount(java.math.BigDecimal cryptoCurrencyAmount) {
@@ -110,25 +110,25 @@ public class CreateCryptoCurrencyInvoiceResult  extends CreateCryptoCurrencyInvo
 
     /**
      * Gets the destinationTag value for this CreateCryptoCurrencyInvoiceResult.
-     *
+     * 
      * @return destinationTag
      */
-    public String getDestinationTag() {
+    public java.lang.String getDestinationTag() {
         return destinationTag;
     }
 
 
     /**
      * Sets the destinationTag value for this CreateCryptoCurrencyInvoiceResult.
-     *
+     * 
      * @param destinationTag
      */
-    public void setDestinationTag(String destinationTag) {
+    public void setDestinationTag(java.lang.String destinationTag) {
         this.destinationTag = destinationTag;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof CreateCryptoCurrencyInvoiceResult)) return false;
         CreateCryptoCurrencyInvoiceResult other = (CreateCryptoCurrencyInvoiceResult) obj;
         if (obj == null) return false;
@@ -138,17 +138,17 @@ public class CreateCryptoCurrencyInvoiceResult  extends CreateCryptoCurrencyInvo
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = super.equals(obj) &&
-            ((this.address==null && other.getAddress()==null) ||
+        _equals = super.equals(obj) && 
+            ((this.address==null && other.getAddress()==null) || 
              (this.address!=null &&
               this.address.equals(other.getAddress()))) &&
-            ((this.addressOldFormat==null && other.getAddressOldFormat()==null) ||
+            ((this.addressOldFormat==null && other.getAddressOldFormat()==null) || 
              (this.addressOldFormat!=null &&
               this.addressOldFormat.equals(other.getAddressOldFormat()))) &&
-            ((this.cryptoCurrencyAmount==null && other.getCryptoCurrencyAmount()==null) ||
+            ((this.cryptoCurrencyAmount==null && other.getCryptoCurrencyAmount()==null) || 
              (this.cryptoCurrencyAmount!=null &&
               this.cryptoCurrencyAmount.equals(other.getCryptoCurrencyAmount()))) &&
-            ((this.destinationTag==null && other.getDestinationTag()==null) ||
+            ((this.destinationTag==null && other.getDestinationTag()==null) || 
              (this.destinationTag!=null &&
               this.destinationTag.equals(other.getDestinationTag())));
         __equalsCalc = null;
@@ -225,10 +225,10 @@ public class CreateCryptoCurrencyInvoiceResult  extends CreateCryptoCurrencyInvo
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -237,10 +237,10 @@ public class CreateCryptoCurrencyInvoiceResult  extends CreateCryptoCurrencyInvo
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

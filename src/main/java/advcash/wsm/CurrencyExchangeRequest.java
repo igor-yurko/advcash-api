@@ -7,24 +7,24 @@
 
 package advcash.wsm;
 
-public class CurrencyExchangeRequest  extends MoneyRequest  implements java.io.Serializable {
-    private CurrencyExchangeAction action;
+public class CurrencyExchangeRequest  extends advcash.wsm.MoneyRequest  implements java.io.Serializable {
+    private advcash.wsm.CurrencyExchangeAction action;
 
-    private Currency from;
+    private advcash.wsm.Currency from;
 
-    private Currency to;
+    private advcash.wsm.Currency to;
 
     public CurrencyExchangeRequest() {
     }
 
     public CurrencyExchangeRequest(
            java.math.BigDecimal amount,
-           Currency currency,
-           String note,
-           Boolean savePaymentTemplate,
-           CurrencyExchangeAction action,
-           Currency from,
-           Currency to) {
+           advcash.wsm.Currency currency,
+           java.lang.String note,
+           java.lang.Boolean savePaymentTemplate,
+           advcash.wsm.CurrencyExchangeAction action,
+           advcash.wsm.Currency from,
+           advcash.wsm.Currency to) {
         super(
             amount,
             currency,
@@ -38,65 +38,65 @@ public class CurrencyExchangeRequest  extends MoneyRequest  implements java.io.S
 
     /**
      * Gets the action value for this CurrencyExchangeRequest.
-     *
+     * 
      * @return action
      */
-    public CurrencyExchangeAction getAction() {
+    public advcash.wsm.CurrencyExchangeAction getAction() {
         return action;
     }
 
 
     /**
      * Sets the action value for this CurrencyExchangeRequest.
-     *
+     * 
      * @param action
      */
-    public void setAction(CurrencyExchangeAction action) {
+    public void setAction(advcash.wsm.CurrencyExchangeAction action) {
         this.action = action;
     }
 
 
     /**
      * Gets the from value for this CurrencyExchangeRequest.
-     *
+     * 
      * @return from
      */
-    public Currency getFrom() {
+    public advcash.wsm.Currency getFrom() {
         return from;
     }
 
 
     /**
      * Sets the from value for this CurrencyExchangeRequest.
-     *
+     * 
      * @param from
      */
-    public void setFrom(Currency from) {
+    public void setFrom(advcash.wsm.Currency from) {
         this.from = from;
     }
 
 
     /**
      * Gets the to value for this CurrencyExchangeRequest.
-     *
+     * 
      * @return to
      */
-    public Currency getTo() {
+    public advcash.wsm.Currency getTo() {
         return to;
     }
 
 
     /**
      * Sets the to value for this CurrencyExchangeRequest.
-     *
+     * 
      * @param to
      */
-    public void setTo(Currency to) {
+    public void setTo(advcash.wsm.Currency to) {
         this.to = to;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof CurrencyExchangeRequest)) return false;
         CurrencyExchangeRequest other = (CurrencyExchangeRequest) obj;
         if (obj == null) return false;
@@ -106,14 +106,14 @@ public class CurrencyExchangeRequest  extends MoneyRequest  implements java.io.S
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = super.equals(obj) &&
-            ((this.action==null && other.getAction()==null) ||
+        _equals = super.equals(obj) && 
+            ((this.action==null && other.getAction()==null) || 
              (this.action!=null &&
               this.action.equals(other.getAction()))) &&
-            ((this.from==null && other.getFrom()==null) ||
+            ((this.from==null && other.getFrom()==null) || 
              (this.from!=null &&
               this.from.equals(other.getFrom()))) &&
-            ((this.to==null && other.getTo()==null) ||
+            ((this.to==null && other.getTo()==null) || 
              (this.to!=null &&
               this.to.equals(other.getTo())));
         __equalsCalc = null;
@@ -180,10 +180,10 @@ public class CurrencyExchangeRequest  extends MoneyRequest  implements java.io.S
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -192,10 +192,10 @@ public class CurrencyExchangeRequest  extends MoneyRequest  implements java.io.S
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

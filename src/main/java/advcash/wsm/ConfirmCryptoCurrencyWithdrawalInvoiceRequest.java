@@ -8,19 +8,19 @@
 package advcash.wsm;
 
 public class ConfirmCryptoCurrencyWithdrawalInvoiceRequest  implements java.io.Serializable {
-    private String destinationTag;
+    private java.lang.String destinationTag;
 
-    private String invoiceId;
+    private java.lang.String invoiceId;
 
-    private String receiver;
+    private java.lang.String receiver;
 
     public ConfirmCryptoCurrencyWithdrawalInvoiceRequest() {
     }
 
     public ConfirmCryptoCurrencyWithdrawalInvoiceRequest(
-           String destinationTag,
-           String invoiceId,
-           String receiver) {
+           java.lang.String destinationTag,
+           java.lang.String invoiceId,
+           java.lang.String receiver) {
            this.destinationTag = destinationTag;
            this.invoiceId = invoiceId;
            this.receiver = receiver;
@@ -29,65 +29,65 @@ public class ConfirmCryptoCurrencyWithdrawalInvoiceRequest  implements java.io.S
 
     /**
      * Gets the destinationTag value for this ConfirmCryptoCurrencyWithdrawalInvoiceRequest.
-     *
+     * 
      * @return destinationTag
      */
-    public String getDestinationTag() {
+    public java.lang.String getDestinationTag() {
         return destinationTag;
     }
 
 
     /**
      * Sets the destinationTag value for this ConfirmCryptoCurrencyWithdrawalInvoiceRequest.
-     *
+     * 
      * @param destinationTag
      */
-    public void setDestinationTag(String destinationTag) {
+    public void setDestinationTag(java.lang.String destinationTag) {
         this.destinationTag = destinationTag;
     }
 
 
     /**
      * Gets the invoiceId value for this ConfirmCryptoCurrencyWithdrawalInvoiceRequest.
-     *
+     * 
      * @return invoiceId
      */
-    public String getInvoiceId() {
+    public java.lang.String getInvoiceId() {
         return invoiceId;
     }
 
 
     /**
      * Sets the invoiceId value for this ConfirmCryptoCurrencyWithdrawalInvoiceRequest.
-     *
+     * 
      * @param invoiceId
      */
-    public void setInvoiceId(String invoiceId) {
+    public void setInvoiceId(java.lang.String invoiceId) {
         this.invoiceId = invoiceId;
     }
 
 
     /**
      * Gets the receiver value for this ConfirmCryptoCurrencyWithdrawalInvoiceRequest.
-     *
+     * 
      * @return receiver
      */
-    public String getReceiver() {
+    public java.lang.String getReceiver() {
         return receiver;
     }
 
 
     /**
      * Sets the receiver value for this ConfirmCryptoCurrencyWithdrawalInvoiceRequest.
-     *
+     * 
      * @param receiver
      */
-    public void setReceiver(String receiver) {
+    public void setReceiver(java.lang.String receiver) {
         this.receiver = receiver;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof ConfirmCryptoCurrencyWithdrawalInvoiceRequest)) return false;
         ConfirmCryptoCurrencyWithdrawalInvoiceRequest other = (ConfirmCryptoCurrencyWithdrawalInvoiceRequest) obj;
         if (obj == null) return false;
@@ -97,14 +97,14 @@ public class ConfirmCryptoCurrencyWithdrawalInvoiceRequest  implements java.io.S
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true &&
-            ((this.destinationTag==null && other.getDestinationTag()==null) ||
+        _equals = true && 
+            ((this.destinationTag==null && other.getDestinationTag()==null) || 
              (this.destinationTag!=null &&
               this.destinationTag.equals(other.getDestinationTag()))) &&
-            ((this.invoiceId==null && other.getInvoiceId()==null) ||
+            ((this.invoiceId==null && other.getInvoiceId()==null) || 
              (this.invoiceId!=null &&
               this.invoiceId.equals(other.getInvoiceId()))) &&
-            ((this.receiver==null && other.getReceiver()==null) ||
+            ((this.receiver==null && other.getReceiver()==null) || 
              (this.receiver!=null &&
               this.receiver.equals(other.getReceiver())));
         __equalsCalc = null;
@@ -171,10 +171,10 @@ public class ConfirmCryptoCurrencyWithdrawalInvoiceRequest  implements java.io.S
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -183,10 +183,10 @@ public class ConfirmCryptoCurrencyWithdrawalInvoiceRequest  implements java.io.S
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

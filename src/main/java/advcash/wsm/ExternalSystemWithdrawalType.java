@@ -8,143 +8,143 @@
 package advcash.wsm;
 
 public class ExternalSystemWithdrawalType implements java.io.Serializable {
-    private String _value_;
+    private java.lang.String _value_;
     private static java.util.HashMap _table_ = new java.util.HashMap();
 
     // Constructor
-    protected ExternalSystemWithdrawalType(String value) {
+    protected ExternalSystemWithdrawalType(java.lang.String value) {
         _value_ = value;
         _table_.put(_value_,this);
     }
 
-    public static final String _OK_PAY_ELECTRONIC_MONEY = "OK_PAY_ELECTRONIC_MONEY";
-    public static final String _PERFECT_MONEY_ELECTRONIC_MONEY = "PERFECT_MONEY_ELECTRONIC_MONEY";
-    public static final String _EGO_PAY_ELECTRONIC_MONEY = "EGO_PAY_ELECTRONIC_MONEY";
-    public static final String _PAXUM_ELECTRONIC_MONEY = "PAXUM_ELECTRONIC_MONEY";
-    public static final String _YANDEX_ELECTRONIC_MONEY = "YANDEX_ELECTRONIC_MONEY";
-    public static final String _PAYEER_ELECTRONIC_MONEY = "PAYEER_ELECTRONIC_MONEY";
-    public static final String _EXMO_BITCOIN_ELECTRONIC_MONEY = "EXMO_BITCOIN_ELECTRONIC_MONEY";
-    public static final String _COINBASE_ELECTRONIC_MONEY = "COINBASE_ELECTRONIC_MONEY";
-    public static final String _KITPS_PAYMENT_SYSTEM = "KITPS_PAYMENT_SYSTEM";
-    public static final String _TEST_PAYMENT_SYSTEM = "TEST_PAYMENT_SYSTEM";
-    public static final String _BTC_E_BITCOIN_ELECTRONIC_MONEY = "BTC_E_BITCOIN_ELECTRONIC_MONEY";
-    public static final String _NETEX_WEB_MONEY_ELECTRONIC_MONEY = "NETEX_WEB_MONEY_ELECTRONIC_MONEY";
-    public static final String _BTC_E_ELECTRONIC_MONEY = "BTC_E_ELECTRONIC_MONEY";
-    public static final String _EXMO_ELECTRONIC_MONEY = "EXMO_ELECTRONIC_MONEY";
-    public static final String _ECOIN_ELECTRONIC_MONEY = "ECOIN_ELECTRONIC_MONEY";
-    public static final String _CAPITALIST_ELECTRONIC_MONEY = "CAPITALIST_ELECTRONIC_MONEY";
-    public static final String _MONETARU_RUSSIAN_BANK_CARD = "MONETARU_RUSSIAN_BANK_CARD";
-    public static final String _MONETARU_QIWI = "MONETARU_QIWI";
-    public static final String _INTERKASSA_UKRAINIAN_BANK_CARD = "INTERKASSA_UKRAINIAN_BANK_CARD";
-    public static final String _BITOK_ELECTRONIC_MONEY = "BITOK_ELECTRONIC_MONEY";
-    public static final String _PAYZA_ELECTRONIC_MONEY = "PAYZA_ELECTRONIC_MONEY";
-    public static final String _EPESE_ELECTRONIC_MONEY = "EPESE_ELECTRONIC_MONEY";
-    public static final String _PAYBOX_KZ_KAZAKHSTANI_BANK_CARD = "PAYBOX_KZ_KAZAKHSTANI_BANK_CARD";
-    public static final String _QIWI_ELECTRONIC_MONEY = "QIWI_ELECTRONIC_MONEY";
-    public static final String _QIWI_BANK_CARD = "QIWI_BANK_CARD";
-    public static final String _CREDIT_PILOT_RU_CARD = "CREDIT_PILOT_RU_CARD";
-    public static final String _CREDIT_PILOT_RU_BANK = "CREDIT_PILOT_RU_BANK";
-    public static final String _CREDIT_PILOT_WALLET_ONE = "CREDIT_PILOT_WALLET_ONE";
-    public static final String _CREDIT_PILOT_SERVICES_OTHER = "CREDIT_PILOT_SERVICES_OTHER";
-    public static final String _CREDIT_PILOT_SERVICES_BANK_PAYMENTS = "CREDIT_PILOT_SERVICES_BANK_PAYMENTS";
-    public static final String _CREDIT_PILOT_SERVICES_MOBILE_SERVICES = "CREDIT_PILOT_SERVICES_MOBILE_SERVICES";
-    public static final String _CREDIT_PILOT_SERVICES_TAXI = "CREDIT_PILOT_SERVICES_TAXI";
-    public static final String _CREDIT_PILOT_SERVICES_GAMES = "CREDIT_PILOT_SERVICES_GAMES";
-    public static final String _CREDIT_PILOT_SERVICES_INTERNET_TV_TELECOM = "CREDIT_PILOT_SERVICES_INTERNET_TV_TELECOM";
-    public static final String _CREDIT_PILOT_SERVICES_E_COMMERCE = "CREDIT_PILOT_SERVICES_E_COMMERCE";
-    public static final String _CREDIT_PILOT_SERVICES_UTILITY_BILLS = "CREDIT_PILOT_SERVICES_UTILITY_BILLS";
-    public static final String _CREDIT_PILOT_SERVICES_MICROFINANCE_ORGANIZATIONS = "CREDIT_PILOT_SERVICES_MICROFINANCE_ORGANIZATIONS";
-    public static final String _ADVCASH_VOUCHER = "ADVCASH_VOUCHER";
-    public static final String _WINPAY_BANK_CARD = "WINPAY_BANK_CARD";
-    public static final String _WINPAY_BANK_CARD_MONEYSWAP = "WINPAY_BANK_CARD_MONEYSWAP";
-    public static final String _WINPAY_BANK_CARD_ROLLING_RESERVE = "WINPAY_BANK_CARD_ROLLING_RESERVE";
-    public static final String _BIT_ONE_LOCAL_BANK_TRANSFER = "BIT_ONE_LOCAL_BANK_TRANSFER";
-    public static final String _BTC_E_ETHEREUM_ELECTRONIC_MONEY = "BTC_E_ETHEREUM_ELECTRONIC_MONEY";
-    public static final String _EPAY_ELECTRONIC_MONEY = "EPAY_ELECTRONIC_MONEY";
-    public static final String _YANDEX_CASSA_ELECTRONIC_MONEY = "YANDEX_CASSA_ELECTRONIC_MONEY";
-    public static final String _ECOIN_VOUCHER_ELECTRONIC_MONEY = "ECOIN_VOUCHER_ELECTRONIC_MONEY";
-    public static final String _PAYBOX_KZ_CASH_BY_CODE = "PAYBOX_KZ_CASH_BY_CODE";
-    public static final String _WEX_ELECTRONIC_MONEY = "WEX_ELECTRONIC_MONEY";
-    public static final String _WEX_BITCOIN_ELECTRONIC_MONEY = "WEX_BITCOIN_ELECTRONIC_MONEY";
-    public static final String _WEX_ETHEREUM_ELECTRONIC_MONEY = "WEX_ETHEREUM_ELECTRONIC_MONEY";
-    public static final String _WEX_BITCOIN_CASH_ELECTRONIC_MONEY = "WEX_BITCOIN_CASH_ELECTRONIC_MONEY";
-    public static final String _WINPAY_MOBILE = "WINPAY_MOBILE";
-    public static final String _WINPAY_QIWI = "WINPAY_QIWI";
-    public static final String _WINPAY_YANDEX = "WINPAY_YANDEX";
-    public static final String _FIO_SEPA = "FIO_SEPA";
-    public static final String _EXMO_ETHEREUM_ELECTRONIC_MONEY = "EXMO_ETHEREUM_ELECTRONIC_MONEY";
-    public static final String _EXMO_BITCOIN_CASH_ELECTRONIC_MONEY = "EXMO_BITCOIN_CASH_ELECTRONIC_MONEY";
-    public static final String _BITFINEX_BITCOIN_ELECTRONIC_MONEY = "BITFINEX_BITCOIN_ELECTRONIC_MONEY";
-    public static final String _NORDPAY_SEPA = "NORDPAY_SEPA";
-    public static final String _MAJESTIC_SEPA = "MAJESTIC_SEPA";
-    public static final String _INTERKASSA_YANDEX = "INTERKASSA_YANDEX";
-    public static final String _BITFINEX_LITECOIN_ELECTRONIC_MONEY = "BITFINEX_LITECOIN_ELECTRONIC_MONEY";
-    public static final String _ASTROPAY_ARGENTINA_LOCAL_BANK_TRANSFER = "ASTROPAY_ARGENTINA_LOCAL_BANK_TRANSFER";
-    public static final String _ASTROPAY_CHILE_LOCAL_BANK_TRANSFER = "ASTROPAY_CHILE_LOCAL_BANK_TRANSFER";
-    public static final String _ASTROPAY_BRAZIL_LOCAL_BANK_TRANSFER = "ASTROPAY_BRAZIL_LOCAL_BANK_TRANSFER";
-    public static final String _ASTROPAY_COLOMBIA_LOCAL_BANK_TRANSFER = "ASTROPAY_COLOMBIA_LOCAL_BANK_TRANSFER";
-    public static final String _ASTROPAY_MEXICO_LOCAL_BANK_TRANSFER = "ASTROPAY_MEXICO_LOCAL_BANK_TRANSFER";
-    public static final String _ASTROPAY_PERU_LOCAL_BANK_TRANSFER = "ASTROPAY_PERU_LOCAL_BANK_TRANSFER";
-    public static final String _ASTROPAY_URUGUAY_LOCAL_BANK_TRANSFER = "ASTROPAY_URUGUAY_LOCAL_BANK_TRANSFER";
-    public static final String _ASTROPAY_CHINA_LOCAL_BANK_TRANSFER = "ASTROPAY_CHINA_LOCAL_BANK_TRANSFER";
-    public static final String _CREDIT_PILOT_YANDEX = "CREDIT_PILOT_YANDEX";
-    public static final String _NORDPAY_SWIFT = "NORDPAY_SWIFT";
-    public static final String _BITFINEX_BITCOIN_CASH_ELECTRONIC_MONEY = "BITFINEX_BITCOIN_CASH_ELECTRONIC_MONEY";
-    public static final String _BITFINEX_RIPPLE_ELECTRONIC_MONEY = "BITFINEX_RIPPLE_ELECTRONIC_MONEY";
-    public static final String _BITFINEX_ETHEREUM_ELECTRONIC_MONEY = "BITFINEX_ETHEREUM_ELECTRONIC_MONEY";
-    public static final String _BITFINEX_ZCASH_ELECTRONIC_MONEY = "BITFINEX_ZCASH_ELECTRONIC_MONEY";
-    public static final String _OKLINK_INDONESIA_LOCAL_BANK_TRANSFER = "OKLINK_INDONESIA_LOCAL_BANK_TRANSFER";
-    public static final String _OKLINK_PHILIPPINES_LOCAL_BANK_TRANSFER = "OKLINK_PHILIPPINES_LOCAL_BANK_TRANSFER";
-    public static final String _OKLINK_THAILAND_LOCAL_BANK_TRANSFER = "OKLINK_THAILAND_LOCAL_BANK_TRANSFER";
-    public static final String _OKLINK_VIETNAM_LOCAL_BANK_TRANSFER = "OKLINK_VIETNAM_LOCAL_BANK_TRANSFER";
-    public static final String _OKLINK_AUSTRALIA_LOCAL_BANK_TRANSFER = "OKLINK_AUSTRALIA_LOCAL_BANK_TRANSFER";
-    public static final String _OKLINK_MALAYSIA_LOCAL_BANK_TRANSFER = "OKLINK_MALAYSIA_LOCAL_BANK_TRANSFER";
-    public static final String _RBK_BANK_CARD = "RBK_BANK_CARD";
-    public static final String _RBK_BANK_CARD_CRYPTO_NETTING = "RBK_BANK_CARD_CRYPTO_NETTING";
-    public static final String _NORDPAY_SWIFT_BUSINESS = "NORDPAY_SWIFT_BUSINESS";
-    public static final String _NORDPAY_SEPA_BUSINESS = "NORDPAY_SEPA_BUSINESS";
-    public static final String _MAJESTIC_SEPA_BUSINESS = "MAJESTIC_SEPA_BUSINESS";
-    public static final String _KRAKEN_BITCOIN_ELECTRONIC_MONEY = "KRAKEN_BITCOIN_ELECTRONIC_MONEY";
-    public static final String _KRAKEN_LITECOIN_ELECTRONIC_MONEY = "KRAKEN_LITECOIN_ELECTRONIC_MONEY";
-    public static final String _KRAKEN_BITCOIN_CASH_ELECTRONIC_MONEY = "KRAKEN_BITCOIN_CASH_ELECTRONIC_MONEY";
-    public static final String _KRAKEN_RIPPLE_ELECTRONIC_MONEY = "KRAKEN_RIPPLE_ELECTRONIC_MONEY";
-    public static final String _KRAKEN_ETHEREUM_ELECTRONIC_MONEY = "KRAKEN_ETHEREUM_ELECTRONIC_MONEY";
-    public static final String _KRAKEN_ZCASH_ELECTRONIC_MONEY = "KRAKEN_ZCASH_ELECTRONIC_MONEY";
-    public static final String _BITSTAMP_BITCOIN_ELECTRONIC_MONEY = "BITSTAMP_BITCOIN_ELECTRONIC_MONEY";
-    public static final String _BITSTAMP_LITECOIN_ELECTRONIC_MONEY = "BITSTAMP_LITECOIN_ELECTRONIC_MONEY";
-    public static final String _BITSTAMP_BITCOIN_CASH_ELECTRONIC_MONEY = "BITSTAMP_BITCOIN_CASH_ELECTRONIC_MONEY";
-    public static final String _BITSTAMP_RIPPLE_ELECTRONIC_MONEY = "BITSTAMP_RIPPLE_ELECTRONIC_MONEY";
-    public static final String _BITSTAMP_ETHEREUM_ELECTRONIC_MONEY = "BITSTAMP_ETHEREUM_ELECTRONIC_MONEY";
-    public static final String _BITTREX_BITCOIN_ELECTRONIC_MONEY = "BITTREX_BITCOIN_ELECTRONIC_MONEY";
-    public static final String _BITTREX_LITECOIN_ELECTRONIC_MONEY = "BITTREX_LITECOIN_ELECTRONIC_MONEY";
-    public static final String _BITTREX_BITCOIN_CASH_ELECTRONIC_MONEY = "BITTREX_BITCOIN_CASH_ELECTRONIC_MONEY";
-    public static final String _BITTREX_RIPPLE_ELECTRONIC_MONEY = "BITTREX_RIPPLE_ELECTRONIC_MONEY";
-    public static final String _BITTREX_ETHEREUM_ELECTRONIC_MONEY = "BITTREX_ETHEREUM_ELECTRONIC_MONEY";
-    public static final String _BITTREX_ZCASH_ELECTRONIC_MONEY = "BITTREX_ZCASH_ELECTRONIC_MONEY";
-    public static final String _OKCOIN_BITCOIN_ELECTRONIC_MONEY = "OKCOIN_BITCOIN_ELECTRONIC_MONEY";
-    public static final String _OKCOIN_LITECOIN_ELECTRONIC_MONEY = "OKCOIN_LITECOIN_ELECTRONIC_MONEY";
-    public static final String _OKCOIN_BITCOIN_CASH_ELECTRONIC_MONEY = "OKCOIN_BITCOIN_CASH_ELECTRONIC_MONEY";
-    public static final String _OKCOIN_RIPPLE_ELECTRONIC_MONEY = "OKCOIN_RIPPLE_ELECTRONIC_MONEY";
-    public static final String _OKCOIN_ETHEREUM_ELECTRONIC_MONEY = "OKCOIN_ETHEREUM_ELECTRONIC_MONEY";
-    public static final String _OKCOIN_ZCASH_ELECTRONIC_MONEY = "OKCOIN_ZCASH_ELECTRONIC_MONEY";
-    public static final String _BINANCE_BITCOIN_ELECTRONIC_MONEY = "BINANCE_BITCOIN_ELECTRONIC_MONEY";
-    public static final String _BINANCE_LITECOIN_ELECTRONIC_MONEY = "BINANCE_LITECOIN_ELECTRONIC_MONEY";
-    public static final String _BINANCE_BITCOIN_CASH_ELECTRONIC_MONEY = "BINANCE_BITCOIN_CASH_ELECTRONIC_MONEY";
-    public static final String _BINANCE_RIPPLE_ELECTRONIC_MONEY = "BINANCE_RIPPLE_ELECTRONIC_MONEY";
-    public static final String _BINANCE_ETHEREUM_ELECTRONIC_MONEY = "BINANCE_ETHEREUM_ELECTRONIC_MONEY";
-    public static final String _BINANCE_ZCASH_ELECTRONIC_MONEY = "BINANCE_ZCASH_ELECTRONIC_MONEY";
-    public static final String _WINPAY_BITCOIN_ELECTRONIC_MONEY = "WINPAY_BITCOIN_ELECTRONIC_MONEY";
-    public static final String _OKLINK_UAE_LOCAL_BANK_TRANSFER = "OKLINK_UAE_LOCAL_BANK_TRANSFER";
-    public static final String _OKLINK_CANADA_LOCAL_BANK_TRANSFER = "OKLINK_CANADA_LOCAL_BANK_TRANSFER";
-    public static final String _OKLINK_DOKU_ELECTRONIC_MONEY = "OKLINK_DOKU_ELECTRONIC_MONEY";
-    public static final String _OKLINK_VIMO_ELECTRONIC_MONEY = "OKLINK_VIMO_ELECTRONIC_MONEY";
-    public static final String _ROYAL_PAY_BANK_CARD = "ROYAL_PAY_BANK_CARD";
-    public static final String _ROYAL_PAY_ADV_PROJECT_BANK_CARD = "ROYAL_PAY_ADV_PROJECT_BANK_CARD";
-    public static final String _PAYSOFT_BANK_CARD = "PAYSOFT_BANK_CARD";
-    public static final String _BITFINEX_USDTETHER_ELECTRONIC_MONEY = "BITFINEX_USDTETHER_ELECTRONIC_MONEY";
-    public static final String _OKCOIN_USDTETHER_ELECTRONIC_MONEY = "OKCOIN_USDTETHER_ELECTRONIC_MONEY";
-    public static final String _EXMO_USDTETHER_ELECTRONIC_MONEY = "EXMO_USDTETHER_ELECTRONIC_MONEY";
-    public static final String _TALKBANK_WITHDRAWAL_TO_BANK_CARD = "TALKBANK_WITHDRAWAL_TO_BANK_CARD";
+    public static final java.lang.String _OK_PAY_ELECTRONIC_MONEY = "OK_PAY_ELECTRONIC_MONEY";
+    public static final java.lang.String _PERFECT_MONEY_ELECTRONIC_MONEY = "PERFECT_MONEY_ELECTRONIC_MONEY";
+    public static final java.lang.String _EGO_PAY_ELECTRONIC_MONEY = "EGO_PAY_ELECTRONIC_MONEY";
+    public static final java.lang.String _PAXUM_ELECTRONIC_MONEY = "PAXUM_ELECTRONIC_MONEY";
+    public static final java.lang.String _YANDEX_ELECTRONIC_MONEY = "YANDEX_ELECTRONIC_MONEY";
+    public static final java.lang.String _PAYEER_ELECTRONIC_MONEY = "PAYEER_ELECTRONIC_MONEY";
+    public static final java.lang.String _EXMO_BITCOIN_ELECTRONIC_MONEY = "EXMO_BITCOIN_ELECTRONIC_MONEY";
+    public static final java.lang.String _COINBASE_ELECTRONIC_MONEY = "COINBASE_ELECTRONIC_MONEY";
+    public static final java.lang.String _KITPS_PAYMENT_SYSTEM = "KITPS_PAYMENT_SYSTEM";
+    public static final java.lang.String _TEST_PAYMENT_SYSTEM = "TEST_PAYMENT_SYSTEM";
+    public static final java.lang.String _BTC_E_BITCOIN_ELECTRONIC_MONEY = "BTC_E_BITCOIN_ELECTRONIC_MONEY";
+    public static final java.lang.String _NETEX_WEB_MONEY_ELECTRONIC_MONEY = "NETEX_WEB_MONEY_ELECTRONIC_MONEY";
+    public static final java.lang.String _BTC_E_ELECTRONIC_MONEY = "BTC_E_ELECTRONIC_MONEY";
+    public static final java.lang.String _EXMO_ELECTRONIC_MONEY = "EXMO_ELECTRONIC_MONEY";
+    public static final java.lang.String _ECOIN_ELECTRONIC_MONEY = "ECOIN_ELECTRONIC_MONEY";
+    public static final java.lang.String _CAPITALIST_ELECTRONIC_MONEY = "CAPITALIST_ELECTRONIC_MONEY";
+    public static final java.lang.String _MONETARU_RUSSIAN_BANK_CARD = "MONETARU_RUSSIAN_BANK_CARD";
+    public static final java.lang.String _MONETARU_QIWI = "MONETARU_QIWI";
+    public static final java.lang.String _INTERKASSA_UKRAINIAN_BANK_CARD = "INTERKASSA_UKRAINIAN_BANK_CARD";
+    public static final java.lang.String _BITOK_ELECTRONIC_MONEY = "BITOK_ELECTRONIC_MONEY";
+    public static final java.lang.String _PAYZA_ELECTRONIC_MONEY = "PAYZA_ELECTRONIC_MONEY";
+    public static final java.lang.String _EPESE_ELECTRONIC_MONEY = "EPESE_ELECTRONIC_MONEY";
+    public static final java.lang.String _PAYBOX_KZ_KAZAKHSTANI_BANK_CARD = "PAYBOX_KZ_KAZAKHSTANI_BANK_CARD";
+    public static final java.lang.String _QIWI_ELECTRONIC_MONEY = "QIWI_ELECTRONIC_MONEY";
+    public static final java.lang.String _QIWI_BANK_CARD = "QIWI_BANK_CARD";
+    public static final java.lang.String _CREDIT_PILOT_RU_CARD = "CREDIT_PILOT_RU_CARD";
+    public static final java.lang.String _CREDIT_PILOT_RU_BANK = "CREDIT_PILOT_RU_BANK";
+    public static final java.lang.String _CREDIT_PILOT_WALLET_ONE = "CREDIT_PILOT_WALLET_ONE";
+    public static final java.lang.String _CREDIT_PILOT_SERVICES_OTHER = "CREDIT_PILOT_SERVICES_OTHER";
+    public static final java.lang.String _CREDIT_PILOT_SERVICES_BANK_PAYMENTS = "CREDIT_PILOT_SERVICES_BANK_PAYMENTS";
+    public static final java.lang.String _CREDIT_PILOT_SERVICES_MOBILE_SERVICES = "CREDIT_PILOT_SERVICES_MOBILE_SERVICES";
+    public static final java.lang.String _CREDIT_PILOT_SERVICES_TAXI = "CREDIT_PILOT_SERVICES_TAXI";
+    public static final java.lang.String _CREDIT_PILOT_SERVICES_GAMES = "CREDIT_PILOT_SERVICES_GAMES";
+    public static final java.lang.String _CREDIT_PILOT_SERVICES_INTERNET_TV_TELECOM = "CREDIT_PILOT_SERVICES_INTERNET_TV_TELECOM";
+    public static final java.lang.String _CREDIT_PILOT_SERVICES_E_COMMERCE = "CREDIT_PILOT_SERVICES_E_COMMERCE";
+    public static final java.lang.String _CREDIT_PILOT_SERVICES_UTILITY_BILLS = "CREDIT_PILOT_SERVICES_UTILITY_BILLS";
+    public static final java.lang.String _CREDIT_PILOT_SERVICES_MICROFINANCE_ORGANIZATIONS = "CREDIT_PILOT_SERVICES_MICROFINANCE_ORGANIZATIONS";
+    public static final java.lang.String _ADVCASH_VOUCHER = "ADVCASH_VOUCHER";
+    public static final java.lang.String _WINPAY_BANK_CARD = "WINPAY_BANK_CARD";
+    public static final java.lang.String _WINPAY_BANK_CARD_MONEYSWAP = "WINPAY_BANK_CARD_MONEYSWAP";
+    public static final java.lang.String _WINPAY_BANK_CARD_ROLLING_RESERVE = "WINPAY_BANK_CARD_ROLLING_RESERVE";
+    public static final java.lang.String _BIT_ONE_LOCAL_BANK_TRANSFER = "BIT_ONE_LOCAL_BANK_TRANSFER";
+    public static final java.lang.String _BTC_E_ETHEREUM_ELECTRONIC_MONEY = "BTC_E_ETHEREUM_ELECTRONIC_MONEY";
+    public static final java.lang.String _EPAY_ELECTRONIC_MONEY = "EPAY_ELECTRONIC_MONEY";
+    public static final java.lang.String _YANDEX_CASSA_ELECTRONIC_MONEY = "YANDEX_CASSA_ELECTRONIC_MONEY";
+    public static final java.lang.String _ECOIN_VOUCHER_ELECTRONIC_MONEY = "ECOIN_VOUCHER_ELECTRONIC_MONEY";
+    public static final java.lang.String _PAYBOX_KZ_CASH_BY_CODE = "PAYBOX_KZ_CASH_BY_CODE";
+    public static final java.lang.String _WEX_ELECTRONIC_MONEY = "WEX_ELECTRONIC_MONEY";
+    public static final java.lang.String _WEX_BITCOIN_ELECTRONIC_MONEY = "WEX_BITCOIN_ELECTRONIC_MONEY";
+    public static final java.lang.String _WEX_ETHEREUM_ELECTRONIC_MONEY = "WEX_ETHEREUM_ELECTRONIC_MONEY";
+    public static final java.lang.String _WEX_BITCOIN_CASH_ELECTRONIC_MONEY = "WEX_BITCOIN_CASH_ELECTRONIC_MONEY";
+    public static final java.lang.String _WINPAY_MOBILE = "WINPAY_MOBILE";
+    public static final java.lang.String _WINPAY_QIWI = "WINPAY_QIWI";
+    public static final java.lang.String _WINPAY_YANDEX = "WINPAY_YANDEX";
+    public static final java.lang.String _FIO_SEPA = "FIO_SEPA";
+    public static final java.lang.String _EXMO_ETHEREUM_ELECTRONIC_MONEY = "EXMO_ETHEREUM_ELECTRONIC_MONEY";
+    public static final java.lang.String _EXMO_BITCOIN_CASH_ELECTRONIC_MONEY = "EXMO_BITCOIN_CASH_ELECTRONIC_MONEY";
+    public static final java.lang.String _BITFINEX_BITCOIN_ELECTRONIC_MONEY = "BITFINEX_BITCOIN_ELECTRONIC_MONEY";
+    public static final java.lang.String _NORDPAY_SEPA = "NORDPAY_SEPA";
+    public static final java.lang.String _MAJESTIC_SEPA = "MAJESTIC_SEPA";
+    public static final java.lang.String _INTERKASSA_YANDEX = "INTERKASSA_YANDEX";
+    public static final java.lang.String _BITFINEX_LITECOIN_ELECTRONIC_MONEY = "BITFINEX_LITECOIN_ELECTRONIC_MONEY";
+    public static final java.lang.String _ASTROPAY_ARGENTINA_LOCAL_BANK_TRANSFER = "ASTROPAY_ARGENTINA_LOCAL_BANK_TRANSFER";
+    public static final java.lang.String _ASTROPAY_CHILE_LOCAL_BANK_TRANSFER = "ASTROPAY_CHILE_LOCAL_BANK_TRANSFER";
+    public static final java.lang.String _ASTROPAY_BRAZIL_LOCAL_BANK_TRANSFER = "ASTROPAY_BRAZIL_LOCAL_BANK_TRANSFER";
+    public static final java.lang.String _ASTROPAY_COLOMBIA_LOCAL_BANK_TRANSFER = "ASTROPAY_COLOMBIA_LOCAL_BANK_TRANSFER";
+    public static final java.lang.String _ASTROPAY_MEXICO_LOCAL_BANK_TRANSFER = "ASTROPAY_MEXICO_LOCAL_BANK_TRANSFER";
+    public static final java.lang.String _ASTROPAY_PERU_LOCAL_BANK_TRANSFER = "ASTROPAY_PERU_LOCAL_BANK_TRANSFER";
+    public static final java.lang.String _ASTROPAY_URUGUAY_LOCAL_BANK_TRANSFER = "ASTROPAY_URUGUAY_LOCAL_BANK_TRANSFER";
+    public static final java.lang.String _ASTROPAY_CHINA_LOCAL_BANK_TRANSFER = "ASTROPAY_CHINA_LOCAL_BANK_TRANSFER";
+    public static final java.lang.String _CREDIT_PILOT_YANDEX = "CREDIT_PILOT_YANDEX";
+    public static final java.lang.String _NORDPAY_SWIFT = "NORDPAY_SWIFT";
+    public static final java.lang.String _BITFINEX_BITCOIN_CASH_ELECTRONIC_MONEY = "BITFINEX_BITCOIN_CASH_ELECTRONIC_MONEY";
+    public static final java.lang.String _BITFINEX_RIPPLE_ELECTRONIC_MONEY = "BITFINEX_RIPPLE_ELECTRONIC_MONEY";
+    public static final java.lang.String _BITFINEX_ETHEREUM_ELECTRONIC_MONEY = "BITFINEX_ETHEREUM_ELECTRONIC_MONEY";
+    public static final java.lang.String _BITFINEX_ZCASH_ELECTRONIC_MONEY = "BITFINEX_ZCASH_ELECTRONIC_MONEY";
+    public static final java.lang.String _OKLINK_INDONESIA_LOCAL_BANK_TRANSFER = "OKLINK_INDONESIA_LOCAL_BANK_TRANSFER";
+    public static final java.lang.String _OKLINK_PHILIPPINES_LOCAL_BANK_TRANSFER = "OKLINK_PHILIPPINES_LOCAL_BANK_TRANSFER";
+    public static final java.lang.String _OKLINK_THAILAND_LOCAL_BANK_TRANSFER = "OKLINK_THAILAND_LOCAL_BANK_TRANSFER";
+    public static final java.lang.String _OKLINK_VIETNAM_LOCAL_BANK_TRANSFER = "OKLINK_VIETNAM_LOCAL_BANK_TRANSFER";
+    public static final java.lang.String _OKLINK_AUSTRALIA_LOCAL_BANK_TRANSFER = "OKLINK_AUSTRALIA_LOCAL_BANK_TRANSFER";
+    public static final java.lang.String _OKLINK_MALAYSIA_LOCAL_BANK_TRANSFER = "OKLINK_MALAYSIA_LOCAL_BANK_TRANSFER";
+    public static final java.lang.String _RBK_BANK_CARD = "RBK_BANK_CARD";
+    public static final java.lang.String _RBK_BANK_CARD_CRYPTO_NETTING = "RBK_BANK_CARD_CRYPTO_NETTING";
+    public static final java.lang.String _NORDPAY_SWIFT_BUSINESS = "NORDPAY_SWIFT_BUSINESS";
+    public static final java.lang.String _NORDPAY_SEPA_BUSINESS = "NORDPAY_SEPA_BUSINESS";
+    public static final java.lang.String _MAJESTIC_SEPA_BUSINESS = "MAJESTIC_SEPA_BUSINESS";
+    public static final java.lang.String _KRAKEN_BITCOIN_ELECTRONIC_MONEY = "KRAKEN_BITCOIN_ELECTRONIC_MONEY";
+    public static final java.lang.String _KRAKEN_LITECOIN_ELECTRONIC_MONEY = "KRAKEN_LITECOIN_ELECTRONIC_MONEY";
+    public static final java.lang.String _KRAKEN_BITCOIN_CASH_ELECTRONIC_MONEY = "KRAKEN_BITCOIN_CASH_ELECTRONIC_MONEY";
+    public static final java.lang.String _KRAKEN_RIPPLE_ELECTRONIC_MONEY = "KRAKEN_RIPPLE_ELECTRONIC_MONEY";
+    public static final java.lang.String _KRAKEN_ETHEREUM_ELECTRONIC_MONEY = "KRAKEN_ETHEREUM_ELECTRONIC_MONEY";
+    public static final java.lang.String _KRAKEN_ZCASH_ELECTRONIC_MONEY = "KRAKEN_ZCASH_ELECTRONIC_MONEY";
+    public static final java.lang.String _BITSTAMP_BITCOIN_ELECTRONIC_MONEY = "BITSTAMP_BITCOIN_ELECTRONIC_MONEY";
+    public static final java.lang.String _BITSTAMP_LITECOIN_ELECTRONIC_MONEY = "BITSTAMP_LITECOIN_ELECTRONIC_MONEY";
+    public static final java.lang.String _BITSTAMP_BITCOIN_CASH_ELECTRONIC_MONEY = "BITSTAMP_BITCOIN_CASH_ELECTRONIC_MONEY";
+    public static final java.lang.String _BITSTAMP_RIPPLE_ELECTRONIC_MONEY = "BITSTAMP_RIPPLE_ELECTRONIC_MONEY";
+    public static final java.lang.String _BITSTAMP_ETHEREUM_ELECTRONIC_MONEY = "BITSTAMP_ETHEREUM_ELECTRONIC_MONEY";
+    public static final java.lang.String _BITTREX_BITCOIN_ELECTRONIC_MONEY = "BITTREX_BITCOIN_ELECTRONIC_MONEY";
+    public static final java.lang.String _BITTREX_LITECOIN_ELECTRONIC_MONEY = "BITTREX_LITECOIN_ELECTRONIC_MONEY";
+    public static final java.lang.String _BITTREX_BITCOIN_CASH_ELECTRONIC_MONEY = "BITTREX_BITCOIN_CASH_ELECTRONIC_MONEY";
+    public static final java.lang.String _BITTREX_RIPPLE_ELECTRONIC_MONEY = "BITTREX_RIPPLE_ELECTRONIC_MONEY";
+    public static final java.lang.String _BITTREX_ETHEREUM_ELECTRONIC_MONEY = "BITTREX_ETHEREUM_ELECTRONIC_MONEY";
+    public static final java.lang.String _BITTREX_ZCASH_ELECTRONIC_MONEY = "BITTREX_ZCASH_ELECTRONIC_MONEY";
+    public static final java.lang.String _OKCOIN_BITCOIN_ELECTRONIC_MONEY = "OKCOIN_BITCOIN_ELECTRONIC_MONEY";
+    public static final java.lang.String _OKCOIN_LITECOIN_ELECTRONIC_MONEY = "OKCOIN_LITECOIN_ELECTRONIC_MONEY";
+    public static final java.lang.String _OKCOIN_BITCOIN_CASH_ELECTRONIC_MONEY = "OKCOIN_BITCOIN_CASH_ELECTRONIC_MONEY";
+    public static final java.lang.String _OKCOIN_RIPPLE_ELECTRONIC_MONEY = "OKCOIN_RIPPLE_ELECTRONIC_MONEY";
+    public static final java.lang.String _OKCOIN_ETHEREUM_ELECTRONIC_MONEY = "OKCOIN_ETHEREUM_ELECTRONIC_MONEY";
+    public static final java.lang.String _OKCOIN_ZCASH_ELECTRONIC_MONEY = "OKCOIN_ZCASH_ELECTRONIC_MONEY";
+    public static final java.lang.String _BINANCE_BITCOIN_ELECTRONIC_MONEY = "BINANCE_BITCOIN_ELECTRONIC_MONEY";
+    public static final java.lang.String _BINANCE_LITECOIN_ELECTRONIC_MONEY = "BINANCE_LITECOIN_ELECTRONIC_MONEY";
+    public static final java.lang.String _BINANCE_BITCOIN_CASH_ELECTRONIC_MONEY = "BINANCE_BITCOIN_CASH_ELECTRONIC_MONEY";
+    public static final java.lang.String _BINANCE_RIPPLE_ELECTRONIC_MONEY = "BINANCE_RIPPLE_ELECTRONIC_MONEY";
+    public static final java.lang.String _BINANCE_ETHEREUM_ELECTRONIC_MONEY = "BINANCE_ETHEREUM_ELECTRONIC_MONEY";
+    public static final java.lang.String _BINANCE_ZCASH_ELECTRONIC_MONEY = "BINANCE_ZCASH_ELECTRONIC_MONEY";
+    public static final java.lang.String _WINPAY_BITCOIN_ELECTRONIC_MONEY = "WINPAY_BITCOIN_ELECTRONIC_MONEY";
+    public static final java.lang.String _OKLINK_UAE_LOCAL_BANK_TRANSFER = "OKLINK_UAE_LOCAL_BANK_TRANSFER";
+    public static final java.lang.String _OKLINK_CANADA_LOCAL_BANK_TRANSFER = "OKLINK_CANADA_LOCAL_BANK_TRANSFER";
+    public static final java.lang.String _OKLINK_DOKU_ELECTRONIC_MONEY = "OKLINK_DOKU_ELECTRONIC_MONEY";
+    public static final java.lang.String _OKLINK_VIMO_ELECTRONIC_MONEY = "OKLINK_VIMO_ELECTRONIC_MONEY";
+    public static final java.lang.String _ROYAL_PAY_BANK_CARD = "ROYAL_PAY_BANK_CARD";
+    public static final java.lang.String _ROYAL_PAY_ADV_PROJECT_BANK_CARD = "ROYAL_PAY_ADV_PROJECT_BANK_CARD";
+    public static final java.lang.String _PAYSOFT_BANK_CARD = "PAYSOFT_BANK_CARD";
+    public static final java.lang.String _BITFINEX_USDTETHER_ELECTRONIC_MONEY = "BITFINEX_USDTETHER_ELECTRONIC_MONEY";
+    public static final java.lang.String _OKCOIN_USDTETHER_ELECTRONIC_MONEY = "OKCOIN_USDTETHER_ELECTRONIC_MONEY";
+    public static final java.lang.String _EXMO_USDTETHER_ELECTRONIC_MONEY = "EXMO_USDTETHER_ELECTRONIC_MONEY";
+    public static final java.lang.String _TALKBANK_WITHDRAWAL_TO_BANK_CARD = "TALKBANK_WITHDRAWAL_TO_BANK_CARD";
     public static final ExternalSystemWithdrawalType OK_PAY_ELECTRONIC_MONEY = new ExternalSystemWithdrawalType(_OK_PAY_ELECTRONIC_MONEY);
     public static final ExternalSystemWithdrawalType PERFECT_MONEY_ELECTRONIC_MONEY = new ExternalSystemWithdrawalType(_PERFECT_MONEY_ELECTRONIC_MONEY);
     public static final ExternalSystemWithdrawalType EGO_PAY_ELECTRONIC_MONEY = new ExternalSystemWithdrawalType(_EGO_PAY_ELECTRONIC_MONEY);
@@ -273,35 +273,35 @@ public class ExternalSystemWithdrawalType implements java.io.Serializable {
     public static final ExternalSystemWithdrawalType OKCOIN_USDTETHER_ELECTRONIC_MONEY = new ExternalSystemWithdrawalType(_OKCOIN_USDTETHER_ELECTRONIC_MONEY);
     public static final ExternalSystemWithdrawalType EXMO_USDTETHER_ELECTRONIC_MONEY = new ExternalSystemWithdrawalType(_EXMO_USDTETHER_ELECTRONIC_MONEY);
     public static final ExternalSystemWithdrawalType TALKBANK_WITHDRAWAL_TO_BANK_CARD = new ExternalSystemWithdrawalType(_TALKBANK_WITHDRAWAL_TO_BANK_CARD);
-    public String getValue() { return _value_;}
-    public static ExternalSystemWithdrawalType fromValue(String value)
-          throws IllegalArgumentException {
+    public java.lang.String getValue() { return _value_;}
+    public static ExternalSystemWithdrawalType fromValue(java.lang.String value)
+          throws java.lang.IllegalArgumentException {
         ExternalSystemWithdrawalType enumeration = (ExternalSystemWithdrawalType)
             _table_.get(value);
-        if (enumeration==null) throw new IllegalArgumentException();
+        if (enumeration==null) throw new java.lang.IllegalArgumentException();
         return enumeration;
     }
-    public static ExternalSystemWithdrawalType fromString(String value)
-          throws IllegalArgumentException {
+    public static ExternalSystemWithdrawalType fromString(java.lang.String value)
+          throws java.lang.IllegalArgumentException {
         return fromValue(value);
     }
-    public boolean equals(Object obj) {return (obj == this);}
+    public boolean equals(java.lang.Object obj) {return (obj == this);}
     public int hashCode() { return toString().hashCode();}
-    public String toString() { return _value_;}
-    public Object readResolve() throws java.io.ObjectStreamException { return fromValue(_value_);}
+    public java.lang.String toString() { return _value_;}
+    public java.lang.Object readResolve() throws java.io.ObjectStreamException { return fromValue(_value_);}
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new org.apache.axis.encoding.ser.EnumSerializer(
             _javaType, _xmlType);
     }
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new org.apache.axis.encoding.ser.EnumDeserializer(
             _javaType, _xmlType);
     }

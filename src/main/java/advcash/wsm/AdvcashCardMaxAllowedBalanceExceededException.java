@@ -14,9 +14,9 @@ public class AdvcashCardMaxAllowedBalanceExceededException  extends org.apache.a
 
     private java.math.BigDecimal allowedAmount;
 
-    private Currency currency;
+    private advcash.wsm.Currency currency;
 
-    private ExceptionType type;
+    private advcash.wsm.ExceptionType type;
 
     public AdvcashCardMaxAllowedBalanceExceededException() {
     }
@@ -25,8 +25,8 @@ public class AdvcashCardMaxAllowedBalanceExceededException  extends org.apache.a
            java.math.BigDecimal maxAllowedBalance,
            java.math.BigDecimal currentBalance,
            java.math.BigDecimal allowedAmount,
-           Currency currency,
-           ExceptionType type) {
+           advcash.wsm.Currency currency,
+           advcash.wsm.ExceptionType type) {
         this.maxAllowedBalance = maxAllowedBalance;
         this.currentBalance = currentBalance;
         this.allowedAmount = allowedAmount;
@@ -37,7 +37,7 @@ public class AdvcashCardMaxAllowedBalanceExceededException  extends org.apache.a
 
     /**
      * Gets the maxAllowedBalance value for this AdvcashCardMaxAllowedBalanceExceededException.
-     *
+     * 
      * @return maxAllowedBalance
      */
     public java.math.BigDecimal getMaxAllowedBalance() {
@@ -47,7 +47,7 @@ public class AdvcashCardMaxAllowedBalanceExceededException  extends org.apache.a
 
     /**
      * Sets the maxAllowedBalance value for this AdvcashCardMaxAllowedBalanceExceededException.
-     *
+     * 
      * @param maxAllowedBalance
      */
     public void setMaxAllowedBalance(java.math.BigDecimal maxAllowedBalance) {
@@ -57,7 +57,7 @@ public class AdvcashCardMaxAllowedBalanceExceededException  extends org.apache.a
 
     /**
      * Gets the currentBalance value for this AdvcashCardMaxAllowedBalanceExceededException.
-     *
+     * 
      * @return currentBalance
      */
     public java.math.BigDecimal getCurrentBalance() {
@@ -67,7 +67,7 @@ public class AdvcashCardMaxAllowedBalanceExceededException  extends org.apache.a
 
     /**
      * Sets the currentBalance value for this AdvcashCardMaxAllowedBalanceExceededException.
-     *
+     * 
      * @param currentBalance
      */
     public void setCurrentBalance(java.math.BigDecimal currentBalance) {
@@ -77,7 +77,7 @@ public class AdvcashCardMaxAllowedBalanceExceededException  extends org.apache.a
 
     /**
      * Gets the allowedAmount value for this AdvcashCardMaxAllowedBalanceExceededException.
-     *
+     * 
      * @return allowedAmount
      */
     public java.math.BigDecimal getAllowedAmount() {
@@ -87,7 +87,7 @@ public class AdvcashCardMaxAllowedBalanceExceededException  extends org.apache.a
 
     /**
      * Sets the allowedAmount value for this AdvcashCardMaxAllowedBalanceExceededException.
-     *
+     * 
      * @param allowedAmount
      */
     public void setAllowedAmount(java.math.BigDecimal allowedAmount) {
@@ -97,45 +97,45 @@ public class AdvcashCardMaxAllowedBalanceExceededException  extends org.apache.a
 
     /**
      * Gets the currency value for this AdvcashCardMaxAllowedBalanceExceededException.
-     *
+     * 
      * @return currency
      */
-    public Currency getCurrency() {
+    public advcash.wsm.Currency getCurrency() {
         return currency;
     }
 
 
     /**
      * Sets the currency value for this AdvcashCardMaxAllowedBalanceExceededException.
-     *
+     * 
      * @param currency
      */
-    public void setCurrency(Currency currency) {
+    public void setCurrency(advcash.wsm.Currency currency) {
         this.currency = currency;
     }
 
 
     /**
      * Gets the type value for this AdvcashCardMaxAllowedBalanceExceededException.
-     *
+     * 
      * @return type
      */
-    public ExceptionType getType() {
+    public advcash.wsm.ExceptionType getType() {
         return type;
     }
 
 
     /**
      * Sets the type value for this AdvcashCardMaxAllowedBalanceExceededException.
-     *
+     * 
      * @param type
      */
-    public void setType(ExceptionType type) {
+    public void setType(advcash.wsm.ExceptionType type) {
         this.type = type;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof AdvcashCardMaxAllowedBalanceExceededException)) return false;
         AdvcashCardMaxAllowedBalanceExceededException other = (AdvcashCardMaxAllowedBalanceExceededException) obj;
         if (obj == null) return false;
@@ -145,20 +145,20 @@ public class AdvcashCardMaxAllowedBalanceExceededException  extends org.apache.a
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true &&
-            ((this.maxAllowedBalance==null && other.getMaxAllowedBalance()==null) ||
+        _equals = true && 
+            ((this.maxAllowedBalance==null && other.getMaxAllowedBalance()==null) || 
              (this.maxAllowedBalance!=null &&
               this.maxAllowedBalance.equals(other.getMaxAllowedBalance()))) &&
-            ((this.currentBalance==null && other.getCurrentBalance()==null) ||
+            ((this.currentBalance==null && other.getCurrentBalance()==null) || 
              (this.currentBalance!=null &&
               this.currentBalance.equals(other.getCurrentBalance()))) &&
-            ((this.allowedAmount==null && other.getAllowedAmount()==null) ||
+            ((this.allowedAmount==null && other.getAllowedAmount()==null) || 
              (this.allowedAmount!=null &&
               this.allowedAmount.equals(other.getAllowedAmount()))) &&
-            ((this.currency==null && other.getCurrency()==null) ||
+            ((this.currency==null && other.getCurrency()==null) || 
              (this.currency!=null &&
               this.currency.equals(other.getCurrency()))) &&
-            ((this.type==null && other.getType()==null) ||
+            ((this.type==null && other.getType()==null) || 
              (this.type!=null &&
               this.type.equals(other.getType())));
         __equalsCalc = null;
@@ -240,10 +240,10 @@ public class AdvcashCardMaxAllowedBalanceExceededException  extends org.apache.a
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -252,10 +252,10 @@ public class AdvcashCardMaxAllowedBalanceExceededException  extends org.apache.a
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

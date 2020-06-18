@@ -8,11 +8,11 @@
 package advcash.wsm;
 
 public class AccountPresentDTO  implements java.io.Serializable {
-    private Boolean isUserVerified;
+    private java.lang.Boolean isUserVerified;
 
-    private Boolean present;
+    private java.lang.Boolean present;
 
-    private String systemAccountName;
+    private java.lang.String systemAccountName;
 
     private int transactionScore;
 
@@ -20,9 +20,9 @@ public class AccountPresentDTO  implements java.io.Serializable {
     }
 
     public AccountPresentDTO(
-           Boolean isUserVerified,
-           Boolean present,
-           String systemAccountName,
+           java.lang.Boolean isUserVerified,
+           java.lang.Boolean present,
+           java.lang.String systemAccountName,
            int transactionScore) {
            this.isUserVerified = isUserVerified;
            this.present = present;
@@ -33,67 +33,67 @@ public class AccountPresentDTO  implements java.io.Serializable {
 
     /**
      * Gets the isUserVerified value for this AccountPresentDTO.
-     *
+     * 
      * @return isUserVerified
      */
-    public Boolean getIsUserVerified() {
+    public java.lang.Boolean getIsUserVerified() {
         return isUserVerified;
     }
 
 
     /**
      * Sets the isUserVerified value for this AccountPresentDTO.
-     *
+     * 
      * @param isUserVerified
      */
-    public void setIsUserVerified(Boolean isUserVerified) {
+    public void setIsUserVerified(java.lang.Boolean isUserVerified) {
         this.isUserVerified = isUserVerified;
     }
 
 
     /**
      * Gets the present value for this AccountPresentDTO.
-     *
+     * 
      * @return present
      */
-    public Boolean getPresent() {
+    public java.lang.Boolean getPresent() {
         return present;
     }
 
 
     /**
      * Sets the present value for this AccountPresentDTO.
-     *
+     * 
      * @param present
      */
-    public void setPresent(Boolean present) {
+    public void setPresent(java.lang.Boolean present) {
         this.present = present;
     }
 
 
     /**
      * Gets the systemAccountName value for this AccountPresentDTO.
-     *
+     * 
      * @return systemAccountName
      */
-    public String getSystemAccountName() {
+    public java.lang.String getSystemAccountName() {
         return systemAccountName;
     }
 
 
     /**
      * Sets the systemAccountName value for this AccountPresentDTO.
-     *
+     * 
      * @param systemAccountName
      */
-    public void setSystemAccountName(String systemAccountName) {
+    public void setSystemAccountName(java.lang.String systemAccountName) {
         this.systemAccountName = systemAccountName;
     }
 
 
     /**
      * Gets the transactionScore value for this AccountPresentDTO.
-     *
+     * 
      * @return transactionScore
      */
     public int getTransactionScore() {
@@ -103,15 +103,15 @@ public class AccountPresentDTO  implements java.io.Serializable {
 
     /**
      * Sets the transactionScore value for this AccountPresentDTO.
-     *
+     * 
      * @param transactionScore
      */
     public void setTransactionScore(int transactionScore) {
         this.transactionScore = transactionScore;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof AccountPresentDTO)) return false;
         AccountPresentDTO other = (AccountPresentDTO) obj;
         if (obj == null) return false;
@@ -121,14 +121,14 @@ public class AccountPresentDTO  implements java.io.Serializable {
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true &&
-            ((this.isUserVerified==null && other.getIsUserVerified()==null) ||
+        _equals = true && 
+            ((this.isUserVerified==null && other.getIsUserVerified()==null) || 
              (this.isUserVerified!=null &&
               this.isUserVerified.equals(other.getIsUserVerified()))) &&
-            ((this.present==null && other.getPresent()==null) ||
+            ((this.present==null && other.getPresent()==null) || 
              (this.present!=null &&
               this.present.equals(other.getPresent()))) &&
-            ((this.systemAccountName==null && other.getSystemAccountName()==null) ||
+            ((this.systemAccountName==null && other.getSystemAccountName()==null) || 
              (this.systemAccountName!=null &&
               this.systemAccountName.equals(other.getSystemAccountName()))) &&
             this.transactionScore == other.getTransactionScore();
@@ -203,10 +203,10 @@ public class AccountPresentDTO  implements java.io.Serializable {
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -215,10 +215,10 @@ public class AccountPresentDTO  implements java.io.Serializable {
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

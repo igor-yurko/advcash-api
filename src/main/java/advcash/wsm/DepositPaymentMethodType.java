@@ -8,139 +8,139 @@
 package advcash.wsm;
 
 public class DepositPaymentMethodType implements java.io.Serializable {
-    private String _value_;
+    private java.lang.String _value_;
     private static java.util.HashMap _table_ = new java.util.HashMap();
 
     // Constructor
-    protected DepositPaymentMethodType(String value) {
+    protected DepositPaymentMethodType(java.lang.String value) {
         _value_ = value;
         _table_.put(_value_,this);
     }
 
-    public static final String _WALLET_ONE = "WALLET_ONE";
-    public static final String _UKASH = "UKASH";
-    public static final String _RBK_MONEY = "RBK_MONEY";
-    public static final String _Z_PAYMENT = "Z_PAYMENT";
-    public static final String _BPAY = "BPAY";
-    public static final String _WEB_CREDS = "WEB_CREDS";
-    public static final String _CASH_TERMINAL = "CASH_TERMINAL";
-    public static final String _MONEY_TRANSFER = "MONEY_TRANSFER";
-    public static final String _SVYAZNOY_BANK = "SVYAZNOY_BANK";
-    public static final String _BANK_TRANSFER = "BANK_TRANSFER";
-    public static final String _MAESTRO = "MAESTRO";
-    public static final String _SOFORT_BANKING = "SOFORT_BANKING";
-    public static final String _TRUST_PAY = "TRUST_PAY";
-    public static final String _BANKS_OFFICES = "BANKS_OFFICES";
-    public static final String _POST_OFFICES = "POST_OFFICES";
-    public static final String _VISA = "VISA";
-    public static final String _MASTERCARD = "MASTERCARD";
-    public static final String _NSMEP_UKRAINE = "NSMEP_UKRAINE";
-    public static final String _PSB_RETAIL = "PSB_RETAIL";
-    public static final String _SBER_ONLINE = "SBER_ONLINE";
-    public static final String _ALFACLICK = "ALFACLICK";
-    public static final String _PRIVAT24 = "PRIVAT24";
-    public static final String _CASHU = "CASHU";
-    public static final String _QIWI = "QIWI";
-    public static final String _QIWI_TERMINAL = "QIWI_TERMINAL";
-    public static final String _EASYPAY = "EASYPAY";
-    public static final String _POLI = "POLI";
-    public static final String _TELEINGRESO = "TELEINGRESO";
-    public static final String _MONEY_MAIL = "MONEY_MAIL";
-    public static final String _YANDEX_MONEY = "YANDEX_MONEY";
-    public static final String _BASHKOMSNAB_BANK = "BASHKOMSNAB_BANK";
-    public static final String _NOVOOPLAT = "NOVOOPLAT";
-    public static final String _ELEXNET = "ELEXNET";
-    public static final String _WEB_MONEY = "WEB_MONEY";
-    public static final String _MOBILE_RETAILS = "MOBILE_RETAILS";
-    public static final String _MOBILE_PHONE_BEELINE = "MOBILE_PHONE_BEELINE";
-    public static final String _MOBILE_PHONE_MTS = "MOBILE_PHONE_MTS";
-    public static final String _MOBILE_PHONE_MEGAFON = "MOBILE_PHONE_MEGAFON";
-    public static final String _EGO_PAY = "EGO_PAY";
-    public static final String _OKPAY = "OKPAY";
-    public static final String _SWIFT = "SWIFT";
-    public static final String _ECOIN = "ECOIN";
-    public static final String _SWIFT_3RD_PARTY = "SWIFT_3RD_PARTY";
-    public static final String _PERFECT_MONEY = "PERFECT_MONEY";
-    public static final String _PAXUM = "PAXUM";
-    public static final String _BITCOIN = "BITCOIN";
-    public static final String _PAYEER = "PAYEER";
-    public static final String _SEPA = "SEPA";
-    public static final String _SEPA_3RD_PARTY = "SEPA_3RD_PARTY";
-    public static final String _TEST = "TEST";
-    public static final String _MIXPLAT = "MIXPLAT";
-    public static final String _BTC_E = "BTC_E";
-    public static final String _FAST_BANK_TRANSFER = "FAST_BANK_TRANSFER";
-    public static final String _REAL_TIME_TRANSFER = "REAL_TIME_TRANSFER";
-    public static final String _EXMO = "EXMO";
-    public static final String _RUSSIAN_STANDARD_BANK = "RUSSIAN_STANDARD_BANK";
-    public static final String _CAPITALIST = "CAPITALIST";
-    public static final String _LIQPAY = "LIQPAY";
-    public static final String _MOBILE_PHONE_TELE2 = "MOBILE_PHONE_TELE2";
-    public static final String _SIMPLYPAY = "SIMPLYPAY";
-    public static final String _BITOK = "BITOK";
-    public static final String _PAYZA = "PAYZA";
-    public static final String _EPESE = "EPESE";
-    public static final String _VISA_KZT = "VISA_KZT";
-    public static final String _MASTERCARD_KZT = "MASTERCARD_KZT";
-    public static final String _AMERICAN_EXPRESS_KZT = "AMERICAN_EXPRESS_KZT";
-    public static final String _VISA_RUB = "VISA_RUB";
-    public static final String _MASTERCARD_RUB = "MASTERCARD_RUB";
-    public static final String _AMERICAN_EXPRESS_RUB = "AMERICAN_EXPRESS_RUB";
-    public static final String _JCB_RUB = "JCB_RUB";
-    public static final String _DINERS_CLUB_RUB = "DINERS_CLUB_RUB";
-    public static final String _VISA_BRL = "VISA_BRL";
-    public static final String _MASTERCARD_BRL = "MASTERCARD_BRL";
-    public static final String _VISA_INTERNATIONAL = "VISA_INTERNATIONAL";
-    public static final String _MASTERCARD_INTERNATIONAL = "MASTERCARD_INTERNATIONAL";
-    public static final String _CHINA_UNION_PAY = "CHINA_UNION_PAY";
-    public static final String _CREDIT_PILOT = "CREDIT_PILOT";
-    public static final String _LOCAL_BANK_TRANSFER_BRL = "LOCAL_BANK_TRANSFER_BRL";
-    public static final String _EPAY = "EPAY";
-    public static final String _YANDEX_CASSA = "YANDEX_CASSA";
-    public static final String _ECOIN_VOUCHER = "ECOIN_VOUCHER";
-    public static final String _HOME_BANK_KZ = "HOME_BANK_KZ";
-    public static final String _KASSA_24_KZ = "KASSA_24_KZ";
-    public static final String _KAZPOST_KZ = "KAZPOST_KZ";
-    public static final String _ATF24_KZ = "ATF24_KZ";
-    public static final String _VISA_UAH = "VISA_UAH";
-    public static final String _MASTERCARD_UAH = "MASTERCARD_UAH";
-    public static final String _WEX = "WEX";
-    public static final String _MIR = "MIR";
-    public static final String _VISA_RUB_ISSUED_IN_RSB = "VISA_RUB_ISSUED_IN_RSB";
-    public static final String _MASTERCARD_RUB_ISSUED_IN_RSB = "MASTERCARD_RUB_ISSUED_IN_RSB";
-    public static final String _FORTEBANK_KZ = "FORTEBANK_KZ";
-    public static final String _ALFACLICK_KZ = "ALFACLICK_KZ";
-    public static final String _BANKRBK24_KZ = "BANKRBK24_KZ";
-    public static final String _LOCAL_BANK_TRANSFER_AUSTRALIA = "LOCAL_BANK_TRANSFER_AUSTRALIA";
-    public static final String _LOCAL_BANK_TRANSFER_HONG_KONG = "LOCAL_BANK_TRANSFER_HONG_KONG";
-    public static final String _LOCAL_BANK_TRANSFER_INDONESIA = "LOCAL_BANK_TRANSFER_INDONESIA";
-    public static final String _LOCAL_BANK_TRANSFER_PHILIPPINES = "LOCAL_BANK_TRANSFER_PHILIPPINES";
-    public static final String _LOCAL_BANK_TRANSFER_SINGAPORE = "LOCAL_BANK_TRANSFER_SINGAPORE";
-    public static final String _LOCAL_BANK_TRANSFER_VIETNAM = "LOCAL_BANK_TRANSFER_VIETNAM";
-    public static final String _LOCAL_BANK_TRANSFER_EU_SEPA = "LOCAL_BANK_TRANSFER_EU_SEPA";
-    public static final String _LOCAL_BANK_TRANSFER_THAILAND = "LOCAL_BANK_TRANSFER_THAILAND";
-    public static final String _LOCAL_BANK_TRANSFER_ARGENTINA = "LOCAL_BANK_TRANSFER_ARGENTINA";
-    public static final String _LOCAL_BANK_TRANSFER_CHILE = "LOCAL_BANK_TRANSFER_CHILE";
-    public static final String _LOCAL_BANK_TRANSFER_TURKEY = "LOCAL_BANK_TRANSFER_TURKEY";
-    public static final String _LOCAL_BANK_TRANSFER_COLOMBIA = "LOCAL_BANK_TRANSFER_COLOMBIA";
-    public static final String _LOCAL_BANK_TRANSFER_MEXICO = "LOCAL_BANK_TRANSFER_MEXICO";
-    public static final String _LOCAL_BANK_TRANSFER_PERU = "LOCAL_BANK_TRANSFER_PERU";
-    public static final String _LOCAL_BANK_TRANSFER_URUGUAY = "LOCAL_BANK_TRANSFER_URUGUAY";
-    public static final String _LOCAL_BANK_TRANSFER_CHINA = "LOCAL_BANK_TRANSFER_CHINA";
-    public static final String _SEPA_ICT = "SEPA_ICT";
-    public static final String _LITECOIN = "LITECOIN";
-    public static final String _LOCAL_BANK_TRANSFER_BRAZIL = "LOCAL_BANK_TRANSFER_BRAZIL";
-    public static final String _BITCOIN_CASH = "BITCOIN_CASH";
-    public static final String _GOOGLE_PAY = "GOOGLE_PAY";
-    public static final String _APPLE_PAY = "APPLE_PAY";
-    public static final String _RIPPLE = "RIPPLE";
-    public static final String _ETHEREUM = "ETHEREUM";
-    public static final String _ZCASH = "ZCASH";
-    public static final String _USDTETHER = "USDTETHER";
-    public static final String _BANK_CARD_TO_CRYPTOCURRENCY = "BANK_CARD_TO_CRYPTOCURRENCY";
-    public static final String _BANK_CARD_RSB_TO_CRYPTOCURRENCY = "BANK_CARD_RSB_TO_CRYPTOCURRENCY";
-    public static final String _SVYAZNOY_EUROSET_CASH_OFFICE = "SVYAZNOY_EUROSET_CASH_OFFICE";
-    public static final String _MTS_CASH_OFFICE = "MTS_CASH_OFFICE";
+    public static final java.lang.String _WALLET_ONE = "WALLET_ONE";
+    public static final java.lang.String _UKASH = "UKASH";
+    public static final java.lang.String _RBK_MONEY = "RBK_MONEY";
+    public static final java.lang.String _Z_PAYMENT = "Z_PAYMENT";
+    public static final java.lang.String _BPAY = "BPAY";
+    public static final java.lang.String _WEB_CREDS = "WEB_CREDS";
+    public static final java.lang.String _CASH_TERMINAL = "CASH_TERMINAL";
+    public static final java.lang.String _MONEY_TRANSFER = "MONEY_TRANSFER";
+    public static final java.lang.String _SVYAZNOY_BANK = "SVYAZNOY_BANK";
+    public static final java.lang.String _BANK_TRANSFER = "BANK_TRANSFER";
+    public static final java.lang.String _MAESTRO = "MAESTRO";
+    public static final java.lang.String _SOFORT_BANKING = "SOFORT_BANKING";
+    public static final java.lang.String _TRUST_PAY = "TRUST_PAY";
+    public static final java.lang.String _BANKS_OFFICES = "BANKS_OFFICES";
+    public static final java.lang.String _POST_OFFICES = "POST_OFFICES";
+    public static final java.lang.String _VISA = "VISA";
+    public static final java.lang.String _MASTERCARD = "MASTERCARD";
+    public static final java.lang.String _NSMEP_UKRAINE = "NSMEP_UKRAINE";
+    public static final java.lang.String _PSB_RETAIL = "PSB_RETAIL";
+    public static final java.lang.String _SBER_ONLINE = "SBER_ONLINE";
+    public static final java.lang.String _ALFACLICK = "ALFACLICK";
+    public static final java.lang.String _PRIVAT24 = "PRIVAT24";
+    public static final java.lang.String _CASHU = "CASHU";
+    public static final java.lang.String _QIWI = "QIWI";
+    public static final java.lang.String _QIWI_TERMINAL = "QIWI_TERMINAL";
+    public static final java.lang.String _EASYPAY = "EASYPAY";
+    public static final java.lang.String _POLI = "POLI";
+    public static final java.lang.String _TELEINGRESO = "TELEINGRESO";
+    public static final java.lang.String _MONEY_MAIL = "MONEY_MAIL";
+    public static final java.lang.String _YANDEX_MONEY = "YANDEX_MONEY";
+    public static final java.lang.String _BASHKOMSNAB_BANK = "BASHKOMSNAB_BANK";
+    public static final java.lang.String _NOVOOPLAT = "NOVOOPLAT";
+    public static final java.lang.String _ELEXNET = "ELEXNET";
+    public static final java.lang.String _WEB_MONEY = "WEB_MONEY";
+    public static final java.lang.String _MOBILE_RETAILS = "MOBILE_RETAILS";
+    public static final java.lang.String _MOBILE_PHONE_BEELINE = "MOBILE_PHONE_BEELINE";
+    public static final java.lang.String _MOBILE_PHONE_MTS = "MOBILE_PHONE_MTS";
+    public static final java.lang.String _MOBILE_PHONE_MEGAFON = "MOBILE_PHONE_MEGAFON";
+    public static final java.lang.String _EGO_PAY = "EGO_PAY";
+    public static final java.lang.String _OKPAY = "OKPAY";
+    public static final java.lang.String _SWIFT = "SWIFT";
+    public static final java.lang.String _ECOIN = "ECOIN";
+    public static final java.lang.String _SWIFT_3RD_PARTY = "SWIFT_3RD_PARTY";
+    public static final java.lang.String _PERFECT_MONEY = "PERFECT_MONEY";
+    public static final java.lang.String _PAXUM = "PAXUM";
+    public static final java.lang.String _BITCOIN = "BITCOIN";
+    public static final java.lang.String _PAYEER = "PAYEER";
+    public static final java.lang.String _SEPA = "SEPA";
+    public static final java.lang.String _SEPA_3RD_PARTY = "SEPA_3RD_PARTY";
+    public static final java.lang.String _TEST = "TEST";
+    public static final java.lang.String _MIXPLAT = "MIXPLAT";
+    public static final java.lang.String _BTC_E = "BTC_E";
+    public static final java.lang.String _FAST_BANK_TRANSFER = "FAST_BANK_TRANSFER";
+    public static final java.lang.String _REAL_TIME_TRANSFER = "REAL_TIME_TRANSFER";
+    public static final java.lang.String _EXMO = "EXMO";
+    public static final java.lang.String _RUSSIAN_STANDARD_BANK = "RUSSIAN_STANDARD_BANK";
+    public static final java.lang.String _CAPITALIST = "CAPITALIST";
+    public static final java.lang.String _LIQPAY = "LIQPAY";
+    public static final java.lang.String _MOBILE_PHONE_TELE2 = "MOBILE_PHONE_TELE2";
+    public static final java.lang.String _SIMPLYPAY = "SIMPLYPAY";
+    public static final java.lang.String _BITOK = "BITOK";
+    public static final java.lang.String _PAYZA = "PAYZA";
+    public static final java.lang.String _EPESE = "EPESE";
+    public static final java.lang.String _VISA_KZT = "VISA_KZT";
+    public static final java.lang.String _MASTERCARD_KZT = "MASTERCARD_KZT";
+    public static final java.lang.String _AMERICAN_EXPRESS_KZT = "AMERICAN_EXPRESS_KZT";
+    public static final java.lang.String _VISA_RUB = "VISA_RUB";
+    public static final java.lang.String _MASTERCARD_RUB = "MASTERCARD_RUB";
+    public static final java.lang.String _AMERICAN_EXPRESS_RUB = "AMERICAN_EXPRESS_RUB";
+    public static final java.lang.String _JCB_RUB = "JCB_RUB";
+    public static final java.lang.String _DINERS_CLUB_RUB = "DINERS_CLUB_RUB";
+    public static final java.lang.String _VISA_BRL = "VISA_BRL";
+    public static final java.lang.String _MASTERCARD_BRL = "MASTERCARD_BRL";
+    public static final java.lang.String _VISA_INTERNATIONAL = "VISA_INTERNATIONAL";
+    public static final java.lang.String _MASTERCARD_INTERNATIONAL = "MASTERCARD_INTERNATIONAL";
+    public static final java.lang.String _CHINA_UNION_PAY = "CHINA_UNION_PAY";
+    public static final java.lang.String _CREDIT_PILOT = "CREDIT_PILOT";
+    public static final java.lang.String _LOCAL_BANK_TRANSFER_BRL = "LOCAL_BANK_TRANSFER_BRL";
+    public static final java.lang.String _EPAY = "EPAY";
+    public static final java.lang.String _YANDEX_CASSA = "YANDEX_CASSA";
+    public static final java.lang.String _ECOIN_VOUCHER = "ECOIN_VOUCHER";
+    public static final java.lang.String _HOME_BANK_KZ = "HOME_BANK_KZ";
+    public static final java.lang.String _KASSA_24_KZ = "KASSA_24_KZ";
+    public static final java.lang.String _KAZPOST_KZ = "KAZPOST_KZ";
+    public static final java.lang.String _ATF24_KZ = "ATF24_KZ";
+    public static final java.lang.String _VISA_UAH = "VISA_UAH";
+    public static final java.lang.String _MASTERCARD_UAH = "MASTERCARD_UAH";
+    public static final java.lang.String _WEX = "WEX";
+    public static final java.lang.String _MIR = "MIR";
+    public static final java.lang.String _VISA_RUB_ISSUED_IN_RSB = "VISA_RUB_ISSUED_IN_RSB";
+    public static final java.lang.String _MASTERCARD_RUB_ISSUED_IN_RSB = "MASTERCARD_RUB_ISSUED_IN_RSB";
+    public static final java.lang.String _FORTEBANK_KZ = "FORTEBANK_KZ";
+    public static final java.lang.String _ALFACLICK_KZ = "ALFACLICK_KZ";
+    public static final java.lang.String _BANKRBK24_KZ = "BANKRBK24_KZ";
+    public static final java.lang.String _LOCAL_BANK_TRANSFER_AUSTRALIA = "LOCAL_BANK_TRANSFER_AUSTRALIA";
+    public static final java.lang.String _LOCAL_BANK_TRANSFER_HONG_KONG = "LOCAL_BANK_TRANSFER_HONG_KONG";
+    public static final java.lang.String _LOCAL_BANK_TRANSFER_INDONESIA = "LOCAL_BANK_TRANSFER_INDONESIA";
+    public static final java.lang.String _LOCAL_BANK_TRANSFER_PHILIPPINES = "LOCAL_BANK_TRANSFER_PHILIPPINES";
+    public static final java.lang.String _LOCAL_BANK_TRANSFER_SINGAPORE = "LOCAL_BANK_TRANSFER_SINGAPORE";
+    public static final java.lang.String _LOCAL_BANK_TRANSFER_VIETNAM = "LOCAL_BANK_TRANSFER_VIETNAM";
+    public static final java.lang.String _LOCAL_BANK_TRANSFER_EU_SEPA = "LOCAL_BANK_TRANSFER_EU_SEPA";
+    public static final java.lang.String _LOCAL_BANK_TRANSFER_THAILAND = "LOCAL_BANK_TRANSFER_THAILAND";
+    public static final java.lang.String _LOCAL_BANK_TRANSFER_ARGENTINA = "LOCAL_BANK_TRANSFER_ARGENTINA";
+    public static final java.lang.String _LOCAL_BANK_TRANSFER_CHILE = "LOCAL_BANK_TRANSFER_CHILE";
+    public static final java.lang.String _LOCAL_BANK_TRANSFER_TURKEY = "LOCAL_BANK_TRANSFER_TURKEY";
+    public static final java.lang.String _LOCAL_BANK_TRANSFER_COLOMBIA = "LOCAL_BANK_TRANSFER_COLOMBIA";
+    public static final java.lang.String _LOCAL_BANK_TRANSFER_MEXICO = "LOCAL_BANK_TRANSFER_MEXICO";
+    public static final java.lang.String _LOCAL_BANK_TRANSFER_PERU = "LOCAL_BANK_TRANSFER_PERU";
+    public static final java.lang.String _LOCAL_BANK_TRANSFER_URUGUAY = "LOCAL_BANK_TRANSFER_URUGUAY";
+    public static final java.lang.String _LOCAL_BANK_TRANSFER_CHINA = "LOCAL_BANK_TRANSFER_CHINA";
+    public static final java.lang.String _SEPA_ICT = "SEPA_ICT";
+    public static final java.lang.String _LITECOIN = "LITECOIN";
+    public static final java.lang.String _LOCAL_BANK_TRANSFER_BRAZIL = "LOCAL_BANK_TRANSFER_BRAZIL";
+    public static final java.lang.String _BITCOIN_CASH = "BITCOIN_CASH";
+    public static final java.lang.String _GOOGLE_PAY = "GOOGLE_PAY";
+    public static final java.lang.String _APPLE_PAY = "APPLE_PAY";
+    public static final java.lang.String _RIPPLE = "RIPPLE";
+    public static final java.lang.String _ETHEREUM = "ETHEREUM";
+    public static final java.lang.String _ZCASH = "ZCASH";
+    public static final java.lang.String _USDTETHER = "USDTETHER";
+    public static final java.lang.String _BANK_CARD_TO_CRYPTOCURRENCY = "BANK_CARD_TO_CRYPTOCURRENCY";
+    public static final java.lang.String _BANK_CARD_RSB_TO_CRYPTOCURRENCY = "BANK_CARD_RSB_TO_CRYPTOCURRENCY";
+    public static final java.lang.String _SVYAZNOY_EUROSET_CASH_OFFICE = "SVYAZNOY_EUROSET_CASH_OFFICE";
+    public static final java.lang.String _MTS_CASH_OFFICE = "MTS_CASH_OFFICE";
     public static final DepositPaymentMethodType WALLET_ONE = new DepositPaymentMethodType(_WALLET_ONE);
     public static final DepositPaymentMethodType UKASH = new DepositPaymentMethodType(_UKASH);
     public static final DepositPaymentMethodType RBK_MONEY = new DepositPaymentMethodType(_RBK_MONEY);
@@ -265,35 +265,35 @@ public class DepositPaymentMethodType implements java.io.Serializable {
     public static final DepositPaymentMethodType BANK_CARD_RSB_TO_CRYPTOCURRENCY = new DepositPaymentMethodType(_BANK_CARD_RSB_TO_CRYPTOCURRENCY);
     public static final DepositPaymentMethodType SVYAZNOY_EUROSET_CASH_OFFICE = new DepositPaymentMethodType(_SVYAZNOY_EUROSET_CASH_OFFICE);
     public static final DepositPaymentMethodType MTS_CASH_OFFICE = new DepositPaymentMethodType(_MTS_CASH_OFFICE);
-    public String getValue() { return _value_;}
-    public static DepositPaymentMethodType fromValue(String value)
-          throws IllegalArgumentException {
+    public java.lang.String getValue() { return _value_;}
+    public static DepositPaymentMethodType fromValue(java.lang.String value)
+          throws java.lang.IllegalArgumentException {
         DepositPaymentMethodType enumeration = (DepositPaymentMethodType)
             _table_.get(value);
-        if (enumeration==null) throw new IllegalArgumentException();
+        if (enumeration==null) throw new java.lang.IllegalArgumentException();
         return enumeration;
     }
-    public static DepositPaymentMethodType fromString(String value)
-          throws IllegalArgumentException {
+    public static DepositPaymentMethodType fromString(java.lang.String value)
+          throws java.lang.IllegalArgumentException {
         return fromValue(value);
     }
-    public boolean equals(Object obj) {return (obj == this);}
+    public boolean equals(java.lang.Object obj) {return (obj == this);}
     public int hashCode() { return toString().hashCode();}
-    public String toString() { return _value_;}
-    public Object readResolve() throws java.io.ObjectStreamException { return fromValue(_value_);}
+    public java.lang.String toString() { return _value_;}
+    public java.lang.Object readResolve() throws java.io.ObjectStreamException { return fromValue(_value_);}
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new org.apache.axis.encoding.ser.EnumSerializer(
             _javaType, _xmlType);
     }
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new org.apache.axis.encoding.ser.EnumDeserializer(
             _javaType, _xmlType);
     }

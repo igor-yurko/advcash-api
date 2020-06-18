@@ -7,20 +7,20 @@
 
 package advcash.wsm;
 
-public class SendMoneyToEcoinEUResultHolder  extends SendMoneyToMarketResultHolder  implements java.io.Serializable {
+public class SendMoneyToEcoinEUResultHolder  extends advcash.wsm.SendMoneyToMarketResultHolder  implements java.io.Serializable {
     public SendMoneyToEcoinEUResultHolder() {
     }
 
     public SendMoneyToEcoinEUResultHolder(
-           String coupon,
-           String id) {
+           java.lang.String coupon,
+           java.lang.String id) {
         super(
             coupon,
             id);
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof SendMoneyToEcoinEUResultHolder)) return false;
         SendMoneyToEcoinEUResultHolder other = (SendMoneyToEcoinEUResultHolder) obj;
         if (obj == null) return false;
@@ -65,10 +65,10 @@ public class SendMoneyToEcoinEUResultHolder  extends SendMoneyToMarketResultHold
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -77,10 +77,10 @@ public class SendMoneyToEcoinEUResultHolder  extends SendMoneyToMarketResultHold
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

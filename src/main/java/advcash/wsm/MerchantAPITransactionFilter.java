@@ -12,19 +12,19 @@ public class MerchantAPITransactionFilter  implements java.io.Serializable {
 
     private int from;
 
-    private SortOrder sortOrder;
+    private advcash.wsm.SortOrder sortOrder;
 
     private java.util.Calendar startTimeFrom;
 
     private java.util.Calendar startTimeTo;
 
-    private TransactionDirection transactionDirection;
+    private advcash.wsm.TransactionDirection transactionDirection;
 
-    private TransactionName transactionName;
+    private advcash.wsm.TransactionName transactionName;
 
-    private TransactionStatus transactionStatus;
+    private advcash.wsm.TransactionStatus transactionStatus;
 
-    private String walletId;
+    private java.lang.String walletId;
 
     public MerchantAPITransactionFilter() {
     }
@@ -32,13 +32,13 @@ public class MerchantAPITransactionFilter  implements java.io.Serializable {
     public MerchantAPITransactionFilter(
            int count,
            int from,
-           SortOrder sortOrder,
+           advcash.wsm.SortOrder sortOrder,
            java.util.Calendar startTimeFrom,
            java.util.Calendar startTimeTo,
-           TransactionDirection transactionDirection,
-           TransactionName transactionName,
-           TransactionStatus transactionStatus,
-           String walletId) {
+           advcash.wsm.TransactionDirection transactionDirection,
+           advcash.wsm.TransactionName transactionName,
+           advcash.wsm.TransactionStatus transactionStatus,
+           java.lang.String walletId) {
            this.count = count;
            this.from = from;
            this.sortOrder = sortOrder;
@@ -53,7 +53,7 @@ public class MerchantAPITransactionFilter  implements java.io.Serializable {
 
     /**
      * Gets the count value for this MerchantAPITransactionFilter.
-     *
+     * 
      * @return count
      */
     public int getCount() {
@@ -63,7 +63,7 @@ public class MerchantAPITransactionFilter  implements java.io.Serializable {
 
     /**
      * Sets the count value for this MerchantAPITransactionFilter.
-     *
+     * 
      * @param count
      */
     public void setCount(int count) {
@@ -73,7 +73,7 @@ public class MerchantAPITransactionFilter  implements java.io.Serializable {
 
     /**
      * Gets the from value for this MerchantAPITransactionFilter.
-     *
+     * 
      * @return from
      */
     public int getFrom() {
@@ -83,7 +83,7 @@ public class MerchantAPITransactionFilter  implements java.io.Serializable {
 
     /**
      * Sets the from value for this MerchantAPITransactionFilter.
-     *
+     * 
      * @param from
      */
     public void setFrom(int from) {
@@ -93,27 +93,27 @@ public class MerchantAPITransactionFilter  implements java.io.Serializable {
 
     /**
      * Gets the sortOrder value for this MerchantAPITransactionFilter.
-     *
+     * 
      * @return sortOrder
      */
-    public SortOrder getSortOrder() {
+    public advcash.wsm.SortOrder getSortOrder() {
         return sortOrder;
     }
 
 
     /**
      * Sets the sortOrder value for this MerchantAPITransactionFilter.
-     *
+     * 
      * @param sortOrder
      */
-    public void setSortOrder(SortOrder sortOrder) {
+    public void setSortOrder(advcash.wsm.SortOrder sortOrder) {
         this.sortOrder = sortOrder;
     }
 
 
     /**
      * Gets the startTimeFrom value for this MerchantAPITransactionFilter.
-     *
+     * 
      * @return startTimeFrom
      */
     public java.util.Calendar getStartTimeFrom() {
@@ -123,7 +123,7 @@ public class MerchantAPITransactionFilter  implements java.io.Serializable {
 
     /**
      * Sets the startTimeFrom value for this MerchantAPITransactionFilter.
-     *
+     * 
      * @param startTimeFrom
      */
     public void setStartTimeFrom(java.util.Calendar startTimeFrom) {
@@ -133,7 +133,7 @@ public class MerchantAPITransactionFilter  implements java.io.Serializable {
 
     /**
      * Gets the startTimeTo value for this MerchantAPITransactionFilter.
-     *
+     * 
      * @return startTimeTo
      */
     public java.util.Calendar getStartTimeTo() {
@@ -143,7 +143,7 @@ public class MerchantAPITransactionFilter  implements java.io.Serializable {
 
     /**
      * Sets the startTimeTo value for this MerchantAPITransactionFilter.
-     *
+     * 
      * @param startTimeTo
      */
     public void setStartTimeTo(java.util.Calendar startTimeTo) {
@@ -153,85 +153,85 @@ public class MerchantAPITransactionFilter  implements java.io.Serializable {
 
     /**
      * Gets the transactionDirection value for this MerchantAPITransactionFilter.
-     *
+     * 
      * @return transactionDirection
      */
-    public TransactionDirection getTransactionDirection() {
+    public advcash.wsm.TransactionDirection getTransactionDirection() {
         return transactionDirection;
     }
 
 
     /**
      * Sets the transactionDirection value for this MerchantAPITransactionFilter.
-     *
+     * 
      * @param transactionDirection
      */
-    public void setTransactionDirection(TransactionDirection transactionDirection) {
+    public void setTransactionDirection(advcash.wsm.TransactionDirection transactionDirection) {
         this.transactionDirection = transactionDirection;
     }
 
 
     /**
      * Gets the transactionName value for this MerchantAPITransactionFilter.
-     *
+     * 
      * @return transactionName
      */
-    public TransactionName getTransactionName() {
+    public advcash.wsm.TransactionName getTransactionName() {
         return transactionName;
     }
 
 
     /**
      * Sets the transactionName value for this MerchantAPITransactionFilter.
-     *
+     * 
      * @param transactionName
      */
-    public void setTransactionName(TransactionName transactionName) {
+    public void setTransactionName(advcash.wsm.TransactionName transactionName) {
         this.transactionName = transactionName;
     }
 
 
     /**
      * Gets the transactionStatus value for this MerchantAPITransactionFilter.
-     *
+     * 
      * @return transactionStatus
      */
-    public TransactionStatus getTransactionStatus() {
+    public advcash.wsm.TransactionStatus getTransactionStatus() {
         return transactionStatus;
     }
 
 
     /**
      * Sets the transactionStatus value for this MerchantAPITransactionFilter.
-     *
+     * 
      * @param transactionStatus
      */
-    public void setTransactionStatus(TransactionStatus transactionStatus) {
+    public void setTransactionStatus(advcash.wsm.TransactionStatus transactionStatus) {
         this.transactionStatus = transactionStatus;
     }
 
 
     /**
      * Gets the walletId value for this MerchantAPITransactionFilter.
-     *
+     * 
      * @return walletId
      */
-    public String getWalletId() {
+    public java.lang.String getWalletId() {
         return walletId;
     }
 
 
     /**
      * Sets the walletId value for this MerchantAPITransactionFilter.
-     *
+     * 
      * @param walletId
      */
-    public void setWalletId(String walletId) {
+    public void setWalletId(java.lang.String walletId) {
         this.walletId = walletId;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof MerchantAPITransactionFilter)) return false;
         MerchantAPITransactionFilter other = (MerchantAPITransactionFilter) obj;
         if (obj == null) return false;
@@ -241,28 +241,28 @@ public class MerchantAPITransactionFilter  implements java.io.Serializable {
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true &&
+        _equals = true && 
             this.count == other.getCount() &&
             this.from == other.getFrom() &&
-            ((this.sortOrder==null && other.getSortOrder()==null) ||
+            ((this.sortOrder==null && other.getSortOrder()==null) || 
              (this.sortOrder!=null &&
               this.sortOrder.equals(other.getSortOrder()))) &&
-            ((this.startTimeFrom==null && other.getStartTimeFrom()==null) ||
+            ((this.startTimeFrom==null && other.getStartTimeFrom()==null) || 
              (this.startTimeFrom!=null &&
               this.startTimeFrom.equals(other.getStartTimeFrom()))) &&
-            ((this.startTimeTo==null && other.getStartTimeTo()==null) ||
+            ((this.startTimeTo==null && other.getStartTimeTo()==null) || 
              (this.startTimeTo!=null &&
               this.startTimeTo.equals(other.getStartTimeTo()))) &&
-            ((this.transactionDirection==null && other.getTransactionDirection()==null) ||
+            ((this.transactionDirection==null && other.getTransactionDirection()==null) || 
              (this.transactionDirection!=null &&
               this.transactionDirection.equals(other.getTransactionDirection()))) &&
-            ((this.transactionName==null && other.getTransactionName()==null) ||
+            ((this.transactionName==null && other.getTransactionName()==null) || 
              (this.transactionName!=null &&
               this.transactionName.equals(other.getTransactionName()))) &&
-            ((this.transactionStatus==null && other.getTransactionStatus()==null) ||
+            ((this.transactionStatus==null && other.getTransactionStatus()==null) || 
              (this.transactionStatus!=null &&
               this.transactionStatus.equals(other.getTransactionStatus()))) &&
-            ((this.walletId==null && other.getWalletId()==null) ||
+            ((this.walletId==null && other.getWalletId()==null) || 
              (this.walletId!=null &&
               this.walletId.equals(other.getWalletId())));
         __equalsCalc = null;
@@ -383,10 +383,10 @@ public class MerchantAPITransactionFilter  implements java.io.Serializable {
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -395,10 +395,10 @@ public class MerchantAPITransactionFilter  implements java.io.Serializable {
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }

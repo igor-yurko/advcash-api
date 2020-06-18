@@ -10,14 +10,14 @@ package advcash.wsm;
 public class WalletBalanceDTO  implements java.io.Serializable {
     private java.math.BigDecimal amount;
 
-    private String id;
+    private java.lang.String id;
 
     public WalletBalanceDTO() {
     }
 
     public WalletBalanceDTO(
            java.math.BigDecimal amount,
-           String id) {
+           java.lang.String id) {
            this.amount = amount;
            this.id = id;
     }
@@ -25,7 +25,7 @@ public class WalletBalanceDTO  implements java.io.Serializable {
 
     /**
      * Gets the amount value for this WalletBalanceDTO.
-     *
+     * 
      * @return amount
      */
     public java.math.BigDecimal getAmount() {
@@ -35,7 +35,7 @@ public class WalletBalanceDTO  implements java.io.Serializable {
 
     /**
      * Sets the amount value for this WalletBalanceDTO.
-     *
+     * 
      * @param amount
      */
     public void setAmount(java.math.BigDecimal amount) {
@@ -45,25 +45,25 @@ public class WalletBalanceDTO  implements java.io.Serializable {
 
     /**
      * Gets the id value for this WalletBalanceDTO.
-     *
+     * 
      * @return id
      */
-    public String getId() {
+    public java.lang.String getId() {
         return id;
     }
 
 
     /**
      * Sets the id value for this WalletBalanceDTO.
-     *
+     * 
      * @param id
      */
-    public void setId(String id) {
+    public void setId(java.lang.String id) {
         this.id = id;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof WalletBalanceDTO)) return false;
         WalletBalanceDTO other = (WalletBalanceDTO) obj;
         if (obj == null) return false;
@@ -73,11 +73,11 @@ public class WalletBalanceDTO  implements java.io.Serializable {
         }
         __equalsCalc = obj;
         boolean _equals;
-        _equals = true &&
-            ((this.amount==null && other.getAmount()==null) ||
+        _equals = true && 
+            ((this.amount==null && other.getAmount()==null) || 
              (this.amount!=null &&
               this.amount.equals(other.getAmount()))) &&
-            ((this.id==null && other.getId()==null) ||
+            ((this.id==null && other.getId()==null) || 
              (this.id!=null &&
               this.id.equals(other.getId())));
         __equalsCalc = null;
@@ -134,10 +134,10 @@ public class WalletBalanceDTO  implements java.io.Serializable {
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
             _javaType, _xmlType, typeDesc);
     }
@@ -146,10 +146,10 @@ public class WalletBalanceDTO  implements java.io.Serializable {
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
-        return
+        return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
             _javaType, _xmlType, typeDesc);
     }
